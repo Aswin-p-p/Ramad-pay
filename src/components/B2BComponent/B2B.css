@@ -1,0 +1,359 @@
+
+.b2b{
+    background-image: url(assets/serviceimg/b2b-bg.jpg);
+    overflow: hidden;
+  }
+  .b2bHeadImg{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    line-height: 0;
+  }
+  .b2bHeadImg img{
+    width: 480px;
+  }
+
+  .cmpny-content .commSpn{
+    font-size: 50px;
+  }
+
+  .p2p .cmpny-content span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+  .cmpny-content{
+    padding-top: 15px;
+  }
+  .cmpny-content p{
+    max-width: 480px;
+  }
+  .cmpny-content h1{
+    font-weight: 700;
+    color: #fff;
+    font-size: 50px;
+  }
+  .cmpny-content p{
+    color: #fff;
+    font-weight: 300;
+    padding-top: 10px;
+    letter-spacing: .5px;
+  }
+  
+  .b2bSecContBlk{
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .b2bSecImg{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  .b2bSecImg img{
+    width: 100%;
+  }
+  .b2bSecCont p{
+    color: #fff;
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+  
+  .b2bSecCont a{
+    display: block;
+    width: fit-content;
+    padding: 12px 37px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    border-radius: 37px;
+    color: #fff;
+    transition: all 0.3s;
+    margin-top: 14px;
+  }
+  .b2bSecCont a:hover{
+    background-color: #fff;
+    color: var(--primary-color);
+  }
+  .b2bSecContBlk > .row{
+    align-items: center;
+  }
+  .b2bSec{
+    padding-bottom: 5em;
+  }
+  
+  .b2bFeatSec{
+    background-color: #eeeeee;
+  
+  }
+  .b2bFeatBlk{
+    padding: 26px;
+    border-radius: 18px;
+    background-color: #fff;
+  }
+  .b2bFeatCont h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .keyFeat li{
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 24px;
+    list-style: none;
+    font-family: var(--aileron);
+  }
+  .keyFeat li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+  
+  }
+  
+  .b2bFeatImg img{
+    width: 100%;
+  }
+  
+  .b2bFeatImg{
+    overflow: hidden;
+    line-height: 0;
+    border-radius: 14px;
+    margin-bottom: 14px;
+  }
+  .b2bFeatSec,
+  .whyChooseSec{
+    padding-bottom: 3em;
+  }
+  
+  .whyChoseContain{
+    background-image: url(assets/serviceimg/whybg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    overflow: hidden;
+    background-position: left;
+    display: flex;
+    align-items: center;
+  }
+  .whyChImg{
+    margin-left: -60px;
+    line-height: 0;
+  }
+  .whyFlx{
+    display: flex;
+    align-items: center;
+  }
+  .whyChoseCont{
+    color: #fff;
+  padding-right: 10em;
+  }
+  
+  .whyChoseCont h2{
+    font-size: 38px;
+    margin-bottom: 24px;
+    position: relative;
+    margin-bottom: 44px;
+  }
+  
+  .whyChoseCont h2::after{
+  
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    width:35%;
+    height: 6px;
+    background-color: #7fe3d5;
+  }
+  
+  .whyChoseCont h2 span{
+    display: block;
+    font-weight: 400;
+  
+  }
+  .whyPt li{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 28px;
+    font-family: var(--aileron);
+  }
+  .whyPt span{
+    font-weight: 500;
+  }
+
+  .whyChImg img{
+    width: 500px;
+  }
+
+
+  @media (max-width: 1024px) {
+    .p2pHeadImg img {
+        width: 380px;
+      }
+      .p2pHeadImg {
+        right: 0;
+      }
+      .p2p {
+        min-height: 480px;
+        height: 60vh;
+      }
+    .p2p {
+        min-height: 480px;
+        height: 60vh;
+      }
+    
+  .b2bHeadImg img {
+    width: 390px;
+  }
+  .b2bHeadImg {
+    bottom: -30px;
+  }
+  .b2bSecContBlk > .row {
+    align-items: initial;
+  }
+  .b2bSecImg {
+    height: 100%;
+  }
+  .b2bSecImg img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .b2bFeatCont h2 {
+    font-size: 26px;
+  }
+  .keyFeat li {
+    font-size: 16px;
+  }
+  .whyChoseCont {
+    color: #fff;
+    padding-right: 2em;
+  }
+  .whyChoseCont h2 {
+    font-size: 30px;
+  }
+  .whyPt li {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  
+  }
+
+
+  
+@media screen and (max-width: 768px) {
+  .p2p .cmpny-content span{
+    font-size: 25px !important;
+  }
+  .b2bComCont{
+    padding-right: 6em;
+  }
+  .p2p {
+    background-position: right;
+    align-items: center;
+}
+  .blogDesc h3 {
+    font-size: 18px;
+  }
+  .blogHeading h1 {
+    font-size: 32px;
+  }
+  .bloginCont h3 {
+    font-size: 24px;
+  }
+
+  .cmpny-content .commSpn {
+    font-size: 30px;
+  }
+  .cmpny-content h1 {
+    font-size: 35px;
+  }
+  .b2bHeadImg img {
+    width: 350px;
+  }
+  .whyChoseCont h2 {
+    font-size: 24px;
+  }
+  .whyChImg img {
+    width: 360px;
+  }
+  .whyChImg {
+    margin-top: 60px;
+  }
+  .whyPt li {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .b2bFeatBlk {
+    margin-bottom: 24px;
+    padding: 20px;
+  }
+
+  .p2p .cmpny-content{
+    padding-top: 0;
+}
+.b2bFeatSec , .whyChooseSec{
+  padding-top: 3rem;
+}
+.cmpny-content h1 {
+  font-size: 32px;
+}
+
+}
+
+
+@media (max-width: 600px) {
+
+  .b2bFeatSec , .whyChooseSec{
+    padding-top: 3rem;
+  }
+  .cmpny-content h1 {
+    font-size: 32px;
+  }
+    
+  .whyChoseCont {
+    padding: 2em;
+  }
+  .whyChoseContain > .row {
+    flex-direction: column-reverse;
+  }
+  .whyChImg {
+    margin-left: -10px;
+    margin-top: 0;
+  }
+  .whyChImg img {
+    width: 300px;
+  }
+  .b2bHeadImg {
+    display: none;
+  }
+  .b2bFeatBlk {
+    margin-bottom: 24px;
+    padding: 20px;
+  }
+
+  /* .b2bHeadImg img {
+    width: 300px;
+  } */
+
+
+  .commSecHead h2 {
+    font-size: 26px;
+    padding: 20px;
+  }
+  .p2p {
+    background-position: right;
+    align-items: center;
+}
+.b2bComCont{
+  padding-right: 0;
+}
+}

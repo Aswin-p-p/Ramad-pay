@@ -1,0 +1,235 @@
+.countryLst-mob{
+    display: none;
+  }
+  .rmd-countries{
+    padding: 40px 0;
+  }
+  .rmd-countries .head {
+    text-align: center;
+  }
+  .rmd-countries .head h2{
+    font-weight: 100;
+    font-size: 40px;
+  }
+  .rmd-countries .head h4{
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 8px;
+    color: var(--text-color);
+  }
+  .tabSection{
+    padding-top: 35px;
+  }
+  .tabs {
+    gap: 8px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+  .tab{
+    flex: 1;
+    border: 1px solid #999999;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: var(--text-color);
+    font-family: var(--aileron);
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 0;
+    background-color: transparent;
+    border-bottom: none;
+    
+  }
+  .tab-content {
+    display: none;
+    /* padding: 10px; */
+    opacity: 0;
+    border: 1px solid #9999;
+    border-radius: 10px;
+  }
+  .active {
+    display: block;
+    background-color: #067e6f;
+    color: white !important;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .activeContent {
+    /* padding-top: 20px; */
+    display: block;
+    color: #000 !important;
+    opacity: 1;
+  
+  }
+  .countries-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+  }
+
+  .listing{
+    width: 25%;
+    cursor: pointer;
+    position: relative;
+   
+  }
+  .rmd-country{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #999;
+    gap: 8px;
+    padding: 14px 0 14px 46px;
+    cursor: pointer;
+  }
+  .border-none{
+    border-right: none;
+  }
+  .listing img{
+    width: 15px;
+  }
+  .listing:last-child{
+    border-right: none;
+  }
+  .listing p{
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .flag-img{
+    line-height: 0;
+  }
+  .listing:hover{
+    background-color: #ffe15a;
+
+  }
+  .tabList-hover {
+    width: 100%;
+    display: block;
+    position: absolute; 
+    background-color: #ffe15a;
+    padding:10px 20px;
+    z-index: 9999;
+    top: 100%; 
+    left: 0;
+
+  }
+  
+  
+  .payment{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0 8px 20px;
+    border-bottom: 1px solid #000;
+  }
+
+  .payment img{
+    width: 20px;
+  }
+  .payment p{
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .payment .bld-txt{
+    font-weight: 700;
+  }
+
+  .content{
+    position: relative;
+    z-index: 22;
+  }
+  
+
+  @media(max-width:1024px){
+    .listing p {
+        font-weight: 300;
+        font-size: 15px;
+    }
+  }
+
+  @media(max-width:768px){
+    .listing p {
+        font-weight: 300;
+        font-size: 15px;
+    }
+  }
+  @media(max-width:600px){
+    /* .listing p {
+        font-weight: 300;
+        font-size: 15px;
+    }
+    .rmd-countries .head h2{
+      font-weight: 100;
+      font-size: 26px;
+  }
+  .countryLst-mob{
+    display: block;
+  } */
+  .countryWeb {
+    display: none;
+  }
+  .countryLst-mob {
+    display: block;
+  }
+
+  button {
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+    /* margin: 5px 0; */
+    width: 100%; /* Optional for styling */
+    text-align: center;
+    border: 1px solid #999;
+    font-family: var(--aileron);
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  button.active {
+    background-color: #067e6f; /* Example active color */
+    color: white;
+  }
+
+  .subList {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: none; /* Hidden by default */
+  }
+
+  .rmd-country {
+    display: flex;
+    align-items: center;
+    border-right: none;
+    gap: 8px;
+    padding: 14px 20px;
+    cursor: pointer;
+    border: 1px solid #9999;
+  }
+
+  .listing {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+  }
+  .listing p {
+    font-weight: 300;
+    font-size: 17px;
+  }
+  .listing img {
+    width: 15px;
+  }
+
+  .tab{
+     border-top-left-radius:0;
+     border-top-right-radius:0;
+     border-bottom: none;
+ 
+  }
+
+  .tab:last-child{
+    border-bottom: 1px solid #999;
+  }
+
+
+}

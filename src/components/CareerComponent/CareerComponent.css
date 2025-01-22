@@ -1,0 +1,327 @@
+/* CAREER PAGE */
+
+.careerCont h3{
+  font-size: 38px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.careerCont p{
+  font-size: 28px;
+  padding-right: 3em;
+}
+
+.careerCont a{
+  background-color: #000;
+  color: #fff;
+  border-radius: 40px;
+  padding: 12px 30px;
+}
+
+.careerAppSec{
+  padding-bottom: 3em;
+}
+.soluBlk{
+  text-align: center;
+}
+.solIco{
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+
+  margin: auto;
+  margin-bottom: 14px;
+}
+
+.solIco img{
+  width: 50px;
+  height: 50px;
+}
+.solCont h3{
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom:8px;
+}
+.solCont{
+  text-align: center;
+}
+
+.guidContain{
+  background-color: var(--primary-color);
+  padding: 100px 40px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.guidContain h2{
+  margin-bottom: 14px;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.guidContain p{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 0 4em;
+  text-align: center;
+}
+.soluContain{
+  margin-top: 70px;
+}
+.guideSec{
+  margin-top: 3em;
+}
+.cultContain{
+  text-align: center;
+}
+.cultContain h3{
+  font-weight: 300;
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+.cultContain p{
+  font-size: 20px;
+  padding: 0 4em;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.benIco img{
+  width: 100px;
+  height: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.benBlk{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.benBlk h4{
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0 3em;
+}
+.benefContain .row{
+  justify-content: center;
+}
+.rmdBenefit,
+.rmdCulture{
+  margin-top: 3em;
+}
+.benefContain{
+  margin-top: 80px;
+}
+
+.careerHdImg{
+  bottom: 0;
+  right: 0;
+  line-height: 0;
+}
+.careerHdImg img{
+  width: 360px;
+}
+/*  */
+.commSpn{
+  display: block;
+  color: #22c68e;
+}
+.commonHro{
+  background-color: var(--primary-color);
+  height: 60vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.cmpny-content .commSpn{
+  font-size: 50px;
+}
+
+.cmpny-content{
+  padding-top: 15px;
+}
+.cmpny-content p{
+  max-width: 480px;
+}
+.cmpny-content h1{
+  font-weight: 700;
+  color: #fff;
+  font-size: 50px;
+}
+.cmpny-content p{
+  color: #fff;
+  font-weight: 300;
+  padding-top: 10px;
+  letter-spacing: .5px;
+}
+
+
+
+.srAreaImg img{
+  width: 400px;
+}
+
+
+
+/* responsive */
+
+@media (max-width: 1024px) {
+  .cmpny-content h1 {
+      font-size: 40px;
+    }
+
+
+
+    .srAreaImg img {
+      width: 350px;
+    }
+    .careerAppSec .commSecHead h2{
+      font-size: 30px;
+    }
+    .careerCont h3{
+      font-size: 30px;
+    }
+    .careerCont p{
+      padding-right: 0;
+      font-size: 20px;
+    }
+    .solCont h3{
+      font-size: 20px;
+    }
+    .guidContain{
+      padding: 40px;
+    }
+    .guidContain p{
+      padding: 0;
+      font-size: 18px;
+    }
+    .guidContain h2,
+    .cultContain h3{
+      font-size: 34px;
+    }
+    .benBlk h4{
+      padding: 0;
+      font-size: 20px;
+    }
+    .benIco img{
+      width: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+  .cmpny-content .commSpn {
+      font-size: 30px;
+    }
+    .cmpny-content h1 {
+      font-size: 35px;
+    }
+
+    .careerHdImg img {
+      width: 300px;
+  }
+    .srAreaImg img {
+      width: 290px;
+  }
+  .srAreaImg img {
+      width: 240px;
+  }
+  .srAreaImg{
+    right: 0;
+  }
+  .careerCont h3{
+    font-size: 30px;
+  }
+  .careerCont p{
+    font-size: 22px;
+  }
+  .solBlk{
+    margin-bottom: 24px;
+  }
+  .solCont h3{
+    font-size: 20px;
+  }
+  .solCont p{
+    font-weight: 300;
+  }
+  .guidContain{
+    padding: 40px;
+  }
+  .guidContain p{
+    padding: 0;
+    font-size: 18px;
+  }
+  .guidContain h2,
+  .cultContain h3{
+    font-size: 36px;
+  }
+  .cultContain p{
+    padding: 0;
+  }
+  .benIco img{
+    width: 60px;
+  }
+  .benBlk h4{
+    padding: 0;
+    font-size: 18px;
+  }
+  .benBlk{
+    margin-bottom: 50px;
+  }
+  .benefContain{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cmpny-content h1 {
+      font-size: 32px;
+    }
+    .careerHro{
+      display: block !important;
+      padding-top: 140px;
+    }
+    .careerHdImg img {
+      width: 210px;
+  }
+  .careerHdImg{
+    line-height: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .guidContain {
+    padding: 20px;
+}
+.guidContain h2, .cultContain h3 {
+  font-size: 27px;
+}
+.cultContain p{
+  font-size: 18px;
+}
+.benBlk {
+  margin-bottom: 24px;
+}
+.rmdSolu .commSecHead h2{
+  margin-bottom: 0px;
+}
+.rmdSolu .commSecHead{
+  margin-bottom: 0px;
+}
+.soluContain{
+  margin-top: 30px;
+}
+.careerAppSec .commSecHead{
+  margin-bottom: 0;
+}
+}

@@ -1,0 +1,154 @@
+
+.teamPg{
+    /* background-image: url(assets/team/team-bg.jpg); */
+    overflow: hidden;
+    align-items: center;
+    background: #067c6c;
+  }
+  .teamBlk{
+    margin-bottom: 30px;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .teamImg img{
+    width: 100%;
+  }
+  .teamImg{
+    overflow: hidden;
+    border-radius: 14px;
+    line-height: 0;
+    margin-bottom: 12px;
+  }
+  .teamBlk{
+    position: relative;
+  }
+  .teamCont{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s;
+    overflow-y: auto;
+  }
+  .teamCont p{
+    font-weight: 200;
+    letter-spacing: 0.9px;
+    line-height: 1.2;
+  }
+  .teamCont h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .teamCont::-webkit-scrollbar-thumb {
+    background: #22c68e; 
+  }
+  .teamCont::-webkit-scrollbar {
+    width: 6px;
+  }
+  .teamCont p{
+    line-height: 1.5;
+  }
+  .teamBlk:hover .teamCont{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .teamDesc h3{
+    font-size: 18px;
+    margin-bottom: 4px;
+    width: fit-content;
+    padding: 6px;
+    border: 1px solid #202020;
+    border-radius: 50px;
+  }
+  .teamDesc span{
+    font-family: var(--aileron);
+  }
+  .teamContain .row{
+    justify-content: center;
+  }
+  
+  .teamHdimg {
+    right: 0 !important;
+    bottom: 0 !important; 
+  }
+  .teamHdimg img{
+    width: 430px !important;
+  }
+  /* .cmpny-content{
+    padding-top: 15px;
+  } */
+  .cmpny-content p{
+    max-width: 480px;
+  }
+  .cmpny-content h1{
+    font-weight: 700;
+    color: #fff;
+    font-size: 50px;
+  }
+  .cmpny-content p{
+    color: #fff;
+    font-weight: 300;
+    padding-top: 10px;
+    letter-spacing: .5px;
+  }
+
+  .prdHedImg{
+    position: absolute;
+    right: 110px;
+    bottom: -110px;
+    line-height: 0;
+}
+.prdHedImg img{
+    width: 490px;
+}
+
+@media (max-width: 1024px) {
+    .teamHdimg img{
+        width: 500px;
+      }
+
+      .cmpny-content h1 {
+        font-size: 40px;
+      } .commSecHead h2 {
+        font-size: 38px;
+      }
+      .commSecHead p {
+        font-size: 18px;
+      }
+}
+@media screen and (max-width: 768px) {
+  
+    .teamHdimg{
+        right: 0;
+       }
+       .teamHdimg img{
+        width: 300px !important;
+      }
+
+      .cmpny-content .commSpn {
+        font-size: 30px;
+      }
+      .cmpny-content h1 {
+        font-size: 35px;
+      }
+      .teamHdimg img{
+        display: block !important;
+      }
+      .commSecHead h2{
+        font-size: 35px;
+     }
+}
+
+@media (max-width: 600px) {
+    .cmpny-content h1 {
+        font-size: 32px;
+      }
+}

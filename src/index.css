@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face{
+  font-family: Aileron;
+    src: url(../fonts/Aileron-UltraLight.otf) ;
+    font-weight: 100;
+  }
+  @font-face{
+    font-family: Aileron;
+    src: url(../fonts/Aileron-Light.otf) ;
+    font-weight: 300;
+  }
+  @font-face{
+    font-family: Aileron;
+    src: url(../fonts/Aileron-Bold.otf) ;
+    font-weight:700;
+  }
+  @font-face{
+    font-family: Aileron;
+    src: url(../fonts/Aileron-Thin.otf) ;
+    font-weight: 200;
+  }
+  @font-face{
+    font-family: Aileron;
+    src: url(../fonts/Aileron-Regular.otf) ;
+    font-weight: 400;
+  }
+  @font-face{
+    font-family: Aileron;
+    src: url(../fonts/Aileron-SemiBold.otf) ;
+    font-weight:500;
+  }
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #03675c; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aafff5; 
+}
+
+
+:root{
+  --aileron:Aileron;
+  --text-color: #067e6f;
+  --primary-color: #067e6f;
+}
+ 
+  :root{
+    --aileron:Aileron;
+    --text-color: #067e6f;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,p,a{
+  font-family: var(--aileron);
+}
+  a{
+    text-decoration: none;
+  }
+  img{
+
+    max-width: 100%;
+}
+main{
+  overflow-x: hidden;
+}
+.commHdImg{
+  position: absolute;
+}
+
+li{
+  font-family: var(--aileron);
+}
+
+@media screen and (max-width:990px) {
+  .cmpny-hroSection,
+  .Cmplnc-hroSection,
+  .commonHro{
+
+    min-height: 400px !important;
+    display: block !important;
+    padding-top: 140px;
+    
+    }
+    .cmpny-content{
+      padding: 0 !important
+    }
+    .agnt-hroSection{
+      padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 662px) {
+  .cmpny-hroSection,
+  .agnt-hroSection,
+  .commonHro,
+  .Cmplnc-hroSection{
+    height: auto !important;
+    padding-bottom: 40px !important;
+  }
+  .agnt-hroSection{
+    min-height: auto;
+  }
+  .commonHro,
+  .cmpny-hroSection,
+  .Cmplnc-hroSection{
+    min-height: auto !important;
+  }
+  .prdHedImg,
+  .serHedImg,
+  .Agnt-heroImg,
+  .pgHeadImg,
+  .commHdImg,
+  .p2pHeadImg,
+  .cmplnc-heroImg {
+    display: none;
+  }
+  
+}

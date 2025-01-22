@@ -1,0 +1,64 @@
+
+.p2p{
+    background-image: url(assets/serviceimg/p2pbanner.jpg);
+    overflow: inherit;
+    background-position: initial;
+  }
+  .p2pHeadImg{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+  }
+  .p2pHeadImg img{
+    width:420px;
+  }
+  
+  .p2p .cmpny-content span{
+    display: block;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .p2pHeadImg img {
+        width: 380px;
+      }
+      .p2pHeadImg {
+        right: 0;
+      }
+      .p2p {
+        min-height: 480px;
+        height: 60vh;
+      }
+  }
+
+  
+@media screen and (max-width: 768px) {
+    .p2p .cmpny-content {
+        padding-top: 0;
+      }
+      .p2pHeadImg img {
+        width: 300px;
+      }
+      .p2pHeadImg {
+        bottom: -40px;
+      }
+      .rmd-countries .head h2 {
+        font-size: 33px;
+      }
+    
+}
+
+
+@media (max-width: 600px) {
+    .p2pHeadImg img {
+        width: 200px;
+      }
+      .p2p {
+        background-position: right;
+      }
+    
+}
+

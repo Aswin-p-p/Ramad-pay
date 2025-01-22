@@ -1,0 +1,392 @@
+
+/* GLOBAL PAYMENT */
+
+.glbPayImg img{
+    width: 380px;
+  }
+  
+  .gpCOnt p{
+  
+    line-height: 1.5;
+    font-size: 20px;
+  }
+  .rmdInterconnected .intrPara{
+    font-size: 30px;
+    margin-bottom: 4px;
+    font-weight: 300;
+  }
+  .rmdInterconnected{
+    text-align: center;
+  }
+  .rmdInterconnected h3{
+    font-size: 35px;
+  }
+  .rmdInterCont p{
+    font-size: 20px;
+    margin: auto;
+    margin-top: 14px;
+    max-width: 100%;
+    font-weight: 300;
+  padding: 0 5em;
+  line-height: 1.4;
+  }
+  
+  .whyRmdPay{
+    background: #eeeeee;
+  
+  padding: 5em 0;}
+  .whyRmdPay h2{
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .whyRmdIco{
+    width: 120px;
+    height: 120px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 14px;
+    
+  }
+  .whyRmdCont h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .whyRmdCont p{
+    padding: 0 0.9em;
+  }
+  .whyRmdIco img{
+    width: 60px;
+  }
+  .whyRmdBlk{
+    text-align: center;
+  }
+  .whyRmdBlk p{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  .rmdInterconnected{
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  .whyGlbImg{
+    line-height: 0;
+    height: 100%;
+  }
+  .whyGlbImg img{
+    height: 100%;
+    object-fit: cover;
+  }
+  .WhyGlbPt li{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  .WhyGlbPt li::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+  }
+  
+  
+  .whyGlbBlk{
+    margin-bottom: 100px;
+  }
+  .whyGlbBlk h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .glbPayWrkImg{
+    overflow: auto;
+    line-height: 0;
+    border-radius: 16px;
+  }
+  .glbPayWrkImg img{
+    width: 100%;
+  }
+  .glbPayWrkCont h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .glbPayWrkCont li{
+    padding-left: 24px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 26px;
+  }
+  .glbPayWrkCont li span{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: block;
+    font-weight: 400;
+  }
+  .glbPayWorks{
+    padding-top: 0;
+    padding-bottom: 3.2em;
+  }
+  
+  .glbPayWorks .row{
+    align-items: center;
+  }
+  .glbPayWrkCont{
+    padding-left: 24px;
+  }
+
+    /* common */
+
+    .commonHro{
+      background-color: var(--primary-color);
+      height: 60vh;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    
+    }
+    .cmpny-content{
+      padding-top: 15px;
+    }
+    .cmpny-content p{
+      max-width: 480px;
+    }
+    .cmpny-content h1{
+      font-weight: 700;
+      color: #fff;
+      font-size: 50px;
+    }
+    .cmpny-content p{
+      color: #fff;
+      font-weight: 300;
+      padding-top: 10px;
+      letter-spacing: .5px;
+    }
+
+    .commSpn{
+      display: block;
+      color: #22c68e;
+    }
+  
+
+  
+    .pageLink{
+      padding: 30px 0;
+    }
+    .pageLink a{
+      font-weight: 700;
+      color: #000;
+    }
+    .pageLink a span{
+      font-weight: 300;
+      color: #067e6f;
+    }
+    .cmpny-content .commSpn{
+      font-size: 50px;
+    }
+    .ngoImg{
+      line-height: 0;
+    }
+    .abtImg img{
+      border-radius: 15px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .primeBtn a{
+      background-color: #000 !important;
+      color: #fff;
+      border-radius: 50px;
+      font-size: 18px;
+      padding: 12px 28px;
+    }
+  @media (max-width: 1024px) {
+    /* global payment */
+    .glbPayImg img{
+      width: 340px;
+    }
+    .rmdInterconnected h3 {
+      font-size: 30px;
+  }
+  .rmdInterconnected .intrPara{
+    font-size: 27px;
+  }
+  .whyRmdBlk p{
+    padding: 0;
+  }
+  .whyRmdCont h3{
+    font-size: 22px;
+  }
+  .whyRmdBlk p{
+    font-size: 18px;
+  }
+  .whyRmdIco{
+    width: 100px;
+    height: 100px;
+  }
+  .whyRmdIco img {
+    width: 50px;
+  }
+  .whyGlbBlk h2{
+    font-size: 30px;
+  }
+  .WhyGlbPt li{
+    font-size: 18px;
+  }
+  .glbPayWrkCont h3{
+    font-size: 30px;
+  }
+  .glbPayWrkCont li{
+    font-size: 18px;
+  }
+  .glbPayWrkImg{
+    height: 100%;
+  }
+  .glbPayWrkCont{
+    padding-left: 0;
+  }
+  .rmd-countries .head h2{
+    font-size: 30px;
+  }
+  /* extra */
+
+  .abt-content > div {
+    padding: 30px;
+  }
+  .cmpny-content h1 {
+    font-size: 40px;
+  }
+
+
+  .ngoImg{
+    height: 100%;
+  }
+  
+  }
+
+
+  @media screen and (max-width: 768px) {
+    /* GLOBAL PAYMENT PAGE */
+
+.rmdInterCont p{
+  padding: 0;
+}
+.rmdInterconnected h3 {
+  font-size: 26px;
+}
+.rmdInterconnected .intrPara {
+  font-size: 23px;
+}
+.whyRmdIco {
+  width: 90px;
+  height: 90px;
+}
+.whyRmdCont h3 {
+  font-size: 20px;
+}
+.whyGlbBlk h2 {
+  font-size: 27px;
+}
+.glbPayWrkImg{
+  margin-bottom: 24px;
+}
+.glbPayImg img {
+  width: 340px;
+}
+.whyRmdPay h2{
+  font-size: 32px;
+}
+.whyGlbBlk{
+  margin-bottom: 60px;
+}
+.whyRmdBlk p {
+  font-size: 16px;
+}
+
+/* extra */
+.abt-content > div {
+  padding: 0;
+}
+.abt-content {
+  padding: 0 15px !important;
+}
+.abtRow {
+  display: block;
+}
+.abt-content > div {
+  padding: 24px 20px;
+}
+.moreBtn a {
+  display: block;
+}
+.abt-content p {
+  padding-bottom: 20px;
+}
+
+.cmpny-content .commSpn {
+  font-size: 30px;
+}
+.cmpny-content h1 {
+  font-size: 35px;
+}
+
+
+  }
+
+  @media (max-width: 600px) {
+    
+/* GLOBAL PAYMENT PAGE */
+.whyGlbBlk {
+  margin-bottom: 50px;
+}
+.glbPayWrkCont h3 {
+  font-size: 26px;
+}
+.whyRmdPay h2{
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.glbPayWorks{
+  padding-bottom: 0;
+}
+.glbPayImg{
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.glbPayImg img{
+  width: 240px;
+}
+
+/* extra */
+.abt-content p {
+  font-size: 16px;
+}
+.cmpny-content h1 {
+  font-size: 32px;
+}
+.serviceInAreaHero{
+  display: block;
+  padding-top: 8.5em;
+}
+  }

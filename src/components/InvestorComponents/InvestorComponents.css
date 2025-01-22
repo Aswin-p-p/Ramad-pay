@@ -1,0 +1,82 @@
+
+.invBgImg img{
+    width: 600px;
+  }
+  .invBgImg {
+    right: 0;
+    bottom: -50px;
+    line-height: 0;
+  }
+  .invst-cont h3{
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 6px;
+  }
+  
+  .invst-cont p{
+    font-size: 24px;
+    line-height: 1.6;
+  }
+  
+  .invst-cont a{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .invstSec{
+    padding: 4em;
+  }
+  
+  @media screen and (max-width:1024px) {
+    .invBgImg img{
+      width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .invBgImg img{
+      width: 400px;
+    }
+    .invBgImg{
+      bottom: 0;
+    }
+      .cmpny-content .commSpn {
+        font-size: 30px;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .invstHro{
+      display: block !important;
+    }
+    .invst-cont h3 {
+        font-size: 27px;
+      }
+      .invst-cont p{
+        font-size: 20px;
+      }
+      .invBgImg{
+        bottom: -54px;
+      }
+      .invBgImg img{
+        width: 100%;
+      }
+      .invstHro{
+        display: block;
+        padding-top: 8em;
+      }
+
+
+      .invstSec{
+        padding: 0;
+        padding-top: 30px;
+      }
+    
+  }
+
+  
+@media (max-width: 320px) {
+    .invBgImg {
+        bottom: -34px;
+      }
+}

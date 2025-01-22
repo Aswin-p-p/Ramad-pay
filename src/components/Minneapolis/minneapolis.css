@@ -1,0 +1,268 @@
+.cmpny-minne{
+    max-width: 600px;
+}
+
+.input-box{
+    padding: 8px 0;
+  }
+  .input-box label{
+    font-weight: 100;
+    color: #000;
+    font-size: 18px;
+  }
+  .input-box input,
+  .input-box select{
+    width: 100%;
+    outline: none;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-top: 5px;
+    font-family: var(--aileron);
+    font-size: 17px;
+  }
+  .input-box input::placeholder{
+    font-weight: 400;
+    font-family: Aileron;
+    color: #000;
+    font-size: 16px;
+  }
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+  }
+  .stpaulimg img{
+    width: 400px ;
+  }
+.srAreaInImg img{
+    width: 460px;
+    bottom: -150px;
+    right: 0;
+  }
+  
+  .srAreaInImg{
+  
+    bottom: -150px;
+    right: 0;
+  }
+  
+  .serInBtn{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  
+  .serInBtn a{
+    display: block;
+    max-width: 300px;
+    width: 300px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    padding: 14px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .serArInCont h3{
+    color: #fff;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .serArInCont p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: .5px;
+  }
+  .serviceAreaInCont{
+    padding-top: 3em;
+  }
+  
+  .serviceAreaInCont .rmd-col{
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+  }
+  .serviceAreaInCont .rmd-col .pay-frm{
+    width: 100%;
+  }
+  
+  .serviceAreaInCont .pay-frm .input-box label{
+    font-size: 22px;
+    font-weight: 300;
+    color: #202020;
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  .serviceAreaInCont .desclaimer{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 24px;
+    line-height: 1.4;
+    color: #535353;
+  }
+  .serviceAreaInCont{
+    background-color: #eeeeee;
+    padding: 4em 0;
+  }
+  
+  .rmserArIn{
+    padding-bottom: 4em;
+  }
+  
+  .saiIco{
+    background-color: var(--primary-color);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+  .saiIco img{
+    width: 50px;
+  }
+  .serviceAreaInFeat .row{
+    justify-content: center;
+  }
+  .saIFeatBlk{
+    text-align: center;
+    padding: 20px ;
+  
+    border-radius: 14px;
+    position: relative;
+    margin-bottom: 30px;
+    padding-top: 40px;
+  }
+  .saiCont h3{
+    font-size: 25px;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .saiCont p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+  .rmdServInCountries{
+    padding-top: 0;
+    padding-bottom: 5em;
+  }
+  .serviceAreaInFeat{
+    padding-top: 0;
+    padding-bottom: 3em;
+  }
+  .SerMinn > div{
+    padding:  30px;
+  }
+  
+@media screen and (max-width: 768px) {
+    .serviceAreaInCont .desclaimer{
+        font-size: 16px;
+      }
+      .saIFeatBlk{
+        font-size: 16px;
+        padding: 0;
+        padding-top: 40px;
+      }
+      .srAreaInImg {
+        bottom: -110px;
+    }
+    .srAreaInImg img {
+      width: 320px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cmpny-content h1 {
+        font-size: 40px;
+      }
+      .srAreaInImg img{
+        width: 350px;
+      }
+      .srAreaInImg{
+        bottom: -120px;
+      }
+      .serInBtn a{
+        max-width: 250px;
+      }
+      .serArInCont h3{
+        font-size: 25px;
+      }
+      .saiCont h3{
+        font-size: 20px;
+      }
+      .saiCont p{
+        font-size: 17px;
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .cmpny-content .commSpn {
+        font-size: 30px;
+      }
+      .cmpny-content h1 {
+        font-size: 35px;
+      }
+
+      .serviceAreaInCont .desclaimer{
+        font-size: 16px;
+      }
+      .saIFeatBlk{
+        font-size: 16px;
+        padding: 0;
+        padding-top: 40px;
+      }
+      .srAreaInImg {
+        bottom: -110px;
+    }
+    .srAreaInImg img {
+      width: 320px;
+    }
+      
+}
+
+@media screen and (max-width: 768px) {
+    .cmpny-content h1 {
+        font-size: 32px;
+      }
+
+      
+}@media screen and (max-width: 600px) {
+    .serviceInAreaHero{
+        display: block;
+        padding-top: 8.5em;
+      }
+
+      .srAreaInImg {
+        bottom: -70px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .srAreaInImg img {
+      width: 220px;
+    }
+    .serInBtn {
+        display: block;
+        margin: auto;
+    }
+    .serInBtn a {
+        margin: auto;
+        margin-bottom: 12px;
+    }
+    .cmpny-minne{
+        padding-top: 0;
+    }
+
+    .stpaulimg img{
+      width: 200px !important;
+    }
+}

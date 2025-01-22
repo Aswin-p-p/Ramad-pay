@@ -1,0 +1,119 @@
+.abt-content > div {
+    padding: 0 60px;
+}
+.srAreaImg img{
+    width: 360px;
+  }
+  .srAreaImg{
+    right: 0;
+    bottom: 0;
+    line-height: 0;
+  }
+  .tite{
+    text-align: center;
+  }
+  .rmdServiceArea .tite h2{
+    font-size: 35px;
+    margin-bottom: 12px;
+  }
+  
+  .rmdServiceArea .tite p{
+    font-size: 20px;
+    padding: 0 80px;
+  }
+  
+  .rmdServiceArea .tite{
+  
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .map{
+    line-height: 0;
+  }
+  .map{
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .mapCont h3{
+    position: relative;
+    width: fit-content;
+    display: block;
+    font-size: 26px;
+    padding-bottom: 12px;
+    color: #fff;
+  }
+  .mapCont h3::after{
+    content: "";
+    display: block;
+    width: 40%;
+    height: 6px;
+    background-color: #22c68e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .mapCont{
+    display: block;
+    padding-top:30px !important;
+  }
+  .mapCont ul{
+    padding-top: 20px;
+  }
+  .mapCont li{
+    margin-bottom: 18px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+  }
+  .mapCont li:last-child{
+    margin-bottom: 0;
+  }
+
+  
+  @media (max-width: 1024px) {
+    .srAreaImg img {
+        width: 350px;
+      }
+      .rmdServiceArea .tite h2{
+        font-size: 28px;
+      }
+      .rmdServiceArea  .tite p {
+        font-size: 20px;
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+    .srAreaImg img {
+        width: 290px;
+    }
+    .rmdServiceArea .tite h2 {
+      font-size: 24px;
+    }
+    .rmdServiceArea .tite p {
+      font-size: 18px;
+      padding: 0;
+    }
+    .mapCont h3{
+      font-size: 23px;
+    }
+    .mapCont li{
+      font-size: 20px;
+    }
+  }
+  
+@media (max-width: 600px) {
+    .srAreaImg img {
+        width: 240px;
+    }
+    .srAreaImg{
+      right: 0;
+    }
+}
+
+li{
+    list-style: none ;;
+}
+.abt-content ul li a {
+  color: #ffff;
+}

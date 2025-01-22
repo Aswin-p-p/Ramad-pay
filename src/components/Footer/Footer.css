@@ -1,0 +1,80 @@
+
+
+.footer-container{
+    background-color: #282828;
+    padding: 80px 0;
+    color: #fff;
+  }
+  .col-flex{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .FtrLogo img{
+    width: 120px;
+  }
+  .rmdFtr h4{
+    font-size: 19px;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+  .cntctSec{
+    max-width: 300px;
+  }
+  .cntct-dtls{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+  }
+  .cntct-dtls p{
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 1.6;
+
+  }
+  .agent{
+    padding: 5px 0;
+  }
+  #agent-head{
+    font-weight: 700;
+  }
+  .agent img{
+    width: 30px;
+  }
+  .FtrService li {
+    font-family: var(--aileron);
+    list-style-type: none;
+    padding: 8px 0;
+  }
+  .FtrService li a{
+    font-weight: 300;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  .FtrService li a:hover{
+    border-bottom: 1px solid #fff;
+  }
+  
+  .socailMedia{
+    padding: 50px 0;
+    text-align: center;
+  }
+  .socailMedia p{
+    font-weight: 200;
+    letter-spacing: .5px;
+    padding: 3px 1px;
+  }
+  .mediaLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  .mediaLinks a{
+    font-size: 22px;
+    color: #000;
+  }
+  

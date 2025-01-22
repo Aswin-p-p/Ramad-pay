@@ -1,0 +1,188 @@
+.cmnyproductcont{
+    max-width: 600px;
+}
+.commSpn{
+    font-family: var(--aileron);
+    font-weight: 700;
+}
+
+.cmpnyproduct{
+    align-items: center !important;
+}
+.convrtSec{
+    background-color: #efefef;
+    padding: 50px 0;
+  }
+  .convrtContain{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 24px;
+    background-image: url(assets/product/convertbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 100px;
+    display: flex;
+  }
+  .convrtContain .rmd-col{
+    border: 1px solid #d4d4d4;
+    border-radius: 20px;
+
+  }
+  .rmdMan{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    line-height: 0;
+  }
+  .rmdMan img{
+    width: 320px;
+  }
+
+.custHero{
+    background-color: var(--primary-color);
+    position: relative;
+    overflow: hidden;
+    background-position:200px ;
+}
+.prdHedImg{
+    position: absolute;
+    right: 0;
+    bottom: -110px;
+    line-height: 0;
+}
+.prdHedImg img{
+    width: 350px;
+}
+.prBlk{
+    border: 1px solid #adadad;
+    padding: 40px;
+    border-radius: 14px;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 30px;
+}
+.prIco img{
+    width: 120px;
+    display: block;
+    margin: auto;
+}
+.prCont h3{
+    font-size: 26px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin: 10px 0;
+}
+.prCont p{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.prBtn a{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 40px;
+    padding: 12px 40px;
+    margin-top: 20px;
+}
+.commSecHead{
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 38px;
+}
+.commSecHead p{
+    font-size: 22px;
+    font-weight: 300;
+}
+.commSecHead h2{
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+.rmdProduct{
+    padding-bottom: 3em;
+}
+@media(max-width:768px){
+    .prdHrImg{
+        right: 0;
+        /* bottom: 0; */
+     }
+     /* .prdHrImg img{
+        right: 0 !important;
+        width: 270px !important;
+     } */
+     .commSecHead h2{
+        font-size: 35px;
+     }
+     .commSecHead p{
+        font-size: 18px;
+        line-height: 1.4;
+     }
+     .prBlk{
+        padding: 10px;
+     }
+     .prIco img{
+        width: 90px;
+     }
+     .prCont h3{
+        font-size: 20px;
+     }
+     .prCont p{
+        font-size: 16px;
+        line-height: 1.4;
+     }
+     .prBtn a{
+        padding: 12px;
+     }
+   
+     .prdHedImg img {
+        width: 295px;
+}
+}
+@media(max-width:600px){
+/*     
+    .prdHedImg {
+        display: none;
+     } */
+     .prdHedImg img {
+         width: 290px;
+     }
+     .prdHrImg{
+        right: 0;
+        bottom: 0;
+     }
+     .prdHrImg img{
+        width: 173px !important;
+     }
+     .cmpny-content h1 {
+         font-size: 32px;
+     }
+     .commSecHead h2 {
+         font-size: 25px;
+     }
+     .commSecHead p {
+         font-size: 17px;
+     }
+     .logo img {
+         width: 90px;
+     }
+
+     .prdHrImg{
+        right: 0;
+        bottom: -37px;
+
+     }
+     .prdHrImg img{
+        width: 173px !important;
+}
+}
+
+@media (max-width: 425px) {
+    .cmpny-content {
+        padding-top: 56%;
+    }
+}

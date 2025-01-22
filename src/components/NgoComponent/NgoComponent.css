@@ -1,0 +1,326 @@
+
+/* NGO PAGE */
+.ngoImgHd{
+  right: 50px;
+  bottom: -4px;
+}
+.ngoImgHd img{
+  width:400px;
+}
+  .ngoImgHd img{
+    width: 400px;
+  }
+  .ngoImg{
+    line-height: 0;
+    height: 100%;
+  }
+  .ngoPtCOnt li{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+  }
+  .ngoPtCOnt li:before{
+    content: "";
+    display: block;
+    left: 0;
+    top: 8px;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+  } 
+  .primeBtn a{
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+  .ngoContContain{
+    margin-top: 3em;
+  }
+  
+  .rmdNgo .tite h2{
+    font-size: 35px;
+    margin-bottom: 12px;
+  }
+  
+  .rmdNgo .tite p{
+    font-size: 20px;
+    padding: 0 80px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  
+  .rmdNgo .tite{
+  
+    max-width: 1200px;
+    margin: auto;
+  }
+  .ngoSecoPt li{
+    position: relative;
+    padding-left: 40px;
+    font-size: 24px;
+    margin-bottom: 14px;
+    font-weight: 300;
+  }
+  
+  .ngoSecoPt li::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 28px;
+    height: 2px;
+    background-color: #000;
+  }
+  .rmdNgoSeco .title h3{
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+  .rmdNgoSeco .title{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .rmdNgoSeco .advPara{
+  font-size: 30px;
+  font-weight: 200;
+  }
+  
+  .ngoPtCOnt h3{
+    font-size: 30px;
+  }
+  .ngoSecoPt p{
+    text-align: center;
+    margin-bottom: 0.9em;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .ngoSecoPt p:last-child{
+    margin-bottom: 0;
+  }
+  .Ngoremittances{
+  padding-top: 3em;
+  }
+  .rmdNgoVidCont h3{
+    font-size: 35px;
+    margin-bottom: 16px;
+  }
+  .rmdNgoVidCont p{
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 18px;
+  }
+  
+  .rmdNgoVid .vid{
+    overflow: hidden;
+    border-radius: 18px;
+    line-height: 0;
+  }
+  
+  .rmdNgoVidCont li{
+    position: relative;
+    margin-bottom: 14px;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 40px;
+  }
+  .rmdNgoVidCont li::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background-color: #000;
+  }
+  
+  .rmdNgoVidSec .row{
+    align-items: center;
+  }
+  .rmdNgoVidCont{
+    padding-left: 24px;
+  }
+  .rmdNgoVidSec{
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  /* common */
+
+  .commonHro{
+    background-color: var(--primary-color);
+    height: 60vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  
+  }
+  .cmpny-content{
+    padding-top: 15px;
+  }
+  .cmpny-content p{
+    max-width: 480px;
+  }
+  .cmpny-content h1{
+    font-weight: 700;
+    color: #fff;
+    font-size: 50px;
+  }
+  .cmpny-content p{
+    color: #fff;
+    font-weight: 300;
+    padding-top: 10px;
+    letter-spacing: .5px;
+  }
+
+  .commSpn{
+    display: block;
+    color: #22c68e;
+  }
+
+
+
+  .pageLink{
+    padding: 30px 0;
+  }
+  .pageLink a{
+    font-weight: 700;
+    color: #000;
+  }
+  .pageLink a span{
+    font-weight: 300;
+    color: #067e6f;
+  }
+  .cmpny-content .commSpn{
+    font-size: 50px;
+  }
+  .rmdNgoSeco{
+    padding: 30px 0;
+  }
+
+  /* responsivness */
+
+  @media (max-width: 1024px) {  
+    
+  /* NGO PAGE */
+  .rmdNgo .tite h2{
+    font-size: 28px;
+  }
+  .ngoImg{
+    height: 100%;
+  }
+  .rmdNgoSeco .title h3{
+    font-size: 28px;
+  }
+  .rmdNgoSeco .advPara{
+    font-size: 24px;
+  }
+  .ngoSecoPt li{
+    font-size: 20px;
+  }
+  
+  .rmdNgoSeco .title{
+    margin-bottom:10px;
+  }
+  .rmdNgoInCont > div{
+    padding: 50px;
+  }
+  .rmdNgoVidCont{
+    padding-left: 18px;
+  }
+  .rmdNgoVidCont h3{
+    font-size: 28px;
+  }
+  .rmdNgoVidCont p{
+    font-size: 23px;
+  }
+  .rmdNgoSeco .advPara{
+    margin-bottom: 30px;
+  }
+
+  /*  */
+
+  .cmpny-content h1 {
+    font-size: 40px;
+  }
+
+
+
+  }
+
+
+  @media screen and (max-width: 768px) {
+    /* NGO PAGE */
+.rmdNgoSeco .title h3{
+    font-size: 26px;
+  }
+  .rmdNgo .tite p{
+    padding: 0 20px;
+  }
+  .rmdNgoVidCont{
+    padding-left: 0;
+  }
+  .rmdNgoVidCont h3 {
+    font-size: 25px;
+  }
+  .rmdNgoVidCont p {
+    font-size: 22px;
+  }
+  .rmdNgoVidCont li{
+    font-size: 18px;
+  }
+  .rmdNgoVid{
+    margin-bottom: 30px;
+  }
+
+  /*  */
+  .cmpny-content .commSpn {
+    font-size: 30px;
+  }
+  .cmpny-content h1 {
+    font-size: 35px;
+  }
+  .ngoImgHd{
+    right: 0;
+  } 
+  .ngoImgHd img {
+    width: 300px;
+}
+  }
+
+  @media (max-width: 600px) {
+    /* NGO  PAGE*/
+.rmdNgo .tite h2 {
+    font-size: 25px;
+  }
+  .ngoPtCOnt li{
+    font-size: 18px;
+  }
+  .rmdNgoSeco .title h3{
+    margin-bottom: 14px;
+  }
+
+  /*  */
+
+  .cmpny-content h1 {
+    font-size: 32px;
+  }
+  .serviceInAreaHero{
+    display: block;
+    padding-top: 8.5em;
+  }
+  .ngoImgHd img {
+    width: 220px;
+}
+  }

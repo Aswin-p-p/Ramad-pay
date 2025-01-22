@@ -1,0 +1,80 @@
+.payment-contain{
+    padding: 40px 0;
+  }
+  
+  .pymnt-details h4{
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .pymnt-details  p{
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: .5px;
+    padding-top: 10px;
+    line-height: 23px;
+  }
+  .dwnldBtns{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 70px;
+  }
+  .get-app{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 7px 20px;
+    width: 200px;
+  }
+  .get-app a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .get-app a i{
+    color: #000000;
+    font-size: 31px;
+  }
+  .get-app a span{
+    font-size: 19px;
+  }
+  
+  .video{
+    border: 1px solid #9999;
+    border-radius: 25px;
+    /* height: 300px; */
+  }
+
+  @media screen and (max-width:768px) {
+    .get-app{
+      padding: 12px;
+      width: auto;
+    }
+    .get-app a span {
+      font-size: 16px;
+  }
+  .dwnldBtns{
+    padding-top: 20px;
+  }
+  }
+
+  @media  (max-width:600px) {
+    .get-app a i {
+      font-size: 24px;
+    }
+  }
+  @media  (max-width:325px) {
+        .get-app a i {
+      font-size: 24px;
+    }
+
+    .get-app a span {
+      font-size: 11px;
+  }
+ .button-dwd{
+  font-size: 11px;
+ }
+  }

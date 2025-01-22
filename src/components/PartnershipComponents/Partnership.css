@@ -1,0 +1,134 @@
+
+.rmdPartner .tite p{
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    line-height: 1.4;
+    margin-bottom: 40px;
+  }
+  .prtnBlk{
+    background-color: #eeeeee;
+    padding: 30px;
+    border-radius: 25px;
+    height: 100%;
+    
+  }
+  
+  .PrtnContain .col-md-6{
+    margin-bottom: 30px;
+  }
+  
+  .prtnDesc h3{
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+  
+  .prtnIco{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+  .prtnIco img{
+    width: 48px;
+  }
+  .prtnDesc p{
+    line-height: 1.4;
+    margin-bottom: 0.9rem;
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .prtnDesc p:nth-last-child(){
+    margin-bottom: 0;
+  }
+  
+  .rmdPartner{
+    padding: 3em;
+  }
+
+  .cmpny-contentwidth{
+    max-width: 600px;
+  }
+  .prtnHdImg{
+    right: 0;
+    bottom: 0;
+    line-height: 0;
+  }
+.prtnHdImg img{
+  width: 380px;
+}
+  @media (max-width: 1024px) {
+    .prtCmpCont .commSpn{
+      font-size: 38px !important;
+    }
+    .prtnHdImg img{
+        width: 320px;
+      }
+      .rmdPartner .tite p{
+        font-size: 24px;
+      }
+    
+      .prtnBlk{
+        padding: 20px;
+      }
+      .prtnIco{
+        width: 65px;
+        height: 65px;
+      }
+      .prtnIco img {
+        width: 38px;
+    }
+    .prtnDesc p{
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .rmdPartner .tite p,
+    .prtnDesc h3 {
+      font-size: 20px;
+  }
+  
+  .rmdPartner{
+    padding: 0;
+    padding-top: 30px;
+  }
+  .prtCmpCont .commSpn{
+    font-size: 32px !important;
+  }
+  .prtCmpCont h1{
+    font-size: 34px !important;
+  }
+  .prtnHdImg img {
+    width: 280px;
+}
+  }
+
+  
+@media (max-width: 600px) {
+.prtnHro{
+  display: block !important;
+  padding-top: 140px;
+}
+.prtCmpCont .commSpn{
+  font-size: 23px !important;
+}
+.prtCmpCont h1{
+  font-size: 28px !important;
+}
+.prtnHdImg img {
+  width: 230px;
+}
+.prtnHdImg{
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+}
+  

@@ -1,0 +1,146 @@
+.servicebanner{
+  background: none;
+}
+.serHedImg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    line-height: 0;
+  }
+  .serHedImg img{
+    width: 445px;
+  }
+  
+  .serContBlk{
+    padding: 12px;
+    background-color:var(--primary-color);
+    border-radius: 14px;
+    height: 100%;
+   padding: 40px;
+   color: #fff;
+  }
+  .serCont h2{
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+  .serCont p{
+    line-height: 1.7;
+    font-size: 17px;
+    margin-bottom: 14px;
+    font-weight: 300;
+  }
+  
+  .serBlk{
+    margin-bottom: 30px;
+  }
+  .serImg{
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    line-height: 0;
+  }
+  .serImg {
+    height: 100%;
+  }
+  .serImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .serContBlk{
+    margin: 0 10px;
+  }
+  .serBlk .col-lg-6,
+  .serBlk .col-md-12 {
+    padding: 0 !important;
+  }
+  
+  .serRev .serContBlk{
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #b4b4b4;
+  }
+  .serRev .serCont h2{
+    color: var(--primary-color);
+  }
+  .commSecHead{
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 38px;
+}
+.commSecHead p{
+    font-size: 22px;
+    font-weight: 300;
+}
+.commSecHead h2{
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+  @media(max-width:1024px){
+    .serHedImg img {
+      width: 460px;
+    }
+    .serContBlk {
+      padding: 20px;
+    }
+    .serCont h2 {
+      font-size: 24px;
+    }
+  }
+ 
+@media screen and (max-width:768px) {
+  .serHedImg img {
+    width: 320px;
+  }
+  .serHedImg {
+    bottom: -43px;
+  }
+  .commSecHead h2 {
+    font-size: 35px;
+  }
+  .commSecHead p {
+    font-size: 16px;
+  }
+  .serContBlk {
+    margin: 0;
+    margin-top: 14px;
+  }
+  .serBlk .col-lg-6, .serBlk .col-md-12{
+    padding: 0 15px !important;
+  }
+}
+
+
+@media(max-width:600px){
+    .commSecHead h2 {
+        font-size: 25px;
+    }
+    .commSecHead p {
+        font-size: 17px;
+    }
+    .serContBlk{
+        margin-top: 6px;
+     }
+     .serHedImg img {
+         width: 270px;
+     }
+     .serContBlk {
+      margin-top: 6px;
+    }
+    .serHedImg img {
+      width: 270px;
+    }
+     .cmpny-content h1 {
+      font-size: 32px;
+  }
+}
+
+
+@media(max-width:425px){
+
+.cmpny-content {
+  padding-top: 56%;
+}
+}
