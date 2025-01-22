@@ -1,5 +1,6 @@
 .cmnyproductcont{
     max-width: 600px;
+    padding-top: 60px !important;
 }
 .commSpn{
     font-family: var(--aileron);
@@ -105,6 +106,14 @@
 }
 .rmdProduct{
     padding-bottom: 3em;
+}
+@media(max-width:1024px){
+
+    .cmnyproductcont{
+        /* max-width: 600px; */
+        padding-top: 15px !important;
+    }
+
 }
 @media(max-width:768px){
     .prdHrImg{
