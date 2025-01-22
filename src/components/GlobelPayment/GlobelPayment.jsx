@@ -1,5 +1,5 @@
 import React from 'react'
-import './GlobelPayment.css'
+import './Globelpayment.css'
 import Countries from '../HomeComponents/Countries/Countries'
 import PageLink from '../PageLinks/PageLink'
 import PageForm from '../PageForm/PageForm'
