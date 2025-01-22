@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import '../Minneapolis/Minneapolis.css'
+import '../Minneapolis/minneapolis.css'
 import Countries from '../HomeComponents/Countries/Countries'
 import PageForm from '../PageForm/PageForm'
 function StCloud() {
