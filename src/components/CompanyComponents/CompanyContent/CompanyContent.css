@@ -121,7 +121,7 @@
 }
 .cntct-Frm {
   width: 100%;
-  background-image: url(assets/company/Form.jpg);
+  background-image: url('../../../../public/assets/company//Form.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
