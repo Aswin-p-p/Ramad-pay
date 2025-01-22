@@ -11,8 +11,9 @@ function Partnership() {
         <div className="container">
           <div className="cmpny-content cmpny-contentwidth prtCmpCont">
             <h1 data-aos="fade-right" data-aos-duration="1000">
-             <span className="commSpn"> Insights and Updates on</span> 
-              Global Payments <br/> and Remittance
+             <span className="commSpn">Ramad Pay's </span> 
+             Global Cross Border  <br/> Payment Strategy
+
             </h1>   
         </div>
 

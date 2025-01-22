@@ -9,8 +9,9 @@ function TeamComponents() {
       <section className="cmpny-hroSection teamPg">
         <div className="container">
           <div className="cmpny-content">
+          <div className="commSpn"> Meet the</div> 
             <h1 data-aos="fade-right" data-aos-duration="1000">
-              Meet the <br/>
+           
               RamadPay Team
             </h1>   
             <p data-aos="fade-right" data-aos-duration="1000">Our success is driven by the dedication, expertise, and passion of our talented team members. Get to know the individuals who are shaping the future of global financial transactions.

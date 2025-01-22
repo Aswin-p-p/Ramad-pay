@@ -9,8 +9,9 @@ function ServiceArea() {
       <section className=" commonHro">
         <div className="container">
           <div className="cmpny-content">
+            <div className="commSpn">  Our Service </div>
             <h1 data-aos="fade-right" data-aos-duration="1000">
-              Our Service <br/> Area
+             Area
             </h1>   
         </div>
 
