@@ -30,7 +30,7 @@ function Footer() {
                                         <div><img src="assets/footer/ftCall.png" alt="" /></div>
                                         <div>
                                             <p>
-                                                Toll-Free 1-888-611-0753 <br />
+                                                Toll-Free <span className='phnfooter'>1-888-611-0753</span> <br />
                                                 (Mon-Fri) 09:00 AM - 6:00 PM
                                             </p>
                                         </div>

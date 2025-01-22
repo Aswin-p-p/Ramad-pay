@@ -79,7 +79,7 @@ function Header() {
               </div>
               <div className="fnd-btn">
                 <div className="button">
-                  <a href="#">Find an agent</a>
+                  <a href="/agent">Find an agent</a>
                 </div>
                 <div className="call-icon">
                   <a href="#">

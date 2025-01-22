@@ -64,9 +64,9 @@
     font-weight: 400;
     color: #ffffff;
   }
-  .mainMenu li a:hover{
+  /* .mainMenu li a:hover{
     font-weight: 600;
-  }
+  } */
   .toggle{
   position: relative;
   display: none;

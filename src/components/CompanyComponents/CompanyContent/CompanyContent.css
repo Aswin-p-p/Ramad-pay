@@ -83,8 +83,9 @@
   background-color: #067e6f;
 }
 .abtImg img {
-  border-radius: 15px;
+  border-radius: 10px;
   height: 100%;
+  border:  1px solid #ccc;
 }
 .colmn {
   padding-left: 30px;
