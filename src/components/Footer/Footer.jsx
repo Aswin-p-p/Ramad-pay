@@ -13,42 +13,7 @@ function Footer() {
                                     <img src="assets/logo.png" alt="" />
                                 </div>
                             </div>
-                            <div className="cntctSec ftrSec">
-                                <h4>Contact Details</h4>
-                                <div className="Ftr-contact">
-                                    <div className="cntct-dtls">
-                                        <div id="locImg"><img src="assets/footer/locate.png" alt="" /></div>
-                                        <div>
-                                            <p>2429 East Franklin Avenue, Minneapolis, MN 55406</p>
-                                        </div>
-                                    </div>
-                                    <div className="cntct-dtls">
-                                        <div><img src="assets/footer/email.png" alt="" /></div>
-                                        <div><p>nfo@ramadpay.com</p></div>
-                                    </div>
-                                    <div className="cntct-dtls">
-                                        <div><img src="assets/footer/ftCall.png" alt="" /></div>
-                                        <div>
-                                            <p>
-                                                Toll-Free <span className='phnfooter'>1-888-611-0753</span> <br />
-                                                (Mon-Fri) 09:00 AM - 6:00 PM
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="agent" >
-                                        <p id="agent-head">Agent portal</p>
-                                        <div className="cntct-dtls">
-                                            <div id="locImg1"><img src="assets/footer/locate.png" alt="" /></div>
-                                            <div>
-                                                <p>
-                                                    24/7 Customer Support in English, Oromo, Swahili,
-                                                    Arabic, Amharic and Somali.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <div className="ftrSec">
                                 <h4>Services</h4>
                                 <div className="FtrService">
@@ -85,6 +50,42 @@ function Footer() {
                                         <li><a href="">Licenses</a></li>
                                         <li><a href="">Find An Agent</a></li>
                                     </ul>
+                                </div>
+                            </div>
+                            <div className="cntctSec ftrSec">
+                                <h4>Contact Details</h4>
+                                <div className="Ftr-contact">
+                                    <div className="cntct-dtls">
+                                        <div id="locImg"><img src="assets/footer/locate.png" alt="" /></div>
+                                        <div>
+                                            <p>2429 East Franklin Avenue, Minneapolis, MN 55406</p>
+                                        </div>
+                                    </div>
+                                    <div className="cntct-dtls">
+                                        <div><img src="assets/footer/email.png" alt="" /></div>
+                                        <div><p>nfo@ramadpay.com</p></div>
+                                    </div>
+                                    <div className="cntct-dtls">
+                                        <div><img src="assets/footer/ftCall.png" alt="" /></div>
+                                        <div>
+                                            <p>
+                                                Toll-Free <span className='phnfooter'>1-888-611-0753</span> <br />
+                                                (Mon-Fri) 09:00 AM - 6:00 PM
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="agent" >
+                                        <p id="agent-head">Agent portal</p>
+                                        <div className="cntct-dtls">
+                                            <div id="locImg1"><img src="assets/footer/locate.png" alt="" /></div>
+                                            <div>
+                                                <p>
+                                                    24/7 Customer Support in English, Oromo, Swahili,
+                                                    Arabic, Amharic and Somali.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

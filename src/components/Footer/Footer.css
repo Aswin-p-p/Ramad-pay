@@ -78,3 +78,13 @@
     color: #000;
   }
   
+  @media(max-width:768px){
+    .cntctSec{
+      padding-left: 30px;
+    }
+  }
+  @media(max-width:600px){
+    .cntctSec{
+      padding-left: 0;
+    }
+  }

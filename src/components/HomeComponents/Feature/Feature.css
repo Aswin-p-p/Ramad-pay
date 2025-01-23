@@ -147,7 +147,7 @@
       object-fit: contain;
     }
     .rmd-slider .icon{
-      height: 50px;
+      height: 43px;
     }
     .rmd-slider h4{
       font-size: 20px;
@@ -155,6 +155,12 @@
     .feature-div h2 {
       font-weight: 100;
       font-size: 35px;
+  }
+  .ftrsSliderTrack{
+    padding: 30px 37px;
+  }
+  .rmd-slider p{
+    font-size: 12px;
   }
   }
 
@@ -169,5 +175,7 @@
     .rmd-slider{
       margin:0;
     }
-
+    .rmd-slider p{
+      font-size: 13px;
+    }
   }
