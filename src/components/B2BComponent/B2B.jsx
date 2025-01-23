@@ -20,7 +20,7 @@ function B2B() {
         </div>
 
         <div className="b2bHeadImg">
-          <img src="assets/serviceimg/b2b bannerImg.png" alt=""/>
+          <img src="assets/serviceimg/b2b-bnr.png" alt=""/>
         </div>
         </div>
       </section>

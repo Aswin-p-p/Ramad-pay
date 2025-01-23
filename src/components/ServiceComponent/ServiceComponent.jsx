@@ -18,8 +18,8 @@ function ServiceComponent() {
             </p>
         </div>
 
-        <div className="serHedImg prdHrImg">
-          <img src="assets/serviceimg/serviceimage.png" alt="serviceimage"/>
+        <div className="serHedImg ">
+          <img src="assets/serviceimg/serv-bnr.png" alt="serviceimage"/>
         </div>
 
         </div>

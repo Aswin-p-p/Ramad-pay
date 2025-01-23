@@ -6,11 +6,11 @@
   .b2bHeadImg{
     position: absolute;
     right: 100px;
-    bottom: -10px;
+    bottom: -60px;
     line-height: 0;
   }
   .b2bHeadImg img{
-    width: 480px;
+    width: 435px;
   }
 
   .cmpny-content .commSpn{
@@ -277,8 +277,13 @@
     font-size: 35px;
   }
   .b2bHeadImg img {
-    width: 350px;
+    width: 315px;
+
   }
+  .b2bHeadImg {
+    bottom: -42px;
+    right: 0;
+}
   .whyChoseCont h2 {
     font-size: 24px;
   }

@@ -20,7 +20,7 @@ function TeamComponents() {
         </div>
 
         <div className="prdHedImg teamHdimg">
-          <img src="assets/team/teamBanner.png" alt=""/>
+          <img src="assets/team/team-bnr.png" alt=""/>
         </div>
         </div>
       </section>

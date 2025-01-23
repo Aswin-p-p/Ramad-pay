@@ -16,7 +16,7 @@ function Customised() {
                     </h1>
                 </div>
                 <div className="commHdImg custHdImg">
-                    <img src="assets/customized/bgimg.png" alt=""/>
+                    <img src="assets/customized/custom-bnr.png" alt=""/>
                 </div>
                 </div>
         </section>

@@ -7,6 +7,20 @@
     font-weight: 700;
 }
 
+.prdHrImg{
+    position: absolute;
+    right: 124px !important;
+    bottom: -110px;
+    line-height: 0;
+
+}
+
+.prdHrImg img{
+    width: 390px !important;
+
+}
+
+
 .cmpnyproduct{
     align-items: center !important;
     overflow: hidden;

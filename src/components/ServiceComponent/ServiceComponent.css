@@ -2,13 +2,14 @@
   background: none;
 }
 .serHedImg{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    line-height: 0;
+  position: absolute;
+  bottom: -64px !important;
+  right: 113px !important;
+  line-height: 0;
+
   }
   .serHedImg img{
-    width: 445px;
+  width: 460px  ; 
   }
   
   .serContBlk{
@@ -92,10 +93,11 @@
  
 @media screen and (max-width:768px) {
   .serHedImg img {
-    width: 320px;
+    width: 320px !important;
   }
   .serHedImg {
     bottom: -43px;
+    right: 0 !important;
   }
   .commSecHead h2 {
     font-size: 35px;

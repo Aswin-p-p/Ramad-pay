@@ -18,7 +18,7 @@ function Partnership() {
         </div>
 
         <div className="commHdImg prtnHdImg" data-aos="fade" data-aos-duration="1000">
-          <img src="assets/partnership/parterbgimg.png" alt=""/>
+          <img src="assets/partnership/partner-bnr.png" alt=""/>
         </div>
         </div>
       </section>

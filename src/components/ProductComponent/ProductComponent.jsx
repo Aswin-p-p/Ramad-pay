@@ -22,7 +22,7 @@ function ProductComponent() {
         </div>
 
         <div className="prdHedImg prdHrImg">
-          <img src="assets/product/holdingphone-latest.png" alt=""/>
+          <img src="assets/product/prdctBnr.png" alt=""/>
         </div>
         </div>
       </section>
