@@ -1,9 +1,9 @@
 
 .invBgImg img{
-    width: 600px;
+    width: 550px;
   }
   .invBgImg {
-    right: 0;
+    right: 130px;
     bottom: -50px;
     line-height: 0;
   }

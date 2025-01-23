@@ -311,7 +311,7 @@ input[type="checkbox"]:checked + label::before {
   .cntct-Frm{
     width: 100%;
     height:auto;
-    background-image: url(assets/company/Form.jpg);
+    /* background-image: url(assets/company/Form.jpg); */
     background-position: 58%;
     background-size: cover;
     position: relative;

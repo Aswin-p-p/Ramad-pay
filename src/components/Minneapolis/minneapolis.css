@@ -37,13 +37,13 @@
 .srAreaInImg img{
     width: 460px;
     bottom: -150px;
-    right: 0;
+   
   }
   
   .srAreaInImg{
   
     bottom: -150px;
-    right: 0;
+    right: 120PX;
   }
   
   .serInBtn{

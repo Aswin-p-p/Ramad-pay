@@ -43,7 +43,7 @@
 .custHero{
     background-color: var(--primary-color);
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-position:200px ;
 }
 .prdHedImg{
