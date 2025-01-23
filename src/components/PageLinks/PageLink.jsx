@@ -5,7 +5,7 @@ function PageLink() {
     <>
     <section>
         <div className="container">
-        <div class="pageLink">
+        <div className="pageLink">
               <a href="">Home | <span>Company</span></a>
             </div>
         </div>

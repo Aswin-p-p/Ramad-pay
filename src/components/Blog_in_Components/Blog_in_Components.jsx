@@ -4,21 +4,21 @@ function Blog_in_Components() {
   return (
     <>
      <main>
-      <section class="commonHro">
-        <div class="container">
-          <div class="blogHeading">
+      <section className="commonHro">
+        <div className="container">
+          <div className="blogHeading">
             <h1 data-aos="fade-up" data-aos-duration="1000">
               Top 5 Benefits of Using Text2Pay for Your Remittance Needs
             </h1>
           </div>
         </div>
       </section>
-      <section class="blogDetail">
-        <div class="container">
-          <div class="blogInImg" data-aos="fade" data-aos-duration="1000">
+      <section className="blogDetail">
+        <div className="container">
+          <div className="blogInImg" data-aos="fade" data-aos-duration="1000">
             <img src="assets/blog/detail.jpg" alt="" />
           </div>
-          <div class="bloginCont" data-aos="fade" data-aos-duration="1000">
+          <div className="bloginCont" data-aos="fade" data-aos-duration="1000">
             <p>
               Sending money to family members abroad is a common practice for
               many people. It provides financial support that can significantly
