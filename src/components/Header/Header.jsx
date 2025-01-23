@@ -76,29 +76,31 @@ function Header() {
             <li><a href="/Compliance">Compliance</a></li>
             <li><a href="/partnership">Partnerships</a></li>
             <li><a href="/Investor">Investor Relations</a></li>
+
             <li className={`serv-SubList ${openServiceArea ? 'open' : ''}`}>
-            <a href="" onClick={(e) => e.preventDefault()}>
-              Our Service Area 
-              <span 
-                className="angle-right" 
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleServiceArea();
-                }}
-              >
-                <i className="fa-solid fa-angle-right"></i>
-              </span>
-            </a>
-            <ul className="serv-subMenu" style={{ display: openServiceArea ? 'block' : 'none' }}>
-              <li><a href="">Minneapolis, MN</a></li>
-              <li><a href="">St. Paul, MN</a></li>
-              <li><a href="">St. Cloud, MN</a></li>
-              <li><a href="">Aurora, CO</a></li>
-              <li><a href="">Columbus, OH</a></li>
-              <li><a href="">Seattle, WA</a></li>
-              <li><a href="">San Diego</a></li>
-            </ul>
-          </li>
+  <a href="/servicearea">
+    Our Service Area
+    <span
+      className="angle-right"
+      onClick={(e) => {
+        e.preventDefault(); // Prevent default only for the span click.
+        toggleServiceArea();
+      }}
+    >
+      <i className="fa-solid fa-angle-right"></i>
+    </span>
+  </a>
+  <ul className="serv-subMenu" style={{ display: openServiceArea ? 'block' : 'none' }}>
+    <li><a href="/minneapolis">Minneapolis, MN</a></li>
+    <li><a href="/stpaul">St. Paul, MN</a></li>
+    <li><a href="/stcloud">St. Cloud, MN</a></li>
+    <li><a href="/Aurora">Aurora, CO</a></li>
+    <li><a href="/Columbus">Columbus, OH</a></li>
+    <li><a href="/WashingtonSeattle">Seattle, WA</a></li>
+    <li><a href="/SanDiego">San Diego</a></li>
+  </ul>
+</li>
+
           </ul>
         </li>
         <li><a href="/blog">Blog/News</a></li>

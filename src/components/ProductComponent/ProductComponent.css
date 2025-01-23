@@ -9,6 +9,7 @@
 
 .cmpnyproduct{
     align-items: center !important;
+    overflow: hidden;
 }
 .convrtSec{
     background-color: #efefef;

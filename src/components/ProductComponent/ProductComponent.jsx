@@ -6,7 +6,7 @@ function ProductComponent() {
   return (
    <>
    <main>
-   <section className="cmpny-hroSection custHero cmpnyproduct">
+   <section className="cmpny-hroSection custHero cmpnyproduct ">
         <div className="container">
           <div className="cmpny-content cmnyproductcont">
           <span className="commSpn" > RamadPay</span>
