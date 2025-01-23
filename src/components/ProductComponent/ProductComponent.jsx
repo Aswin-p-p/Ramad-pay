@@ -63,7 +63,7 @@ function ProductComponent() {
             <div className="col-md-4">
               <div className="prBlk">
                 <div className="prIco">
-                  <img src="assets/product/remit.png" alt=""/>
+                  <img src="assets/product/partner.png" alt=""/>
                 </div>
                 <div className="prCont">
                   <h3>Become An Agent</h3>
@@ -77,7 +77,7 @@ function ProductComponent() {
             <div className="col-md-4">
               <div className="prBlk">
                 <div className="prIco">
-                  <img src="assets/product/remit.png" alt=""/>
+                  <img src="assets/product/risk-compliance.png" alt=""/>
                 </div>
                 <div className="prCont">
                   <h3>Risk & compliance</h3>
