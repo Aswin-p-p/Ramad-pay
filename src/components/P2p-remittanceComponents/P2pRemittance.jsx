@@ -9,7 +9,7 @@ function P2pRemittance() {
         <div className="container">
           <div className="cmpny-content">
             <h1 data-aos="fade-right" data-aos-duration="1000">
-                <span classNameName='commSpn'>international</span>
+                <span className='commSpn'>international</span>
                 P2P Global Payment
             </h1>   
         </div>
