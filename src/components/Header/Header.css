@@ -285,3 +285,63 @@
   }.hasSub.open .dropdown-arrow {
     transform: rotate(180deg);
   }
+
+
+  .serv-SubList {
+    position: relative;
+  }
+  .angle-right{
+    position: absolute;
+    right:50px;
+  }
+  .serv-subMenu a {
+    color: #000 !important;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  .serv-subMenu a:hover {
+    color: var(--primary-color) !important;
+  }
+
+
+  @media (min-width: 992px) {
+ 
+
+    .serv-subMenu {
+      position: absolute;
+      width: 250px;
+      background-color: #fff;
+      border-radius: 4px;
+      top: 15px;
+      opacity: 0;
+      left: 250px;
+      padding-top: 8px;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: block !important;
+      padding-bottom: 7px;
+    }
+    
+    .serv-SubList:hover .serv-subMenu {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 991px) {
+    .serv-subMenu {
+      display: none;
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  
+  @media(max-width:1350px){
+    .serv-subMenu {
+      left: -250px; /* Move submenu to the left */
+    }
+  }
