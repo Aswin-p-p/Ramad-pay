@@ -3,7 +3,7 @@ import './PageForm.css';
 
 function PageForm() {
     return (
-        <section className="contactSec" data-aos="fade-in" data-aos-duration="1000">
+        <section className="contactSec">
             <div className="container">
                 <div className="cntct-Frm">
                     <div className="FrmSec">
