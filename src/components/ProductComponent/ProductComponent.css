@@ -139,6 +139,12 @@
         right: 0 !important;
         width: 270px !important;
      } */
+    .prdHrImg img{
+        width: 320px;
+     }
+    .rmdProduct{
+        padding-bottom: 1em;
+     }
      .commSecHead h2{
         font-size: 35px;
      }

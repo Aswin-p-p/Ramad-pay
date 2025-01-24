@@ -15,7 +15,7 @@ function Compliance() {
         </div>
 
         <div className="cmplnc-heroImg">
-          <img src="assets/compliance/com-heroImg.png" alt=""/>
+          <img src="assets/compliance/compliance-bnr.png" alt=""/>
         </div>
         </div>
       </section>

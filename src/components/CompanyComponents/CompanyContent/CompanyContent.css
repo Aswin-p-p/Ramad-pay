@@ -118,6 +118,7 @@
 .contactSec {
   background-color: #efefef;
   padding: 50px 0;
+  position: relative;
 }
 .cntct-Frm {
   width: 100%;

@@ -10,8 +10,8 @@
   }
   .cmplnc-heroImg{
     position: absolute;
-    bottom: -205px;
-    right: 0;
+    bottom: -40px;
+    right: 104px;
   
   }
   .cmplnc-heroImg img{
@@ -147,7 +147,7 @@
 
   @media (max-width: 768px) {
     .cmplnc-heroImg {
-        bottom: -180px;
+        bottom: -37px;
     }
     .cmplnc-heroImg img{
         width: 350px;
