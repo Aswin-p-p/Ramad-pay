@@ -18,7 +18,7 @@ function ProductComponent() {
               </p>  
               <p>Our Ramad Pay Remittance Package is designed to meet your urgent money transfer needs, ensuring your funds reach their destination swiftly and reliably.</p>
             
-            <div className="readmore-btn" data-aos="fade-right" data-aos-duration="1000"><a href="">Read More</a></div>
+            <div className="readmore-btn" data-aos="fade-right" data-aos-duration="1000"><a href="/aboutus">Read More</a></div>
         </div>
 
         <div className="prdHedImg prdHrImg">
