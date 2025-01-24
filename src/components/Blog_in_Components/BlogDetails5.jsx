@@ -8,8 +8,7 @@ function BlogDetails5() {
         <section className="commonHro">
           <div className="container">
             <div className="blogHeading">
-              <h1 data-aos="fade-up" data-aos-duration="1000">
-                Real Stories: How Text2Pay is Making a Difference for Families Across Borders
+              <h1 data-aos="fade-up" data-aos-duration="1000">Real Stories: Text2Pay's Impact on Families Across Borders
               </h1>
             </div>
           </div>

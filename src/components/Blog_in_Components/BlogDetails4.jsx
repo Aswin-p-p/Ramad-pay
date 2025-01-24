@@ -9,7 +9,7 @@ function BlogDetails4() {
           <div className="container">
             <div className="blogHeading">
               <h1 data-aos="fade-up" data-aos-duration="1000">
-              Text2Pay: The Future of Seamless International Money Transfers
+              Text2Pay: The Future of Global Money Transfers
               </h1>
             </div>
           </div>

@@ -9,7 +9,7 @@ function BlogDetails6() {
           <div className="container">
             <div className="blogHeading">
               <h1 data-aos="fade-up" data-aos-duration="1000">
-                Breaking Down Barriers: Text2Pay is Revolutionizing Money Transfers
+              Breaking Barriers: Text2Pay Revolutionizing Money Transfers
               </h1>
             </div>
           </div>

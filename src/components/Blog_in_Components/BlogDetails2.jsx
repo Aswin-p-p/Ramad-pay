@@ -9,7 +9,7 @@ function BlogDetails2() {
           <div className="container">
             <div className="blogHeading">
               <h1 data-aos="fade-up" data-aos-duration="1000">
-                Step-by-Step Guide: Sending Money Abroad with Text2Pay
+              Step-by-Step: Sending Money Abroad with Text2Pay
               </h1>
             </div>
           </div>
