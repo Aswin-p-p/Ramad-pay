@@ -97,7 +97,7 @@ function Blogcomponent() {
              <a href="Text2Pay-The-Future-of-Seamless">
               <div className="blogBlk">
                 <div className="blogImg">
-                  <img src="assets/blog/blog1.jpg" alt=""/>
+                  <img src="assets/blog/detail.jpg" alt=""/>
                 </div>
                 <div className="blogDesc">
                   <span className="blgDate">17 Aug 2024</span>
@@ -115,7 +115,7 @@ function Blogcomponent() {
               <a href="/Real-Stories-How-Text2Pay-is-Making">
                 <div className="blogBlk">
                   <div className="blogImg">
-                    <img src="assets/blog/blog2.jpg" alt=""/>
+                    <img src="assets/blog/blogb2b.jpg" alt=""/>
                   </div>
                   <div className="blogDesc">
                     <span className="blgDate">17 Dec 2024</span>
@@ -133,7 +133,7 @@ function Blogcomponent() {
               <a href="/Breaking-Down-Barriers">
                 <div className="blogBlk">
                   <div className="blogImg">
-                    <img src="assets/blog/3.jpg" alt=""/>
+                    <img src="assets/blog/GlobalPartnerships.jpg" alt=""/>
                   </div>
                   <div className="blogDesc">
                     <span className="blgDate">17 July 2024</span>

@@ -16,7 +16,7 @@ function Agent() {
         </div>
 
         <div className="Agnt-heroImg">
-          <img src="assets/Agent/agentImg.png" alt=""/>
+          <img src="assets/Agent/agent-banner.png" alt=""/>
         </div>
         </div>
       </section>

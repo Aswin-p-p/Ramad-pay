@@ -1,12 +1,12 @@
 .custHdImg{
 
-    right: 140px;
-    bottom: -20px;
+    right: 190px;
+    bottom: 1px;
     line-height: 0;
 }
 
 .custHdImg img{
-    width: 400px;
+    width: 470px;
 }
 
 @media screen and (max-width:1024px) {

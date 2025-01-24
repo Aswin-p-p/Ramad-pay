@@ -16,7 +16,7 @@ function InvestorComponent() {
         </div>
 
         <div className="commHdImg invBgImg">
-        <img src="assets/investors/bgimg.jpg" alt=""/>
+        <img src="assets/investors/investorimg.png" alt=""/>
         </div>
         </div>
       </section>

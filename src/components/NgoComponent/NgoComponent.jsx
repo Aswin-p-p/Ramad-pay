@@ -16,7 +16,7 @@ function NgoComponent() {
                     </h1>
                 </div>
                 <div className="commHdImg ngoImgHd">
-                    <img src="assets/ngo-img/bgimg.png" alt=""/>
+                    <img src="assets/ngo-img/img.png" alt=""/>
                 </div>
                 </div>
         </section>

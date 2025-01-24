@@ -15,7 +15,7 @@ function P2pRemittance() {
         </div>
 
         <div className="p2pHeadImg">
-          <img src="assets/serviceimg/p2p.png" alt=""/>
+          <img src="assets/serviceimg/p2pbannerimg.png" alt=""/>
         </div>
         </div>
       </section>

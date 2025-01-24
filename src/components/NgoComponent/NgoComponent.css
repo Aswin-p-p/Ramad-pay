@@ -1,14 +1,12 @@
 
 /* NGO PAGE */
 .ngoImgHd{
-  right: 120px;
+  right: 140px;
   bottom: -4px;
 }
-.ngoImgHd img{
-  width:400px;
-}
+
   .ngoImgHd img{
-    width: 400px;
+    width: 440px;
   }
   .ngoImg{
     line-height: 0;
