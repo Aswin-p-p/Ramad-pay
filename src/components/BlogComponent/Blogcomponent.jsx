@@ -36,8 +36,8 @@ function Blogcomponent() {
             </h2>
           </div>
           <div className="row">
-            <div className="col-md-4">
-             <a href="blog-in.html">
+            <div className="col-md-4 blogpad">
+             <a href="Top-5-Benefits-of-Using-Text2Pay">
               <div className="blogBlk">
                 <div className="blogImg">
                   <img src="assets/blog/blog1.jpg" alt=""/>
@@ -54,14 +54,14 @@ function Blogcomponent() {
               </div>
              </a>
             </div>
-            <div className="col-md-4">
-              <a href="">
+            <div className="col-md-4 blogpad">
+              <a href="/Step-by-Step-Guide">
                 <div className="blogBlk">
                   <div className="blogImg">
                     <img src="assets/blog/blog2.jpg" alt=""/>
                   </div>
                   <div className="blogDesc">
-                    <span className="blgDate">17 Nov 2024</span>
+                    <span className="blgDate">17 Oct 2024</span>
                     <h3>
                       Step-by-Step Guide: Sending Money Abroad with Text2Pay
                     </h3>
@@ -72,19 +72,132 @@ function Blogcomponent() {
                 </div>
               </a>
             </div>
-            <div className="col-md-4">
-              <a href="">
+            <div className="col-md-4 blogpad">
+              <a href="/Security-How-Text2Pay-Ensures">
                 <div className="blogBlk">
                   <div className="blogImg">
                     <img src="assets/blog/3.jpg" alt=""/>
                   </div>
                   <div className="blogDesc">
-                    <span className="blgDate">17 Nov 2024</span>
+                    <span className="blgDate">17 Sep 2024</span>
                     <h3>
                       Security First: How Text2Pay Ensures Safe and Secure Transactions
                     </h3>
                     <p>
                       In the digital age, the security of financial transactions is a paramount concern. 
+                    </p>
+                  </div>
+                </div>
+              </a>
+              
+            </div> 
+          </div>
+          <div className="row">
+            <div className="col-md-4 blogpad">
+             <a href="Text2Pay-The-Future-of-Seamless">
+              <div className="blogBlk">
+                <div className="blogImg">
+                  <img src="assets/blog/blog1.jpg" alt=""/>
+                </div>
+                <div className="blogDesc">
+                  <span className="blgDate">17 Aug 2024</span>
+                  <h3>
+                  Text2Pay: The Future of Seamless International Money Transfers
+                  </h3>
+                  <p>
+                  In an increasingly interconnected world, the need for efficient and secure money transfer services is more important than ever.
+                  </p>
+                </div>
+              </div>
+             </a>
+            </div>
+            <div className="col-md-4 blogpad">
+              <a href="/Real-Stories-How-Text2Pay-is-Making">
+                <div className="blogBlk">
+                  <div className="blogImg">
+                    <img src="assets/blog/blog2.jpg" alt=""/>
+                  </div>
+                  <div className="blogDesc">
+                    <span className="blgDate">17 Dec 2024</span>
+                    <h3>
+                    Real Stories: How Text2Pay is Making a Difference for Families Across Borders
+                    </h3>
+                    <p>
+                    Sending money to family members abroad is a common practice for many people. 
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="col-md-4 blogpad">
+              <a href="/Breaking-Down-Barriers">
+                <div className="blogBlk">
+                  <div className="blogImg">
+                    <img src="assets/blog/3.jpg" alt=""/>
+                  </div>
+                  <div className="blogDesc">
+                    <span className="blgDate">17 July 2024</span>
+                    <h3>
+                    Breaking Down Barriers: How Ramad Pay’s Text2Pay is Revolutionizing Money Transfers
+                    </h3>
+                    <p>
+                    In today’s fast-paced world, sending money across borders shouldn’t be a hassle.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              
+            </div> 
+          </div>
+          <div className="row">
+            <div className="col-md-4 blogpad">
+             <a href="Investing-in-Remittance">
+              <div className="blogBlk">
+                <div className="blogImg">
+                  <img src="assets/blog/blog1.jpg" alt=""/>
+                </div>
+                <div className="blogDesc">
+                  <span className="blgDate">02 jun 2024</span>
+                  <h3>
+                  Investing in Remittance: A Glimpse into Investor Relations at Ramad Pay
+                  </h3>
+                  <p>
+                  In today’s dynamic financial landscape, the remittance industry stands out as a beacon of opportunity and growth.                  </p>
+                </div>
+              </div>
+             </a>
+            </div>
+            <div className="col-md-4 blogpad">
+              <a href="Global-Partnerships-How-Ramad">
+                <div className="blogBlk">
+                  <div className="blogImg">
+                    <img src="assets/blog/blog2.jpg" alt=""/>
+                  </div>
+                  <div className="blogDesc">
+                    <span className="blgDate">18 May 2024</span>
+                    <h3>
+                    Global Partnerships: How Ramad Pay is Expanding its Reach
+                    </h3>
+                    <p>
+                    The realm of global finance is intricate, interwoven, and incessantly dynamic.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="col-md-4 blogpad">
+              <a href="/Innovations-in-B2B-Digital">
+                <div className="blogBlk">
+                  <div className="blogImg">
+                    <img src="assets/blog/3.jpg" alt=""/>
+                  </div>
+                  <div className="blogDesc">
+                    <span className="blgDate">03 May 2024</span>
+                    <h3>
+                    Innovations in B2B Digital Payments: What Businesses Need to Know
+                    </h3>
+                    <p>
+                    In the age of digitization, business transactions have transformed dramatically.
                     </p>
                   </div>
                 </div>

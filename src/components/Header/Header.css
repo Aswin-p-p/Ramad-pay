@@ -40,13 +40,13 @@
   }
   .button{
     background-color: #fff;
-    padding: 4px 20px;
+    padding: 10px 29px;
     border-radius: 50px;
   }
   .button a{
     color: var(--text-color);
     font-weight:700;
-    font-size: 13px;
+    font-size: 15px;
   }
   .call-icon img{
     width: 20px;

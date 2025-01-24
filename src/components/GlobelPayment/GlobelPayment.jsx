@@ -16,7 +16,7 @@ function GlobelPayment() {
                         success
                     </h1>
                 </div>
-                <div className="commHdImg custHdImg">
+                <div className="commHdImg custHdImg globprodimg">
                     <img src="assets/globalpayment/bgimg.png" alt=""/>
                 </div>
                 </div>

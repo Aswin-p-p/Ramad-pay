@@ -16,7 +16,7 @@
 }
 
 .prdHrImg img{
-    width: 390px !important;
+    width: 500px !important;
 
 }
 
@@ -63,12 +63,12 @@
 }
 .prdHedImg{
     position: absolute;
-    right: 0;
-    bottom: -110px;
+    right: 150px;
+    bottom: 0;
     line-height: 0;
 }
 .prdHedImg img{
-    width: 350px;
+    width: 500px;
 }
 .prBlk{
     border: 1px solid #adadad;
@@ -132,7 +132,7 @@
 }
 @media(max-width:768px){
     .prdHrImg{
-        right: 0;
+        right: -19px !important;
         /* bottom: 0; */
      }
      /* .prdHrImg img{
@@ -140,7 +140,7 @@
         width: 270px !important;
      } */
     .prdHrImg img{
-        width: 320px;
+    width: 320px !important  ;
      }
     .rmdProduct{
         padding-bottom: 1em;

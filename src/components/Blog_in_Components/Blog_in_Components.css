@@ -146,6 +146,9 @@
   .bloginCont h3 {
     font-size: 20px;
   }
+  .blogInImg img{
+    display: none;  ;
+  }
 
 }
 

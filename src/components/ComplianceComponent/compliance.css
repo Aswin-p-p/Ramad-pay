@@ -10,12 +10,12 @@
   }
   .cmplnc-heroImg{
     position: absolute;
-    bottom: -40px;
-    right: 104px;
+    bottom: -4px;
+    right: 140px;
   
   }
   .cmplnc-heroImg img{
-    width: 400px;
+    width: 500px;
   }
   
   .cmplnc-content h1{

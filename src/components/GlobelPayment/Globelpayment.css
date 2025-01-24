@@ -1,4 +1,9 @@
-
+.globprodimg{
+  bottom: -50px !important;
+}
+.globprodimg img{
+  width: 360px !important;
+}
 /* GLOBAL PAYMENT */
 
 .glbPayImg img{

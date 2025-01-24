@@ -1,12 +1,12 @@
 
 .b2b{
     background-image: url(assets/serviceimg/b2b-bg.jpg);
-    overflow: hidden;
+    overflow: hidden !important;
   }
   .b2bHeadImg{
     position: absolute;
-    right: 100px;
-    bottom: -60px;
+    right: 135px;
+    bottom: 21px;
     line-height: 0;
   }
   .b2bHeadImg img{
@@ -93,6 +93,7 @@
     padding: 26px;
     border-radius: 18px;
     background-color: #fff;
+    height: 100%;
   }
   .b2bFeatCont h2{
     font-size: 28px;
@@ -130,7 +131,8 @@
   }
   .b2bFeatSec,
   .whyChooseSec{
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
+    padding: 3em 0;
   }
   
   .whyChoseContain{

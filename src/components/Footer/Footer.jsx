@@ -18,11 +18,11 @@ function Footer() {
                                 <h4>Services</h4>
                                 <div className="FtrService">
                                     <ul>
-                                        <li><a href="">P2P Remittance Services</a></li>
-                                        <li><a href="">NGO</a></li>
+                                        <li><a href="/p2premittance">P2P Remittance Services</a></li>
+                                        <li><a href="/ngo">NGO</a></li>
                                         <li><a href="/b2b">B2B</a></li>
                                         <li><a href="">Ramad Pay App</a></li>
-                                        <li><a href="">Global Payments</a></li>
+                                        <li><a href="/globalpayment">Global Payments</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -31,10 +31,10 @@ function Footer() {
                                 <div className="FtrService Company">
                                     <ul>
                                         <li><a href="/company">Company</a></li>
-                                        <li><a href="">Team</a></li>
+                                        <li><a href="/Teams">Team</a></li>
                                         <li><a href="/career">Careers</a></li>
-                                        <li><a href="">Compliance</a></li>
-                                        <li><a href="">Partnerships</a></li>
+                                        <li><a href="/Compliance">Compliance</a></li>
+                                        <li><a href="/partnership">Partnerships</a></li>
                                         <li><a href="/Investor">Investor Relations</a></li>
                                     </ul>
                                 </div>
@@ -48,7 +48,7 @@ function Footer() {
                                         <li><a href="">Terms of Use</a></li>
                                         <li><a href="">Compliance</a></li>
                                         <li><a href="">Licenses</a></li>
-                                        <li><a href="">Find An Agent</a></li>
+                                        <li><a href="/agent">Find An Agent</a></li>
                                     </ul>
                                 </div>
                             </div>

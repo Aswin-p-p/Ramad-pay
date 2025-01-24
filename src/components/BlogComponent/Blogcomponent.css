@@ -1,4 +1,6 @@
-
+.blogpad{
+  padding: 20px ;
+}
 .commonHro{
     background-color: var(--primary-color);
     height: 60vh;

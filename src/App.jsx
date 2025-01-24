@@ -32,6 +32,14 @@ import WashingtonSeattle from './components/ServiceListComponents/WashingtonSeat
 import Columbus from './components/ServiceListComponents/Columbus';
 import Aurora from './components/ServiceListComponents/Aurora';
 import Customised from './components/CustamisedComponent/Customised';
+import BlogDetails2 from './components/Blog_in_Components/BlogDetails2';
+import BlogDetails3 from './components/Blog_in_Components/BlogDetails3';
+import BlogDetails4 from './components/Blog_in_Components/BlogDetails4';
+import BlogDetails5 from './components/Blog_in_Components/BlogDetails5';
+import BlogDetails6 from './components/Blog_in_Components/BlogDetails6';
+import BlogDetails7 from './components/Blog_in_Components/BlogDetails7';
+import BlogDetails8 from './components/Blog_in_Components/BlogDetails8';
+import BlogDetails9 from './components/Blog_in_Components/BlogDetails9';
 
 
 function App() {
@@ -57,7 +65,7 @@ function App() {
         <Route path="/Investor" element={<InvestorComponent/>} />
         <Route path="/partnership" element={<Partnership/>} />
         <Route path="/Teams" element={<TeamComponents/>} />
-        <Route path="/Blog_in" element={<Blog_in_Components/>} />
+        <Route path="/Top-5-Benefits-of-Using-Text2Pay" element={<Blog_in_Components/>} />
         <Route path="/Career" element={<CareerComponent/>} />
         <Route path="/servicearea" element={<ServiceArea/>} />
         <Route path="/Compliance" element={<Compliance/>} />
@@ -74,6 +82,14 @@ function App() {
         <Route path="/Columbus" element={<Columbus/>} />
         <Route path="/Aurora" element={<Aurora/>} />
         <Route path="/customised" element={<Customised/>} />
+        <Route path="/Step-by-Step-Guide" element={<BlogDetails2/>} />
+        <Route path="/Security-How-Text2Pay-Ensures" element={<BlogDetails3/>} />
+        <Route path="/Text2Pay-The-Future-of-Seamless" element={<BlogDetails4/>} />
+        <Route path="/Real-Stories-How-Text2Pay-is-Making" element={<BlogDetails5/>} />
+        <Route path="/Breaking-Down-Barriers" element={<BlogDetails6/>} />
+        <Route path="/Investing-in-Remittance" element={<BlogDetails7/>} />
+        <Route path="/Global-Partnerships-How-Ramad" element={<BlogDetails8/>} />
+        <Route path="/Innovations-in-B2B-Digital" element={<BlogDetails9/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
