@@ -6,6 +6,16 @@
     transition: all 0.3s;
     
   }
+  .dropdown-arrow {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: 5px !important;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .dropdown-arrow::after {
+    content: '\f107';
+  }
   .hdr-contain.scrolled{
     background-color: #067e6f;
     box-shadow: 0 0 2px #025248;
@@ -77,6 +87,10 @@
   height: 3px;
   background-color: #000;
   margin: 6px 0;
+  }
+
+  .togglerlogo img{
+    display: none;
   }
   @media screen and (max-width:999px){
     .toggle{
@@ -158,6 +172,9 @@
   }
 
   @media(max-width:600px){
+    .togglerlogo img{
+      display: block;
+    }
     .fnd-btn {
       display: flex
   ;
@@ -187,8 +204,9 @@
 
   .mainMenu ul {
     display: block ;
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
+    padding-left: 30px;
 }
 .mainMenu li{
     margin-bottom: 18px;
@@ -215,9 +233,10 @@
   .subMenu a:hover {
     color: var(--primary-color) !important;
   }
-
+ 
 
   @media (min-width: 992px) {
+    
     .subMenu {
       position: absolute;
       width: 250px;

@@ -51,6 +51,9 @@ function Header() {
               <div className={`menuSec ${isMenuOpen ? 'show' : ''}`}>
               <div className="mainMenu">
       <ul className="mainUl">
+        <div className="togglerlogo">
+          <img src="" alt="" />
+        </div>
         <li><a href="/prodcuts">Product</a></li>
         <li className={`hasSub ${openSubMenu === 0 ? 'open' : ''}`}>
           <a href="/service" >
