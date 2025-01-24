@@ -40,7 +40,7 @@ function Blogcomponent() {
              <a href="Top-5-Benefits-of-Using-Text2Pay">
               <div className="blogBlk">
                 <div className="blogImg">
-                  <img src="assets/blog/blog1.jpg" alt=""/>
+                  <img src="assets/blog/detail-1.jpg" alt=""/>
                 </div>
                 <div className="blogDesc">
                   <span className="blgDate">17 Nov 2024</span>
@@ -58,7 +58,7 @@ function Blogcomponent() {
               <a href="/Step-by-Step-Guide">
                 <div className="blogBlk">
                   <div className="blogImg">
-                    <img src="assets/blog/blog2.jpg" alt=""/>
+                    <img src="assets/blog/MoneyTransfers.jpg" alt=""/>
                   </div>
                   <div className="blogDesc">
                     <span className="blgDate">17 Oct 2024</span>
@@ -97,7 +97,7 @@ function Blogcomponent() {
              <a href="Text2Pay-The-Future-of-Seamless">
               <div className="blogBlk">
                 <div className="blogImg">
-                  <img src="assets/blog/detail.jpg" alt=""/>
+                  <img src="assets/blog/Revolutionizing.jpg" alt=""/>
                 </div>
                 <div className="blogDesc">
                   <span className="blgDate">17 Aug 2024</span>

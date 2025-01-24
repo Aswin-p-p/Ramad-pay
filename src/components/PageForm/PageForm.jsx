@@ -30,7 +30,7 @@ function PageForm() {
                     </div>
                     </div>
                     <div className="col-Img">
-                        <img src="assets/company/frmImg_06.png" alt="Join RamadPay" />
+                        <img src="assets/company/formooter.png" alt="Join RamadPay" />
                     </div>
                 </div>
             </div>
