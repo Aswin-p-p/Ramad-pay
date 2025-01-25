@@ -2,6 +2,8 @@ import React from 'react';
 import './Hero.css'; // Corrected path for CSS import
 import Hand from '../../../assets/images/heroImages/hand-1.png';
 import gif from '/assets/pay fn.gif';
+import heroSlider from '/assets/Gif/heroSlider.gif';
+import heroSlideer from '/assets/Gif/heroSlideer.gif';
 
 function Hero() {
     return (
@@ -51,7 +53,7 @@ function Hero() {
                             <img src={Hand} alt="" />
                         </div>
                         <div className="screen">
-                            <img src={gif} alt="" />
+                            <img src={heroSlideer} alt="" />
                         </div>
                     </div>
                 </div>
