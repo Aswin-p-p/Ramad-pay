@@ -1,3 +1,14 @@
-.contactSec{
-    z-index: -1;
+.contactSec {
+    position: relative; /* Makes sure this section is in a new stacking context */
+    z-index: 1; /* Ensures this section appears on top of any overlapping elements */
+}
+
+.container {
+    position: relative; /* Keeps the content within the container interactive */
+    z-index: 2; /* Ensures the form inputs stay clickable */
+}
+
+input, button {
+    position: relative; /* Ensure inputs and buttons are interactive */
+    z-index: 999;
 }
