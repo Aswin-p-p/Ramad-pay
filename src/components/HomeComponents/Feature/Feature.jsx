@@ -120,6 +120,35 @@ function Feature() {
                   competitive exchange rates to make your remittance go further.
                 </p>
               </div>
+              <div className="rmd-slider">
+                <div className="icon">
+                  <img
+                    src="assets/sliderImages/streamline.png"
+                    alt="Competitive Exchange Rates"
+                  />
+                </div>
+                <h4>Streamlined Process</h4>
+                <p>
+                Sending money shouldn’t be complicated. With our user-friendly
+                 online platform and 
+                mobile app, you can initiate a remittance within minutes.
+                 It’s as simple as a few clicks.
+                </p>
+              </div>
+              <div className="rmd-slider">
+                <div className="icon">
+                  <img
+                    src="assets/sliderImages/customer.png"
+                    alt="steamline  Rates"
+                  />
+                </div>
+                <h4>24/7 Customer Support</h4>
+                <p>
+                We’re here for you around the clock. Our dedicated customer
+                 support team is available 24/7 to address 
+                 your queries and provide assistance whenever you need it.
+                </p>
+              </div>
             </Slider>
             <button
             className="next-btn"

@@ -43,10 +43,10 @@ function Footer() {
                                 <h4>Others</h4>
                                 <div className="FtrService">
                                     <ul>
-                                        <li><a href="">News</a></li>
+                                        <li><a href="/blog">News</a></li>
                                         <li><a href="">Privacy Policy</a></li>
                                         <li><a href="">Terms of Use</a></li>
-                                        <li><a href="">Compliance</a></li>
+                                        <li><a href="/Compliance">Compliance</a></li>
                                         <li><a href="">Licenses</a></li>
                                         <li><a href="/agent">Find An Agent</a></li>
                                     </ul>

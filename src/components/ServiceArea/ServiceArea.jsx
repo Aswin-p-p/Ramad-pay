@@ -11,7 +11,7 @@ function ServiceArea() {
           <div className="cmpny-content">
             <div className="commSpn">  Our Service </div>
             <h1 data-aos="fade-right" data-aos-duration="1000">
-             Area
+             Areas
             </h1>   
         </div>
 
