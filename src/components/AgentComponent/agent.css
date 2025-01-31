@@ -185,7 +185,12 @@
     display: block;
     margin: auto;
     width: 100px;
+    height: 100px;
   }
+
+  /* .message{
+    height: 80px;
+  } */
   .bnftsLst p{
       max-width: 160px;
       text-align: center;

@@ -144,6 +144,7 @@
     background-position: left;
     display: flex;
     align-items: center;
+    padding-top: 30px;
   }
   .whyChImg{
     margin-left: -60px;

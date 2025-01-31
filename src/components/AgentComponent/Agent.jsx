@@ -30,10 +30,10 @@ function Agent() {
       <section className="Agnt-section">
         <div className="container">
           <div className="Agnt-lnch">
-            <div className="lauch-head ">
+            {/* <div className="lauch-head ">
                 <h3>Launch Your Money Transfer Business </h3>
                 <p>-  Zero Upfront Investment</p>
-            </div>
+            </div> */}
             <div className="lnch-cnt">
                 <h4>Join a Leading Money Transfer Network and Make a Difference</h4>
                 <p>Ramad Pay Inc. invites you to become part of our growing network of agents. As a Ramad Pay Agent, you’ll help revolutionize how money is transferred across the U.S. With over 20 Money Transfer Licenses and services such as Text2Pay, cash pickups, and digital transfers, we are committed to simplifying and securing financial transactions for customers nationwide. Join us, earn attractive commissions, and grow your business while providing essential services to your community.</p>
@@ -244,7 +244,40 @@ function Agent() {
         </div>
       </section>
 
-    <PageForm/>
+      <section className="contactSec">
+            <div className="container">
+                <div className="cntct-Frm">
+                    <div className="FrmSec">
+                    <div>
+                    <h3>Your Information,<br />Your Terms - Join RamadPay Today!</h3>
+                        <form className="form">
+                            <div className="cntct-inputBox">
+                                <input type="text" placeholder="Your Name" />
+                                <input type="text" placeholder="Email Address" />
+                            </div>
+                            <input type="number" placeholder="Phone Number" />
+
+                            <textarea type="text" placeholder='Message' className='message' />
+                            <div className="custom-chkbox d-flex col-30">
+                                <input type="checkbox" id="accounts" />
+                                <label htmlFor="accounts">
+                                    By clicking this box, you agree to receive SMS from Ramad Pay Inc. You can reply
+                                    "STOP" to opt-out at any time. This is my Privacy Policy. If the box is not clicked,
+                                    the form should not be sent.
+                                </label>
+                            </div>
+                            <div className="join-btn">
+                                <button type="submit">Join Ramad Pay</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    <div className="col-Img">
+                        <img src="assets/company/formooter.png" alt="Join RamadPay" />
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     <section class="takeFrst">

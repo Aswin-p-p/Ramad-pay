@@ -26,12 +26,13 @@ function AboutComponent() {
       <section className="CA-section">
           <div className="container">
             <div className="pageLink">
-              <a href="">Home | Company | <span>Partnership</span></a>
+              <a href="">Home | Company | <span>About Us</span></a>
             </div>
         </div>
       </section>
       <section className="abt-section">
           <div className="container" data-aos="fade-in" data-aos-duration="1000">
+            
             <p>Ramad Pay Inc, formerly known as Kaah Express F.S. Inc., was incorporated in 2001 in Minneapolis, Minnesota as a Money Service Business (MSB). Since its founding, the company has evolved and expanded its services from the state of Minnesota to over 16 US states including California and Texas.</p>
 
              <p> Ramad Pay provides international money transfer services to US immigrants who want to send money to their loved ones in over 120 countries.</p>
@@ -43,6 +44,9 @@ function AboutComponent() {
 
       <section className="founders-sec">
           <div className="container">
+            <h2>
+              Executive Leadership
+            </h2>
               <div className="row ">
                 <div className="col-md-4" data-aos="fade-right" data-aos-duration="1000">
                   <div className="foundersImg ">

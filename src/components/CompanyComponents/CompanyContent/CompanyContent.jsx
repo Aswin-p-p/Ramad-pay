@@ -18,7 +18,7 @@ function CompanyContent() {
                             Welcome to RamadPay, your trusted partner for seamless and secure cross-border financial solutions. At RamadPay, we’re committed to simplifying international transactions, empowering individuals and businesses to send and receive money with confidence.
                         </p>
                         <div className="readmore-btn" data-aos="fade-right" data-aos-duration="1000">
-                            <a href="prodcuts" aria-label="Read more about RamadPay">Read More</a>
+                            <a href="/Teams" aria-label="Read more about RamadPay">Read More</a>
                         </div>
                     </div>
 

@@ -4,6 +4,14 @@ import Countries from '../HomeComponents/Countries/Countries'
 import PageLink from '../PageLinks/PageLink'
 import PageForm from '../PageForm/PageForm'
 function GlobelPayment() {
+  const handleSmoothScroll = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+
+    const pageFormSection = document.getElementById('pageFormSection');
+    if (pageFormSection) {
+      pageFormSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll effect
+    }
+  };
   return (
 <>
 <main>
@@ -43,7 +51,7 @@ function GlobelPayment() {
                                         Joining Ramad Pay’s agent network in the U.S. is a great way to provide quality service while participating in this exciting growth and a generous commission.
                                       </p>
                                       <div className="primeBtn">
-                                        <a href="">Get Started</a>
+                                        <a href="" onClick={handleSmoothScroll}>Get Started</a>
                                       </div>
                                     </div>
                                 </div>
@@ -113,7 +121,8 @@ function GlobelPayment() {
                   <div className="whyRmdCont">
                     <h3>Transparent Fees</h3>
                     <p>
-                        Transparent FeesWe're committed to transparency. Our fee structures are straightforward and easily accessible.
+                    We're committed to transparency. Our
+                     fee structures are straightforward and easily accessible.
                     </p>
                   </div>
                 </div>
@@ -220,7 +229,9 @@ function GlobelPayment() {
     </div>
 
     
- <PageForm/>
+    <section id="pageFormSection">
+          <PageForm />
+        </section>
 
     </main>
 </>

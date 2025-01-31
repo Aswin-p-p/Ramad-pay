@@ -137,3 +137,9 @@ align-items: center;
       font-size: 30px;
     }
   }
+
+  .founders-sec h2{
+    text-align: center;
+    font-size: 38px;
+    padding-bottom: 30px;
+  }
