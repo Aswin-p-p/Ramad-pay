@@ -86,9 +86,9 @@ function Feature() {
                 </div>
                 <h4>Global Reach</h4>
                 <p>
-                  Our FastTrack Remittance Package covers a wide range of
-                  countries, ensuring that your money can reach across borders
-                  effortlessly.
+                We understand that distances shouldn’t limit your ability
+                 to support those you care about. Our FastTrack Remittance
+                 Package covers a wide range of countries, ensuring that your money can reach across borders effortlessly.
                 </p>
               </div>
               <div className="rmd-slider">

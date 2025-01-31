@@ -55,7 +55,7 @@ function Header() {
               <div className="mainMenu">
       <ul className="mainUl">
         
-        <li><a href="/prodcuts">Product</a></li>
+        <li><a href="/products">Product</a></li>
         <li className={`hasSub ${openSubMenu === 0 ? 'open' : ''}`}>
           <a href="/service" >
             Services <span className="dropdown-arrow" onClick={(e) => { e.preventDefault(); toggleSubMenu(0); }}></span>

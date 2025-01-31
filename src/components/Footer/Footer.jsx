@@ -31,6 +31,7 @@ function Footer() {
                                 <div className="FtrService Company">
                                     <ul>
                                         <li><a href="/company">Company</a></li>
+                                        <li><a href="/aboutus">About us</a></li>
                                         <li><a href="/Teams">Team</a></li>
                                         <li><a href="/career">Careers</a></li>
                                         <li><a href="/Compliance">Compliance</a></li>

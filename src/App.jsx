@@ -71,7 +71,7 @@ function App() {
         <Route path="/Compliance" element={<Compliance/>} />
         <Route path="/agent" element={<Agent/>} />
         <Route path="/p2premittance" element={<P2pRemittance/>} />
-        <Route path="/prodcuts" element={<ProductComponent/>} />
+        <Route path="/products" element={<ProductComponent/>} />
         <Route path="/minneapolis" element={<Minneapolis/>} />
         <Route path="/ngo" element={<NgoComponent/>} />
         <Route path="/globalpayment" element={<GlobelPayment/>} />
