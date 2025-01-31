@@ -136,7 +136,7 @@
   }
   
   .whyChoseContain{
-    background-image: url('assets/serviceimg/whybg.jpg');
+    background-image: url('../../../public/assets/serviceimg/whybg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 18px;
