@@ -153,8 +153,7 @@ function Compliance() {
     <div className="container">
          <div className="Com-row">
                   <div className="com-head">
-                    <h3>Our Approach to AML/CFT 
-                      Compliance</h3>
+                    <h3>Effective Reporting and Transparency</h3>
                   </div>
                 <div className="rmd-complaince" data-aos="fade-right" data-aos-duration="1000">
        

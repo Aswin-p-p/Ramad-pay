@@ -142,7 +142,7 @@ function StCloud() {
                                 <h3>P2P Remittance 
                                     Services</h3>
                                     <p>
-                                        Minneapolis to Anywhere: Send Money with Speed and Security
+                                    Your St. Cloud Gateway for Fast International Money Transfers
                                     </p>
                             </div>
                         </div>
@@ -156,8 +156,7 @@ function StCloud() {
                                 <h3>Support for
                                     NGOs</h3>
                                     <p>
-                                        Empower Minneapolis NGOs: Facilitating Global Aid with Precision
-                                    </p>
+                                    Enhancing St. Cloud’s NGO Impact with Streamlined Financial Solutions                                    </p>
                             </div>
                         </div>
                     </div>
@@ -171,8 +170,7 @@ function StCloud() {
                                 <h3>Digital Payments
                                     for B2B</h3>
                                     <p>
-                                        Minneapolis Businesses Thrive with Our Digital Payment Solutions    
-                                    </p>
+                                    Digital Payment Mastery for St. Cloud Businesses                                    </p>
                             </div>
                         </div>
                     </div>
@@ -185,8 +183,7 @@ function StCloud() {
                                 <h3>Customized 
                                     Ramad Pay App</h3>
                                     <p>
-                                        Minneapolis Goes Digital: Your Banking Experience, Redefined
-                                    </p>
+                                    St. Cloud Goes Digital: The Future of Banking is Here                                    </p>
                             </div>
                         </div>
                     </div>
@@ -200,8 +197,7 @@ function StCloud() {
                                 <h3>Global Payments 
                                     Agency</h3>
                                     <p>
-                                        Expand Your Minneapolis Business Globally with Our Payment Expertise
-                                    </p>
+                                    St. Cloud Businesses: Expand Your Reach with Global Payment Solutions                                    </p>
                             </div>
                         </div>
                     </div>

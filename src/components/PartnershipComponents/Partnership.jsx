@@ -80,12 +80,10 @@ function Partnership() {
                   <div className="prtnDesc">
                     <h3>Global Payment Aggregators</h3>
                     <p>
-                      Ramad Pay has built a diverse partner ecosystem to advance our mission of providing fast, low-cost cross-border payments globally. We leverage partnerships with global remittance aggregators, mobile money operators, e-commerce platforms, fintech innovators, and NGOs. These collaborations maximize our reach, capabilities, and impact across sectors.
-  
+                    Partnerships with leading global payment aggregators enable us to expand our cross border reach by connecting to platforms with millions of users worldwide. This allows our customers to instantly send funds to recipients with accounts on these services across 200+ markets.  
                     </p>
                     <p>
-                      Our platform makes it easy for partners to integrate and innovate with us. This partner ecosystem strategy expands our services and merchant network to achieve our vision of delivering financial services to underserved communities worldwide. We’ll continue expanding partnerships to solve global payment challenges.
-                    </p>
+                    Account holders can also cash out to our e-wallet or bank accounts in 90+ countries. Merchants accepting these networks can easily enable our service for cross-border payments. Interoperability improves convenience and access for end users by enabling seamless movement of money between different payment ecosystems, benefitting all parties.                    </p>
                   </div>
                 </div>
               </div>

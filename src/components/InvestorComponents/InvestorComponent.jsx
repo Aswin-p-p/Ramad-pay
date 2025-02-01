@@ -23,7 +23,7 @@ function InvestorComponent() {
       <section className="CA-section">
           <div className="container">
             <div className="pageLink">
-              <a href="">Home | Company | <span>Investors</span></a>
+              <a href="">Home | Company | <span>Investor</span></a>
             </div>
         </div>
       </section>

@@ -144,7 +144,7 @@ function StPaul() {
                                 <h3>P2P Remittance 
                                     Services</h3>
                                     <p>
-                                        Minneapolis to Anywhere: Send Money with Speed and Security
+                                    St. Paul’s Fast Track to Worldwide Money Transfers
                                     </p>
                             </div>
                         </div>
@@ -173,7 +173,7 @@ function StPaul() {
                                 <h3>Digital Payments
                                     for B2B</h3>
                                     <p>
-                                        Minneapolis Businesses Thrive with Our Digital Payment Solutions    
+                                    Revolutionize Your St. Paul Business with Digital Payment Innovations  
                                     </p>
                             </div>
                         </div>
@@ -187,7 +187,7 @@ function StPaul() {
                                 <h3>Customized 
                                     Ramad Pay App</h3>
                                     <p>
-                                        Minneapolis Goes Digital: Your Banking Experience, Redefined
+                                    St. Paul’s Choice for a Smarter Banking Experience
                                     </p>
                             </div>
                         </div>
@@ -202,7 +202,7 @@ function StPaul() {
                                 <h3>Global Payments 
                                     Agency</h3>
                                     <p>
-                                        Expand Your Minneapolis Business Globally with Our Payment Expertise
+                                    Elevating St. Paul Businesses in the Global Payment Arena
                                     </p>
                             </div>
                         </div>

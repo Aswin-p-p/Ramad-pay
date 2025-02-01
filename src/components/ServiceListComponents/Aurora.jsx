@@ -142,7 +142,7 @@ function Aurora() {
                               <h3>P2P Remittance 
                                   Services</h3>
                                   <p>
-                                      Minneapolis to Anywhere: Send Money with Speed and Security
+                                  Connecting Aurora to the World with Swift Money Transfers
                                   </p>
                           </div>
                       </div>
@@ -156,8 +156,7 @@ function Aurora() {
                               <h3>Support for
                                   NGOs</h3>
                                   <p>
-                                      Empower Minneapolis NGOs: Facilitating Global Aid with Precision
-                                  </p>
+                                  Strengthening Aurora’s NGOs with Streamlined Financial Tools                                  </p>
                           </div>
                       </div>
                   </div>
@@ -171,8 +170,7 @@ function Aurora() {
                               <h3>Digital Payments
                                   for B2B</h3>
                                   <p>
-                                      Minneapolis Businesses Thrive with Our Digital Payment Solutions    
-                                  </p>
+                                  Aurora’s Business World: Embracing Digital Payment Technologies                                  </p>
                           </div>
                       </div>
                   </div>
@@ -185,8 +183,7 @@ function Aurora() {
                               <h3>Customized 
                                   Ramad Pay App</h3>
                                   <p>
-                                      Minneapolis Goes Digital: Your Banking Experience, Redefined
-                                  </p>
+                                  Aurora: Experience the Future of Banking Today                                  </p>
                           </div>
                       </div>
                   </div>
@@ -200,8 +197,7 @@ function Aurora() {
                               <h3>Global Payments 
                                   Agency</h3>
                                   <p>
-                                      Expand Your Minneapolis Business Globally with Our Payment Expertise
-                                  </p>
+                                  Expand Your Aurora Business’s Global Footprint with Our Solutions                                  </p>
                           </div>
                       </div>
                   </div>

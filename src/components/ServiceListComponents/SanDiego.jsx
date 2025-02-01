@@ -142,7 +142,7 @@ function SanDiego() {
                                 <h3>P2P Remittance 
                                     Services</h3>
                                     <p>
-                                        Minneapolis to Anywhere: Send Money with Speed and Security
+                                    Your San Diego Gateway for Fast International Money Transfers
                                     </p>
                             </div>
                         </div>
@@ -156,7 +156,7 @@ function SanDiego() {
                                 <h3>Support for
                                     NGOs</h3>
                                     <p>
-                                        Empower Minneapolis NGOs: Facilitating Global Aid with Precision
+                                    Enhancing San Diego’s NGO Impact with Streamlined Financial Solutions
                                     </p>
                             </div>
                         </div>
@@ -171,7 +171,7 @@ function SanDiego() {
                                 <h3>Digital Payments
                                     for B2B</h3>
                                     <p>
-                                        Minneapolis Businesses Thrive with Our Digital Payment Solutions    
+                                    Digital Payment Mastery for San Diego Businesses 
                                     </p>
                             </div>
                         </div>
@@ -185,7 +185,7 @@ function SanDiego() {
                                 <h3>Customized 
                                     Ramad Pay App</h3>
                                     <p>
-                                        Minneapolis Goes Digital: Your Banking Experience, Redefined
+                                    San Diego Goes Digital: The Future of Banking is Here
                                     </p>
                             </div>
                         </div>
@@ -200,7 +200,7 @@ function SanDiego() {
                                 <h3>Global Payments 
                                     Agency</h3>
                                     <p>
-                                        Expand Your Minneapolis Business Globally with Our Payment Expertise
+                                    San Diego Businesses: Expand Your Reach with Global Payment Solutions
                                     </p>
                             </div>
                         </div>

@@ -62,7 +62,7 @@ function App() {
         <Route path="/aboutus" element={<AboutComponent/>} />
         <Route path="/blog" element={<Blogcomponent/>} />
         <Route path="/b2b" element={<B2B/>} />
-        <Route path="/Investor" element={<InvestorComponent/>} />
+        <Route path="/investor" element={<InvestorComponent/>} />
         <Route path="/partnership" element={<Partnership/>} />
         <Route path="/Teams" element={<TeamComponents/>} />
         <Route path="/Top-5-Benefits-of-Using-Text2Pay" element={<Blog_in_Components/>} />

@@ -143,8 +143,7 @@ function Columbus() {
                               <h3>P2P Remittance 
                                   Services</h3>
                                   <p>
-                                      Minneapolis to Anywhere: Send Money with Speed and Security
-                                  </p>
+                                  Columbus’ Gateway to Fast and Secure Global Money Transfers                                  </p>
                           </div>
                       </div>
                   </div>
@@ -157,8 +156,7 @@ function Columbus() {
                               <h3>Support for
                                   NGOs</h3>
                                   <p>
-                                      Empower Minneapolis NGOs: Facilitating Global Aid with Precision
-                                  </p>
+                                  Empower Columbus’ NGOs with Effective Financial Solutions                                  </p>
                           </div>
                       </div>
                   </div>
@@ -172,8 +170,7 @@ function Columbus() {
                               <h3>Digital Payments
                                   for B2B</h3>
                                   <p>
-                                      Minneapolis Businesses Thrive with Our Digital Payment Solutions    
-                                  </p>
+                                  Innovative Payment Solutions for Columbus Businesses                                  </p>
                           </div>
                       </div>
                   </div>
@@ -186,8 +183,7 @@ function Columbus() {
                               <h3>Customized 
                                   Ramad Pay App</h3>
                                   <p>
-                                      Minneapolis Goes Digital: Your Banking Experience, Redefined
-                                  </p>
+                                  Redefining Digital Banking in Columbus                                  </p>
                           </div>
                       </div>
                   </div>
@@ -201,8 +197,7 @@ function Columbus() {
                               <h3>Global Payments 
                                   Agency</h3>
                                   <p>
-                                      Expand Your Minneapolis Business Globally with Our Payment Expertise
-                                  </p>
+                                  Columbus Businesses, Go Global with Our Payment Solutions                                  </p>
                           </div>
                       </div>
                   </div>

@@ -34,8 +34,7 @@ function ServiceArea() {
               With Ramad Pay, you're always connected to the best in financial technology, no matter where you are.
             </h2>
             <p>
-              Through strategic partnerships, we’re able to enhance our services, expand our reach, and provide even greater value to our customers. Explore our diverse partnerships and alliances that drive our mission forward.
-            </p>
+            Our services span across various regions, offering convenient, secure, and innovative payment options tailored to meet the unique needs of each area.            </p>
           </div>
           
           <div className="mapContBlk">
