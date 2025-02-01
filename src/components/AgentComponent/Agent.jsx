@@ -280,15 +280,15 @@ function Agent() {
         </section>
 
 
-    <section class="takeFrst">
-        <div class="container">
-            <div class="frstStep">
-              <div class="lauch-head ">
+    <section className="takeFrst">
+        <div className="container">
+            <div className="frstStep">
+              <div className="lauch-head ">
                 <h3>Take Your First Step Towards</h3>
                 <p>Becoming A Ramad Pay Agent</p>
             </div>
             </div>
-            <div class="FstStp-cnt">
+            <div className="FstStp-cnt">
                 <h4>Start Earning Commissions and Making a Difference
                 </h4>
                 <p>Now is the time to take action and join the growing Ramad Pay Agent network. With competitive commissions, strong customer support, and innovative services like Text2Pay, you’ll have everything you need to succeed. Apply today and become part of a financial revolution that helps customers transfer money securely, quickly, and easily.</p>

@@ -11,6 +11,15 @@ function StPaul() {
         dateInputRef.current.showPicker();
       }
     };
+
+    const handleSmoothScroll = (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+
+        const pageFormSection = document.getElementById('pageFormSection');
+        if (pageFormSection) {
+            pageFormSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll effect
+        }
+    };
   return (
     <>
     
@@ -51,7 +60,7 @@ function StPaul() {
                     </div>
                     <div className="serInBtn">
                         <div>
-                            <a href="">Learn More</a>
+                            <a href="" onClick={handleSmoothScroll}>Learn More</a>
                         </div>
                         <div>
                             <a href="">
@@ -132,7 +141,7 @@ function StPaul() {
 
 
 
-        <section className="serviceAreaInFeat">
+        <section className="serviceAreaInFeat" id="pageFormSection">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">

@@ -12,6 +12,15 @@ function Minneapolis() {
     }
   };
 
+  const handleSmoothScroll = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+
+    const pageFormSection = document.getElementById('pageFormSection');
+    if (pageFormSection) {
+        pageFormSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll effect
+    }
+};
+
   return (
     <>
 
@@ -53,7 +62,7 @@ function Minneapolis() {
                     </div>
                     <div className="serInBtn">
                         <div>
-                            <a href="">Learn More</a>
+                            <a href="" onClick={handleSmoothScroll}>Learn More</a>
                         </div>
                         <div>
                             <a href="">
@@ -135,7 +144,7 @@ function Minneapolis() {
 
 
 
-        <section className="serviceAreaInFeat">
+        <section className="serviceAreaInFeat" id="pageFormSection">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
