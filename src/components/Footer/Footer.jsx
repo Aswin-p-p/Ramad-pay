@@ -36,7 +36,7 @@ function Footer() {
                                         <li><a href="/career">Careers</a></li>
                                         <li><a href="/Compliance">Compliance</a></li>
                                         <li><a href="/partnership">Partnerships</a></li>
-                                        <li><a href="/Investor">Investor Relations</a></li>
+                                        <li><a href="/investor-relations">Investor Relations</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -112,6 +112,10 @@ function Footer() {
                         <div>
                             <a href=""><i className="fa-brands fa-youtube"></i></a>
                         </div>
+                        <div>
+                              <a href=""><i className="fa-brands fa-google"></i></a>
+                            </div>
+
                     </div>
                 </div>
             </footer>

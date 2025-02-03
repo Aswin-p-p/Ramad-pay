@@ -72,7 +72,13 @@ function AboutComponent() {
                   </div>
                   <div className="name">
                     <h3>Hussein D. Hashi - CPA</h3>
-                    <div className="linkedin"><a href=""><i className="fa-brands fa-linkedin-in"></i></a> </div>
+
+                    <div className="linkedin">
+  <a href="https://www.linkedin.com/your-profile" target="_blank" rel="noopener noreferrer">
+    <i className="fa-brands fa-linkedin-in"></i>
+  </a> 
+</div>
+
                   </div>
                 </div>
               </div>

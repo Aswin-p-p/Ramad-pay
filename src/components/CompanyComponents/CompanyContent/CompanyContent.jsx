@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './CompanyContent.css';
 import PageLinks from '../../PageLinks/PageLink'
@@ -64,7 +63,7 @@ function CompanyContent() {
                                                 <div></div>
                                                 <p>We value the trust and support of our investors, and this page serves as a hub for information about our financial performance, strategy, and initiatives. Here, you’ll find the latest updates on our company’s progress and how we’re driving growth and value.</p>
 
-                                                <div className="moreBtn"><a href="/Investor">Explore More</a></div>
+                                                <div className="moreBtn"><a href="/investor-relations">Explore More</a></div>
                                             </div>
                                         </div>
                                         <div className="abtImg col-md-6">

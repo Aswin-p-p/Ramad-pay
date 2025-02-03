@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useEffect } from 'react' 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
@@ -62,7 +61,7 @@ function App() {
         <Route path="/aboutus" element={<AboutComponent/>} />
         <Route path="/blog" element={<Blogcomponent/>} />
         <Route path="/b2b" element={<B2B/>} />
-        <Route path="/investor" element={<InvestorComponent/>} />
+        <Route path="/investor-relations" element={<InvestorComponent/>} />
         <Route path="/partnership" element={<Partnership/>} />
         <Route path="/Teams" element={<TeamComponents/>} />
         <Route path="/Top-5-Benefits-of-Using-Text2Pay" element={<Blog_in_Components/>} />

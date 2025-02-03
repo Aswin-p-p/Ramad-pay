@@ -79,7 +79,7 @@ function Header() {
             <li><a href="/career">Careers</a></li>
             <li><a href="/Compliance">Compliance</a></li>
             <li><a href="/partnership">Partnerships</a></li>
-            <li><a href="/Investor">Investor Relations</a></li>
+            <li><a href="/investor-relations">Investor Relations</a></li>
 
             <li className={`serv-SubList ${openServiceArea ? 'open' : ''}`}>
   <a href="/servicearea">

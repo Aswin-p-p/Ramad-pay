@@ -8,11 +8,14 @@ function InvestorComponent() {
     <main>
       <section className=" commonHro invstHro">
         <div className="container">
-          <div className="cmpny-content">
+        <div className="cmpny-content">
+          <div className="commSpn">Shaping the</div> 
             <h1 data-aos="fade-right" data-aos-duration="1000">
-              <span className="commSpn">Shaping the  </span> 
-              Future Together
+            Future Together
             </h1>   
+            <p data-aos="fade-right" data-aos-duration="1000">Enabling immigrants to achieve their dreams by delivering financial solutions they can rely on.
+              </p>  
+
         </div>
 
         <div className="commHdImg invBgImg">

@@ -29,15 +29,15 @@ function Countries() {
       name: 'Burkina Faso', flag: 'assets/CountryFlag/burkina.jpg', hoverData: {
         payoutType: 'Wallets2; Banks',
         coverage: 'All Banks2',
-        businessType: 'P2P2',
+        businessType: 'P2P',
       }
     },
     {
       name: 'Burundi', flag: 'assets/CountryFlag/burundi.jpg',
       hoverData: {
-        payoutType: 'Wallets; Banks3',
-        coverage: 'All Banks3',
-        businessType: 'P2P3',
+        payoutType: 'Wallets',
+        coverage: 'Ecocash',
+        businessType: 'P2P',
       }
     },
     {
@@ -45,67 +45,43 @@ function Countries() {
       hoverData: {
         payoutType: 'Wallets; Banks4',
         coverage: 'All Banks4',
-        businessType: 'P2P4',
+        businessType: 'P2P',
       }
     },
     {
       name: 'C.A Republic', flag: 'assets/CountryFlag/CA.jpg',
       hoverData: {
-        payoutType: 'Wallets; Banks5',
-        coverage: 'All Banks5',
-        businessType: 'P2P5',
+        payoutType: 'Wallets',
+        coverage: 'Orange',
+        businessType: 'P2P',
       }
     },
     {
-      name: 'Chad', flag: 'assets/CountryFlag/benin.jpg',
+      name: 'Chad', flag: 'assets/CountryFlag/chad.jpg',
       hoverData: {
-        payoutType: 'Wallets; Banks6',
-        coverage: 'All Banks6',
-        businessType: 'P2P6',
+        payoutType: 'Wallets',
+        coverage: 'Airtel; Moov',
+        businessType: 'P2P',
       }
     },
     {
-      name: 'DRC', flag: 'assets/CountryFlag/burkina.jpg',
+      name: 'Congo B', flag: 'assets/CountryFlag/republic-of-the-congo.png',
       hoverData: {
-        payoutType: 'Wallets; Banks7',
-        coverage: 'All Banks7',
-        businessType: 'P2P7',
+        payoutType: 'Wallets',
+        coverage: 'Airtel; MTN',
+        businessType: 'P2P',
       }
     },
     {
-      name: 'Egypt', flag: 'assets/CountryFlag/burundi.jpg',
+      name: 'DRC', flag: 'assets/CountryFlag/DRC.jpg',
       hoverData: {
-        payoutType: 'Wallets; Banks8',
-        coverage: 'All Banks8',
-        businessType: 'P2P8',
+        payoutType: 'Wallets',
+        coverage: 'Airtel',
+        businessType: 'P2P',
       }
     },
     {
-      name: 'Ethopia', flag: 'assets/CountryFlag/cameroon.jpg',
-      hoverData: {
-        payoutType: 'Wallets; Banks9',
-        coverage: 'All Banks9',
-        businessType: 'P2P9',
-      }
-    },
-    {
-      name: 'Gabon', flag: 'assets/CountryFlag/CA.jpg',
-      hoverData: {
-        payoutType: 'Wallets; Banks10',
-        coverage: 'All Banks10',
-        businessType: 'P2P10',
-      }
-    },
-    { name: 'Guinea Bissau', flag: 'assets/CountryFlag/benin.jpg' },
-    { name: 'Guinea Conakry', flag: 'assets/CountryFlag/burkina.jpg' },
-    { name: 'Ivory Coast', flag: 'assets/CountryFlag/burundi.jpg' },
-    { name: 'Kenya', flag: 'assets/CountryFlag/cameroon.jpg' },
-    { name: 'Malawi', flag: 'assets/CountryFlag/CA.jpg' },
-  ];
-  const usacountries = [
-    {
-      name: 'Benin',
-      flag: 'assets/CountryFlag/benin.jpg',
+      name: 'Egypt', flag: 'assets/CountryFlag/egypt.jpg',
       hoverData: {
         payoutType: 'Wallets; Banks',
         coverage: 'All Banks',
@@ -113,82 +89,504 @@ function Countries() {
       }
     },
     {
-      name: 'Burkina Faso', flag: 'assets/CountryFlag/burkina.jpg', hoverData: {
+      name: 'Ethopia', flag: 'assets/CountryFlag/ethopya.jpg',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Gabon', flag: 'assets/CountryFlag/gabon.jpg',
+      hoverData: {
+        payoutType: 'Wallets; Banks',
+        coverage: 'Airtel, Moov; All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Ghana', flag: 'assets/CountryFlag/ghana.png',
+      hoverData: {
+        payoutType: 'Wallets; Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Guinea Bissau', flag: 'assets/CountryFlag/Guinea Bissau.png',
+      hoverData: {
+        payoutType: 'Wallets',
+        coverage: 'MTN',
+        businessType: 'P2P',
+      }
+    },
+    { 
+      name: 'Guinea Conakry', flag: 'assets/CountryFlag/guinea.jpg',
+      hoverData: {
+        payoutType: 'Wallets',
+        coverage: 'MTN',
+        businessType: 'P2P',
+      }
+      
+     },
+  
+  
+
+
+    { 
+      name: 'Ivory Coast', flag: 'assets/CountryFlag/ivory.jpg',
+      hoverData: {
+        payoutType: 'Wallets; Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    
+    },
+    { name: 'Kenya', flag: 'assets/CountryFlag/kenya.jpg',
+      hoverData: {
+        payoutType: 'Banks; Wallets',
+        coverage: 'All Banks; Airtel, M-Pesa',
+        businessType: 'P2P',
+      }
+
+     },
+     { name: 'Liberia', flag: 'assets/CountryFlag/liberia.png',
+      hoverData: {
+        payoutType: 'Wallets; Banks',
+        coverage: 'MTN; UBA Banks',
+        businessType: 'P2P',
+      }
+
+     },
+    { 
+      name: 'Malawi', flag: 'assets/CountryFlag/malawi.jpg',
+      hoverData: {
+        payoutType: 'Banks; Wallets',
+        coverage: 'All Banks; Airtel',
+        businessType: 'P2P',
+      }
+
+     },
+     { 
+      name: 'Mali', flag: 'assets/CountryFlag/mali.jpg',
+      hoverData: {
+        payoutType: 'Wallets',
+        coverage: 'Orange, Malitel',
+        businessType: 'P2P',
+      }
+
+     },
+     { 
+      name: 'Mozambique', flag: 'assets/CountryFlag/mozambique.jpg',
+      hoverData: {
+        payoutType: 'Wallets',
+        coverage: 'M-Pesa, M-kesh',
+        businessType: 'P2P',
+      }
+
+     },
+     { 
+      name: 'Nigeria', flag: 'assets/CountryFlag/nigeria.jpg',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+
+     },
+     { 
+      name: 'Rwanda', flag: 'assets/CountryFlag/rwanda.jpg',
+      hoverData: {
+        payoutType: 'Wallets; Banks',
+        coverage: 'MTN, Airtel-Tigo; All Banks',
+        businessType: 'P2P',
+      }
+
+     },
+     { 
+      name: 'Senegal', flag: 'assets/CountryFlag/senegal.jpg',
+      hoverData: {
+        payoutType: 'Wallets',
+        coverage: 'All Banks; Orange, Wave, Tigo, Wizall',
+        businessType: 'P2P',
+      }
+
+     },
+     { 
+      name: 'Sierra Leone', flag: 'assets/CountryFlag/sierra.jpg',
+      hoverData: {
+        payoutType: 'Wallets',
+        coverage: 'Orange',
+        businessType: 'P2P',
+      }
+
+     },
+     { 
+      name: 'Somalia', flag: 'assets/CountryFlag/somalia.jpg',
+      hoverData: {
+        payoutType: 'Banks; Wallets',
+        coverage: 'Banks; Zaad, EVC-Plus, Premier Wallet, Sahal',
+        businessType: 'P2P',
+      }
+
+     },
+     { 
+      name: 'South Africa', flag: 'assets/CountryFlag/S-africa.jpg',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: ' All Banks',
+        businessType: 'P2P',
+      }
+
+     }, 
+     { 
+      name: 'South Sudan', flag: 'assets/CountryFlag/S-sudan.jpg',
+      hoverData: {
+        payoutType: 'Wallets',
+        coverage: 'm-Gurush',
+        businessType: 'P2P',
+      }
+
+     }, 
+
+
+     { 
+      name: 'Tanzania', flag: 'assets/CountryFlag/tanzania.jpg',
+      hoverData: {
+        payoutType: 'Banks; Wallets',
+        coverage: 'All Banks; Airtel, Vodacom, Tigo',
+        businessType: 'P2P',
+      }
+
+     },
+     { 
+      name: 'Uganda', flag: 'assets/CountryFlag/uganda.jpg',
+      hoverData: {
+        payoutType: 'Banks; Wallets',
+        coverage: 'All Banks; MTN, Airtel',
+        businessType: 'P2P',
+      }
+
+     },
+     { 
+      name: 'Zambia', flag: 'assets/CountryFlag/zambia.jpg',
+      hoverData: {
+        payoutType: 'Wallets',
+        coverage: 'MTN, Airtel',
+        businessType: 'P2P',
+      }
+
+     },
+  ];
+
+
+
+
+
+  const usacountries = [
+    {
+      name: 'Canada',
+      flag: 'assets/CountryFlag/canada.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Bolivia', flag: 'assets/CountryFlag/bolivia.png', hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Brazil', flag: 'assets/CountryFlag/brazil.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Colombia', flag: 'assets/CountryFlag/colombia.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Haiti', flag: 'assets/CountryFlag/Haiti.png',
+      hoverData: {
+        payoutType: 'Wallets',
+        coverage: 'Digicel',
+        businessType: 'P2P5',
+      }
+    },
+    {
+      name: 'Mexico', flag: 'assets/CountryFlag/mexico.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Paraguay', flag: 'assets/CountryFlag/paraguay.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Peru', flag: 'assets/CountryFlag/peru.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Uruguay', flag: 'assets/CountryFlag/uruguay.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P9',
+      }
+    },
+    {
+      name: '', flag: '',
+     
+    },
+ 
+
+  ];
+
+
+
+
+  const Aspacountries = [
+    {
+      name: 'Cambodia',
+      flag: 'assets/CountryFlag/cambodia.png',
+      hoverData: {
+        payoutType: 'Wallets',
+        coverage: 'Wings',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'China', flag: 'assets/CountryFlag/china.png', hoverData: {
+        payoutType: 'Wallets; Banks',
+        coverage: ' AliPay; All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Hong Kong', flag: 'assets/CountryFlag/hong-kong.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'India', flag: 'assets/CountryFlag/india.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P4',
+      }
+    },
+    {
+      name: 'Malaysia', flag: 'assets/CountryFlag/malaysia.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P5',
+      }
+    },
+    {
+      name: 'Nepal', flag: 'assets/CountryFlag/nepal.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Pakistan', flag: 'assets/CountryFlag/pakistan.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Philippines', flag: 'assets/CountryFlag/philippens.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: '', flag: '',
+     
+    },
+    {
+      name: '', flag: '',
+     
+    },
+
+  ];
+
+
+  const europe = [
+    {
+      name: 'Belgium',
+      flag: 'assets/CountryFlag/belgium.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Cyprus', flag: 'assets/CountryFlag/cyprus.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Finland', flag: 'assets/CountryFlag/finland.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'France', flag: 'assets/CountryFlag/france.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Germany', flag: 'assets/CountryFlag/germany.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Greece', flag: 'assets/CountryFlag/greece.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Italy', flag: 'assets/CountryFlag/italy.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Malta', flag: 'assets/CountryFlag/malta.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Netherlands', flag: 'assets/CountryFlag/netherlands.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Spain', flag: 'assets/CountryFlag/spain.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Sweden', flag: 'assets/CountryFlag/sweden.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'Turkey', flag: 'assets/CountryFlag/turkey.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'United Kingdom', flag: 'assets/CountryFlag/united-kingdom.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+
+    {
+      name: '', flag: '',
+     
+    },
+    {
+      name: '', flag: '',
+     
+    },
+   
+  ];
+
+
+  const Gcc = [
+    {
+      name: 'Bahrain', flag: 'assets/CountryFlag/bahrain.png',
+      hoverData: {
+        payoutType: 'Banks',
+        coverage: 'All Banks',
+        businessType: 'P2P',
+      }
+    },
+    {
+      name: 'UAE', flag: 'assets/CountryFlag/united-arab-emirates.png',
+       hoverData: {
         payoutType: 'Wallets2; Banks',
         coverage: 'All Banks2',
         businessType: 'P2P2',
       }
     },
-    {
-      name: 'Burundi', flag: 'assets/CountryFlag/burundi.jpg',
-      hoverData: {
-        payoutType: 'Wallets; Banks3',
-        coverage: 'All Banks3',
-        businessType: 'P2P3',
-      }
-    },
-    {
-      name: 'Cameroon', flag: 'assets/CountryFlag/cameroon.jpg',
-      hoverData: {
-        payoutType: 'Wallets; Banks4',
-        coverage: 'All Banks4',
-        businessType: 'P2P4',
-      }
-    },
-    {
-      name: 'C.A Republic', flag: 'assets/CountryFlag/CA.jpg',
-      hoverData: {
-        payoutType: 'Wallets; Banks5',
-        coverage: 'All Banks5',
-        businessType: 'P2P5',
-      }
-    },
-    {
-      name: 'Chad', flag: 'assets/CountryFlag/benin.jpg',
-      hoverData: {
-        payoutType: 'Wallets; Banks6',
-        coverage: 'All Banks6',
-        businessType: 'P2P6',
-      }
-    },
-    {
-      name: 'DRC', flag: 'assets/CountryFlag/burkina.jpg',
-      hoverData: {
-        payoutType: 'Wallets; Banks7',
-        coverage: 'All Banks7',
-        businessType: 'P2P7',
-      }
-    },
-    {
-      name: 'Egypt', flag: 'assets/CountryFlag/burundi.jpg',
-      hoverData: {
-        payoutType: 'Wallets; Banks8',
-        coverage: 'All Banks8',
-        businessType: 'P2P8',
-      }
-    },
-    {
-      name: 'Ethopia', flag: 'assets/CountryFlag/cameroon.jpg',
-      hoverData: {
-        payoutType: 'Wallets; Banks9',
-        coverage: 'All Banks9',
-        businessType: 'P2P9',
-      }
-    },
-    {
-      name: 'Gabon', flag: 'assets/CountryFlag/CA.jpg',
-      hoverData: {
-        payoutType: 'Wallets; Banks10',
-        coverage: 'All Banks10',
-        businessType: 'P2P10',
-      }
-    },
-    { name: 'Guinea Bissau', flag: 'assets/CountryFlag/benin.jpg' },
-    { name: 'Guinea Conakry', flag: 'assets/CountryFlag/burkina.jpg' },
-    { name: 'Ivory Coast', flag: 'assets/CountryFlag/burundi.jpg' },
-    { name: 'Kenya', flag: 'assets/CountryFlag/cameroon.jpg' },
-    { name: 'Malawi', flag: 'assets/CountryFlag/CA.jpg' },
+   
+
+
+
+  
   ];
+
 
   const chunkArray = (array, size) => {
     const chunks = [];
@@ -321,8 +719,10 @@ function Countries() {
                     </div>
                   ))}
                 </div>
+
+
                 <div className={`tab-content ${activeTab === 2 ? 'activeContent' : ''}`}>
-                {chunkArray(usacountries, 5).map((countryChunk, chunkIndex) => (
+                {chunkArray(Aspacountries, 5).map((countryChunk, chunkIndex) => (
                     <div className="countries-list" key={chunkIndex}>
                       {countryChunk.map((country, index) => (
                         <div
@@ -360,6 +760,91 @@ function Countries() {
                     </div>
                   ))}
                 </div>
+
+
+                <div className={`tab-content ${activeTab === 3 ? 'activeContent' : ''}`}>
+                {chunkArray(europe, 5).map((countryChunk, chunkIndex) => (
+                    <div className="countries-list" key={chunkIndex}>
+                      {countryChunk.map((country, index) => (
+                        <div
+                          className="listing"
+                          key={index}
+                          onMouseEnter={() => setHoveredCountry(country.name)}
+                          onMouseLeave={() => setHoveredCountry(null)}
+                        >
+                          <div className="rmd-country">
+                            <div className="flag-img">
+                              <img src={country.flag} alt={country.name} />
+                            </div>
+                            <div><p>{country.name}</p></div>
+                          </div>
+
+                          {/* Show hover content only for hovered country */}
+                          {hoveredCountry === country.name && country.hoverData && (
+                            <div   className="tabList-hover">
+                              <div className="payment">
+                                <div><img src="assets/CountryFlag/hoverimage/wallet.png" alt="Wallet" /></div>
+                                <div><p>Payout type:</p><p className="bld-txt">{country.hoverData.payoutType}</p></div>
+                              </div>
+                              <div className="payment">
+                                <div><img src="assets/CountryFlag/hoverimage/allBanks.png" alt="All Banks" /></div>
+                                <div><p>Coverage:</p><p className="bld-txt">{country.hoverData.coverage}</p></div>
+                              </div>
+                              <div className="payment">
+                                <div><img src="assets/CountryFlag/hoverimage/bag.png" alt="Business" /></div>
+                                <div><p>Business type:</p><p className="bld-txt">{country.hoverData.businessType}</p></div>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+
+
+                <div className={`tab-content ${activeTab === 4 ? 'activeContent' : ''}`}>
+                {chunkArray(Gcc, 5).map((countryChunk, chunkIndex) => (
+                    <div className="countries-list" key={chunkIndex}>
+                      {countryChunk.map((country, index) => (
+                        <div
+                          className="listing"
+                          key={index}
+                          onMouseEnter={() => setHoveredCountry(country.name)}
+                          onMouseLeave={() => setHoveredCountry(null)}
+                        >
+                          <div className="rmd-country">
+                            <div className="flag-img">
+                              <img src={country.flag} alt={country.name} />
+                            </div>
+                            <div><p>{country.name}</p></div>
+                          </div>
+
+                          {/* Show hover content only for hovered country */}
+                          {hoveredCountry === country.name && country.hoverData && (
+                            <div   className="tabList-hover">
+                              <div className="payment">
+                                <div><img src="assets/CountryFlag/hoverimage/wallet.png" alt="Wallet" /></div>
+                                <div><p>Payout type:</p><p className="bld-txt">{country.hoverData.payoutType}</p></div>
+                              </div>
+                              <div className="payment">
+                                <div><img src="assets/CountryFlag/hoverimage/allBanks.png" alt="All Banks" /></div>
+                                <div><p>Coverage:</p><p className="bld-txt">{country.hoverData.coverage}</p></div>
+                              </div>
+                              <div className="payment">
+                                <div><img src="assets/CountryFlag/hoverimage/bag.png" alt="Business" /></div>
+                                <div><p>Business type:</p><p className="bld-txt">{country.hoverData.businessType}</p></div>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+
+
+
               </div>
             </div>
           </div>
@@ -512,7 +997,63 @@ function Countries() {
 
                 {activeTab === 2 && (
             <div className="subList" style={{ display: "block" }}>
-              <p>APAC content goes here...</p>
+                 {Aspacountries.map((country, index) => (
+                <div
+                  className="listing"
+                  key={index}
+                  onMouseEnter={() => setHoveredCountry(country.name)}
+                  onMouseLeave={() => setHoveredCountry(null)}
+                >
+                  <div className="rmd-country">
+                    <div className="flag-img">
+                      <img src={country.flag} alt={country.name} />
+                    </div>
+                    <div>
+                      <p>{country.name}</p>
+                    </div>
+                  </div>
+                  {hoveredCountry === country.name && country.hoverData && (
+                    <div className="tabList-hover" >
+                      <div className="payment">
+                        <div>
+                          <img
+                            src="assets/CountryFlag/hoverimage/wallet.png"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p>Payout type:</p>
+                          <p className="bld-txt">{country.hoverData.payoutType}</p>
+                        </div>
+                      </div>
+                      <div className="payment">
+                        <div>
+                          <img
+                            src="assets/CountryFlag/hoverimage/allBanks.png"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p>Coverage:</p>
+                          <p className="bld-txt">{country.hoverData.coverage}</p>
+                        </div>
+                      </div>
+                      <div className="payment">
+                        <div>
+                          <img
+                            src="assets/CountryFlag/hoverimage/bag.png"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p>Business type:</p>
+                          <p className="bld-txt">{country.hoverData.businessType}</p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           )}
                 <button
@@ -524,7 +1065,63 @@ function Countries() {
 
                 {activeTab === 3 && (
             <div className="subList" style={{ display: "block" }}>
-              <p>Europe content goes here...</p>
+              {europe.map((country, index) => (
+                <div
+                  className="listing"
+                  key={index}
+                  onMouseEnter={() => setHoveredCountry(country.name)}
+                  onMouseLeave={() => setHoveredCountry(null)}
+                >
+                  <div className="rmd-country">
+                    <div className="flag-img">
+                      <img src={country.flag} alt={country.name} />
+                    </div>
+                    <div>
+                      <p>{country.name}</p>
+                    </div>
+                  </div>
+                  {hoveredCountry === country.name && country.hoverData && (
+                    <div className="tabList-hover" >
+                      <div className="payment">
+                        <div>
+                          <img
+                            src="assets/CountryFlag/hoverimage/wallet.png"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p>Payout type:</p>
+                          <p className="bld-txt">{country.hoverData.payoutType}</p>
+                        </div>
+                      </div>
+                      <div className="payment">
+                        <div>
+                          <img
+                            src="assets/CountryFlag/hoverimage/allBanks.png"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p>Coverage:</p>
+                          <p className="bld-txt">{country.hoverData.coverage}</p>
+                        </div>
+                      </div>
+                      <div className="payment">
+                        <div>
+                          <img
+                            src="assets/CountryFlag/hoverimage/bag.png"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p>Business type:</p>
+                          <p className="bld-txt">{country.hoverData.businessType}</p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           )}
                 <button
@@ -535,7 +1132,63 @@ function Countries() {
                 </button>
                 {activeTab === 4 && (
             <div className="subList" style={{ display: "block" }}>
-              <p>GCC content goes here...</p>
+            {Gcc.map((country, index) => (
+                <div
+                  className="listing"
+                  key={index}
+                  onMouseEnter={() => setHoveredCountry(country.name)}
+                  onMouseLeave={() => setHoveredCountry(null)}
+                >
+                  <div className="rmd-country">
+                    <div className="flag-img">
+                      <img src={country.flag} alt={country.name} />
+                    </div>
+                    <div>
+                      <p>{country.name}</p>
+                    </div>
+                  </div>
+                  {hoveredCountry === country.name && country.hoverData && (
+                    <div className="tabList-hover" >
+                      <div className="payment">
+                        <div>
+                          <img
+                            src="assets/CountryFlag/hoverimage/wallet.png"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p>Payout type:</p>
+                          <p className="bld-txt">{country.hoverData.payoutType}</p>
+                        </div>
+                      </div>
+                      <div className="payment">
+                        <div>
+                          <img
+                            src="assets/CountryFlag/hoverimage/allBanks.png"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p>Coverage:</p>
+                          <p className="bld-txt">{country.hoverData.coverage}</p>
+                        </div>
+                      </div>
+                      <div className="payment">
+                        <div>
+                          <img
+                            src="assets/CountryFlag/hoverimage/bag.png"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <p>Business type:</p>
+                          <p className="bld-txt">{country.hoverData.businessType}</p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           )}
         </div>

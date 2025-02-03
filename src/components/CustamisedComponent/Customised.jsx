@@ -109,7 +109,7 @@ function Customised() {
                   <div className="whyRmdCont">
                     <h3>Transparent Fees</h3>
                     <p>
-                        Transparent FeesWe're committed to transparency. Our fee structures are straightforward and easily accessible.
+                        We're committed to transparency. Our fee structures are straightforward and easily accessible.
                     </p>
                   </div>
                 </div>

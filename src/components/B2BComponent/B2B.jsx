@@ -62,7 +62,7 @@ function B2B() {
                         Additionally, enhanced financial management through detailed transaction data reporting provides visibility into cash flow and supplier relationships so that you know everything is taken care of securely as your operations evolve over time. With Ramad Pay as an experienced payment industry partner, businesses can focus on growing without worrying about their financial operations being high-performing or built to scale.
                       </p>
   
-                      <div className="moreBtn"><a href="#pageFormSection" onClick={handleSmoothScroll}>Explore More</a></div>
+                      <div className="moreBtn"><a href="#pageFormSection" onClick={handleSmoothScroll}>Get Started</a></div>
                     </div>
                   </div>
                 </div>
