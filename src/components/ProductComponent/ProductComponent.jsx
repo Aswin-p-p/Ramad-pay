@@ -53,7 +53,7 @@ function ProductComponent() {
                 </div>
                 <div className="prCont">
                   <h3>FX Calculator</h3>
-                  <p>Instantly estimate fees and exchange rates. Make informed decisions and send money smartly with our Remittance Calculator.</p>
+                  <p>Quickly estimate fees and exchange rates. Make informed decisions and send money confidently.</p>
                 </div>
                 <div className="prBtn">
                   <a href="">FX Calculator</a>

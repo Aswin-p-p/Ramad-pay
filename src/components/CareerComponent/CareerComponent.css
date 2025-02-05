@@ -325,3 +325,178 @@
   margin-bottom: 0;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custome-field{
+  border: 1px solid #7e7d7d;
+  border-radius: 5px;
+  font-family: var(--aileron);
+}
+#custom-button {
+  padding:12px 10px;
+  color: white;
+  background-color: #067e6f;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#custom-button:hover {
+  background-color: #00b28f;
+}
+
+#custom-text {
+  margin-left: 10px;
+  color: #000;
+  font-weight: 200;
+}
+.file-size{
+  font-family: var(--aileron);
+  font-weight: 300;
+  padding-top: 8px;
+}
+.sub-Btn{
+  background-color: #067e6f;
+  padding: 12px 20px;
+  border-radius: 12px;
+  width: 150px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.sub-Btn a{
+  color: #fff;
+  font-weight: 400;
+}
+.sub-Btn:hover {
+  background-color: #00b28f;
+}
+
+
+
+
+
+
+
+
+.Career-popup {
+  position: fixed;
+  z-index: 22;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  max-width: 700px;
+
+}
+.Career-popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popupCr{
+  display: block;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 2px #ccc;
+  padding: 30px;
+  border-radius: 15px;
+}
+.clsFrm-btn{
+  background-color: #067e6f;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 34px;
+  top: 66px;
+}
+.clsFrm-btn i{
+  color: #000000;
+}
+.label{
+  font-family: var(--aileron);
+  font-weight: 200;
+  padding-bottom: 8px;
+}
+.frm-txt{
+  padding: 6px 0;
+}
+.frm-txt input{
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #7e7d7d;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+}
+
+.custome-field{
+  border: 1px solid #7e7d7d;
+  border-radius: 5px;
+  font-family: var(--aileron);
+}
+#custom-button {
+  padding:12px 10px;
+  color: white;
+  background-color: #067e6f;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#custom-button:hover {
+  background-color: #00b28f;
+}
+
+#custom-text {
+  margin-left: 10px;
+  color: #000;
+  font-weight: 200;
+}
+.file-size{
+  font-family: var(--aileron);
+  font-weight: 300;
+  padding-top: 8px;
+}
+.sub-Btn{
+  background-color: #067e6f;
+  padding: 12px 20px;
+  border-radius: 12px;
+  width: 150px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.sub-Btn a{
+  color: #fff;
+  font-weight: 400;
+}
+.sub-Btn:hover {
+  background-color: #00b28f;
+}

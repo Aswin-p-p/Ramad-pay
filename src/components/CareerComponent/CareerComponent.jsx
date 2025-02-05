@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './CareerComponent.css'
 import PageForm from '../PageForm/PageForm'
 
 function CareerComponent() {
+  const [isFormVisible, setIsFormVisible] = useState(false);
+
+  const [fileName, setFileName] = useState('');
+  const handleFileClick = () => {
+    document.getElementById('real-file').click();  // Trigger file input click
+  };
+  
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    setFileName(file ? file.name : 'No file chosen');
+  };
+
+  const toggleForm = () => {
+    setIsFormVisible((prev) => !prev);
+  };
+  
   return (
   <>
  <main>
@@ -45,7 +61,7 @@ function CareerComponent() {
                     <p>
                       Discover the Distinctive Essence of a Career at RamadPay
                     </p>
-                    <a href="">Appy Now</a>
+                  <div  >  <a onClick={toggleForm}>Appy Now</a></div>
                     </div>
                 </div>
                 <div className="abtImg col-md-12 col-lg-6">
@@ -216,6 +232,53 @@ function CareerComponent() {
 
       <PageForm/>
       </main>
+
+
+
+     
+
+      <section className={`Career-popup ${isFormVisible ? 'show' : ''}`} >
+
+      <div className="container">
+            <div className="popupCr">
+              <div className="clsFrm-btn"   onClick={toggleForm}><i className="fa-solid fa-xmark"></i></div>
+                <form className="pop-form">
+                <div className="frm-txt">
+                  <div className="label">Name</div>
+                  <input type="text"/>
+                </div>
+                <div className="frm-txt">
+                  <div className="label">Email</div>
+                  <input type="text"/>
+                </div>
+                <div className="frm-txt">
+                  <div className="label">Phone</div>
+                  <input type="number"/>
+                </div>
+                <div className="frm-txt">
+  <div className="label">Upload Resume</div>
+  <div className="custome-field">
+    <input 
+      type="file" 
+      id="real-file" 
+      hidden 
+      onChange={handleFileChange} 
+    />
+    <button type="button" id="custom-button" onClick={handleFileClick}>
+      Choose File
+    </button>
+    <span id="custom-text">{fileName || 'No file chosen'}</span>
+  </div>
+  <div className="file-size">Max. file size: 512MB</div>
+</div>
+
+
+                <div className="sub-Btn"><a href="">Submit</a></div>
+                </form>
+
+          </div>
+      </div>
+  </section>
   </>
   )
 }

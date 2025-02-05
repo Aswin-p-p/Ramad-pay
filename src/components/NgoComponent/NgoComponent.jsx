@@ -1,8 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './NgoComponent.css'
 import PageForm from '../PageForm/PageForm'
 
 function NgoComponent() {
+  const [isFormVisible, setIsFormVisible] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+
+  const toggleForm = () => {
+    setIsFormVisible((prev) => !prev);
+  };
+
+  const handleCheckboxChange = (e) => {
+    setIsChecked(e.target.checked);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!isChecked) {
+      alert('Please agree to the terms to proceed.');
+      return;
+    }
+    alert('Form submitted successfully!');
+    setIsFormVisible(false); // Hide form after submission
+  };
+
   return (
    <>
     <main>
@@ -54,8 +75,8 @@ function NgoComponent() {
                                       <p>
 
                                       </p>
-                                      <div className="primeBtn">
-                                        <a href="">Get in touch</a>
+                                      <div className="primeBtn"  onClick={toggleForm}>
+                                        <a >Get in touch</a>
                                       </div>
                                     </div>
                                 </div>
@@ -226,6 +247,40 @@ function NgoComponent() {
 
     <PageForm/>
     </main>
+
+  
+    <div className={`popup-frm ${isFormVisible ? 'show' : ''}`}>
+        <div className="container">
+          <div className="popup">
+            <div className="clsFrm-btn" onClick={toggleForm}>
+              <i>&times;</i> {/* Close button */}
+            </div>
+            <h3>Your Information, Your Terms. Join Ramad Pay Today!</h3>
+            <form className="form" onSubmit={handleSubmit}>
+              <div className="cntct-inputBox">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Email Address" required />
+              </div>
+              <input type="number" placeholder="Phone Number" required />
+
+              <div className="custom-chkbox d-flex col-30">
+                <input
+                  type="checkbox"
+                  id="accounts"
+                  onChange={handleCheckboxChange}
+                />
+                <label htmlFor="accounts">
+                  By clicking this box, you agree to receive SMS from Ramad Pay Inc.
+                </label>
+              </div>
+
+              <div className="join-btn">
+                <button type="submit">Join Ramad Pay</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
    </>
   )
 }

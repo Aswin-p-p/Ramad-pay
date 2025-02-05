@@ -38,6 +38,7 @@
     border-radius: 50px;
     font-size: 18px;
     padding: 12px 28px;
+    
   }
   .ngoContContain{
     margin-top: 3em;
@@ -322,3 +323,76 @@
     width: 220px;
 }
   }
+
+
+
+
+
+
+
+
+  
+  .popup-frm {
+    position: fixed;
+    z-index: 22;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .popup-frm.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .popup{
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 2px #ccc;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  .clsFrm-btn{
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 34px;
+    top: 10px;
+  }
+  .clsFrm-btn i{
+    color: #fff;
+  }
+  .popup h3{
+    text-align: center;
+  }
+
+
+  @media(max-width:768px){
+    .popup-frm {
+        width: 90%;
+    }
+    .popup{
+      max-width: 100%;
+    }
+    
+  }
+  
+  @media (max-width: 600px) {
+    .cntct-inputBox {
+      display: block;
+      gap: 8px;
+  }
+  .popup h3 {
+    padding-top: 20px;
+  }
+}

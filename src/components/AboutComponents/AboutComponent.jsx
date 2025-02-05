@@ -54,7 +54,7 @@ function AboutComponent() {
                   </div>
                   <div className="name">
                     <h3>Aden Hassan - CEO</h3>
-                    <div className="linkedin"><a href=""><i className="fa-brands fa-linkedin-in"></i></a> </div>
+                    <div className="linkedin"><a href="https://www.linkedin.com/in/adenhassan/"><i className="fa-brands fa-linkedin-in"></i></a> </div>
                   </div>
                 </div>
                 <div className="col-md-4">
@@ -63,7 +63,7 @@ function AboutComponent() {
                   </div>
                   <div className="name">
                     <h3>Ali Mohammed - CTO</h3>
-                    <div className="linkedin"><a href=""><i className="fa-brands fa-linkedin-in"></i></a> </div>
+                    <div className="linkedin"><a href="https://www.linkedin.com/in/anacnac/"><i className="fa-brands fa-linkedin-in"></i></a> </div>
                   </div>
                 </div>
                 <div className="col-md-4">
@@ -74,7 +74,7 @@ function AboutComponent() {
                     <h3>Hussein D. Hashi - CPA</h3>
 
                     <div className="linkedin">
-  <a href="https://www.linkedin.com/your-profile" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/hussein-hashi-a0a72a8/" target="_blank" rel="noopener noreferrer">
     <i className="fa-brands fa-linkedin-in"></i>
   </a> 
 </div>

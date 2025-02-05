@@ -70,6 +70,7 @@
   }
   .teamDesc span{
     font-family: var(--aileron);
+    padding-left: 6px;
   }
   .teamContain .row{
     justify-content: center;

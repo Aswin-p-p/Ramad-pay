@@ -63,7 +63,7 @@ function StPaul() {
                             <a href="" onClick={handleSmoothScroll}>Learn More</a>
                         </div>
                         <div>
-                            <a href="">
+                            <a href="/find-Agent">
                                 Find an agent near you
                             </a>
                         </div>
@@ -167,7 +167,7 @@ function StPaul() {
                                 <h3>Support for
                                     NGOs</h3>
                                     <p>
-                                        Empower Minneapolis NGOs: Facilitating Global Aid with Precision
+                                    Empowering St. Paul NGOs with Effective Financial Tools
                                     </p>
                             </div>
                         </div>
