@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
-import './NgoComponent.css'
-import PageForm from '../PageForm/PageForm'
+import React, { useState } from 'react';
+import './NgoComponent.css';
+import Swal from 'sweetalert2';
+import PageForm from '../PageForm/PageForm';
 
 function NgoComponent() {
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
 
   const toggleForm = () => {
     setIsFormVisible((prev) => !prev);
@@ -14,14 +18,74 @@ function NgoComponent() {
     setIsChecked(e.target.checked);
   };
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    if (name === 'name') setName(value);
+    if (name === 'email') setEmail(value);
+    if (name === 'phoneNumber') setPhoneNumber(value);
+  };
+
+  const validateForm = () => {
+    if (!name || !email || !phoneNumber) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Missing Fields',
+        text: 'Please fill in all fields.',
+      });
+      return false;
+    }
+
+    // Email validation
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Invalid Email',
+        text: 'Please enter a valid email address.',
+      });
+      return false;
+    }
+
+    // Phone number validation
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Invalid Phone Number',
+        text: 'Please enter a valid 10-digit phone number.',
+      });
+      return false;
+    }
+
+    if (!isChecked) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Agreement Required',
+        text: 'Please agree to the terms to proceed.',
+      });
+      return false;
+    }
+
+    return true;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!isChecked) {
-      alert('Please agree to the terms to proceed.');
-      return;
+
+    if (validateForm()) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Form Submitted',
+        text: 'Thank you for submitting the form!',
+      });
+      setIsFormVisible(false); // Hide form after submission
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        agreed: false,
+    });
     }
-    alert('Form submitted successfully!');
-    setIsFormVisible(false); // Hide form after submission
   };
 
   return (
@@ -250,36 +314,61 @@ function NgoComponent() {
 
   
     <div className={`popup-frm ${isFormVisible ? 'show' : ''}`}>
-        <div className="container">
-          <div className="popup">
-            <div className="clsFrm-btn" onClick={toggleForm}>
-              <i>&times;</i> {/* Close button */}
-            </div>
-            <h3>Your Information, Your Terms. Join Ramad Pay Today!</h3>
-            <form className="form" onSubmit={handleSubmit}>
-              <div className="cntct-inputBox">
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Email Address" required />
-              </div>
-              <input type="number" placeholder="Phone Number" required />
+    <div className="container">
+      
 
-              <div className="custom-chkbox d-flex col-30">
-                <input
-                  type="checkbox"
-                  id="accounts"
-                  onChange={handleCheckboxChange}
-                />
-                <label htmlFor="accounts">
-                  By clicking this box, you agree to receive SMS from Ramad Pay Inc.
-                </label>
-              </div>
-
-              <div className="join-btn">
-                <button type="submit">Join Ramad Pay</button>
-              </div>
-            </form>
+        <div className="popup">
+          <div className="clsFrm-btn" onClick={toggleForm}>
+            <i>&times;</i> {/* Close button */}
           </div>
+          <h3>Your Information, Your Terms. Join Us Today!</h3>
+          <form className="form" onSubmit={handleSubmit}>
+            <div className="cntct-inputBox">
+              <input
+                type="text"
+                placeholder="Your Name"
+                name="name"
+                value={name}
+                onChange={handleInputChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                name="email"
+                value={email}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <input
+              type="number"
+              placeholder="Phone Number"
+              name="phoneNumber"
+              value={phoneNumber}
+              onChange={handleInputChange}
+              required
+            />
+
+            <div className="custom-chkbox d-flex col-30">
+              <input
+                type="checkbox"
+                id="accountspop"
+                checked={isChecked}
+                onChange={handleCheckboxChange}
+              />
+              <label htmlFor="accountspop">
+                By clicking this box, you agree to receive SMS from us.
+              </label>
+            </div>
+
+            <div className="join-btn">
+              <button type="submit">Join Now</button>
+            </div>
+          </form>
         </div>
+     
+    </div>
       </div>
    </>
   )

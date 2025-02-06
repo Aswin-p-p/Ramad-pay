@@ -500,3 +500,7 @@
 .sub-Btn:hover {
   background-color: #00b28f;
 }
+
+.error{
+  color: red;
+}

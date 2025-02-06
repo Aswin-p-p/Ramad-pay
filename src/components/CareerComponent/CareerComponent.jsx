@@ -1,18 +1,106 @@
 import React, { useState } from 'react'
 import './CareerComponent.css'
 import PageForm from '../PageForm/PageForm'
+import Swal from 'sweetalert2';
+
 
 function CareerComponent() {
   const [isFormVisible, setIsFormVisible] = useState(false);
 
   const [fileName, setFileName] = useState('');
+  const [fileError, setFileError] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+  });
   const handleFileClick = () => {
     document.getElementById('real-file').click();  // Trigger file input click
   };
   
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    setFileName(file ? file.name : 'No file chosen');
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setFileName(file ? file.name : null);
+
+    // Check if file size is less than or equal to 512MB
+    if (file && file.size > 536870912) {
+      setFileError('File size exceeds 512MB');
+    } else {
+      setFileError('');
+    }
+  };
+
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const validateForm = () => {
+    let isValid = true;
+    // Reset all error messages
+    const errors = {
+      name: '',
+      email: '',
+      phone: '',
+      file: '',
+    };
+
+    // Check for empty fields
+    if (!formData.name) {
+      errors.name = 'Name is required';
+      isValid = false;
+    }
+    if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = 'Please enter a valid email';
+      isValid = false;
+    }
+    if (!formData.phone || formData.phone.length !== 10) {
+      errors.phone = 'Please enter a valid 10-digit phone number';
+      isValid = false;
+    }
+    if (!fileName) {
+      errors.file = 'Please upload a resume';
+      isValid = false;
+    }
+    setErrorMessages(errors);
+
+    return isValid;
+  };
+  const [errorMessages, setErrorMessages] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    file: '',
+  });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      // Display success message using SweetAlert2
+      Swal.fire({
+        icon: 'success',
+        title: 'Form submitted successfully!',
+        text: 'Your details have been successfully submitted.',
+      });
+
+      // Clear form after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+      });
+      setFileName('');
+      setFileError('');
+    } else {
+      // Display error message using SweetAlert2
+      Swal.fire({
+        icon: 'error',
+        title: 'Form submission failed!',
+        text: 'Please fix the errors in the form.',
+      });
+    }
   };
 
   const toggleForm = () => {
@@ -240,44 +328,66 @@ function CareerComponent() {
       <section className={`Career-popup ${isFormVisible ? 'show' : ''}`} >
 
       <div className="container">
-            <div className="popupCr">
-              <div className="clsFrm-btn"   onClick={toggleForm}><i className="fa-solid fa-xmark"></i></div>
-                <form className="pop-form">
-                <div className="frm-txt">
-                  <div className="label">Name</div>
-                  <input type="text"/>
-                </div>
-                <div className="frm-txt">
-                  <div className="label">Email</div>
-                  <input type="text"/>
-                </div>
-                <div className="frm-txt">
-                  <div className="label">Phone</div>
-                  <input type="number"/>
-                </div>
-                <div className="frm-txt">
-  <div className="label">Upload Resume</div>
-  <div className="custome-field">
-    <input 
-      type="file" 
-      id="real-file" 
-      hidden 
-      onChange={handleFileChange} 
-    />
-    <button type="button" id="custom-button" onClick={handleFileClick}>
-      Choose File
-    </button>
-    <span id="custom-text">{fileName || 'No file chosen'}</span>
-  </div>
-  <div className="file-size">Max. file size: 512MB</div>
-</div>
-
-
-                <div className="sub-Btn"><a href="">Submit</a></div>
-                </form>
-
+      <div className="popupCr">
+        <div className="clsFrm-btn" onClick={toggleForm}>
+          <i className="fa-solid fa-xmark"></i>
+        </div>
+        <form className="pop-form" >
+          <div className="frm-txt">
+            <div className="label">Name</div>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            {errorMessages.name && <div className="error">{errorMessages.name}</div>}
           </div>
+          <div className="frm-txt">
+            <div className="label">Email</div>
+            <input
+              type="text"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            {errorMessages.email && <div className="error">{errorMessages.email}</div>}
+          </div>
+          <div className="frm-txt">
+            <div className="label">Phone</div>
+            <input
+              type="number"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+            {errorMessages.phone && <div className="error">{errorMessages.phone}</div>}
+          </div>
+          <div className="frm-txt">
+            <div className="label">Upload Resume</div>
+            <div className="custome-field">
+              <input
+                type="file"
+                id="real-file"
+                hidden
+                onChange={handleFileChange}
+              />
+              <button type="button" id="custom-button" onClick={handleFileClick}>
+                Choose File
+              </button>
+              <span id="custom-text">{fileName || 'No file chosen'}</span>
+            </div>
+            {fileError && <div className="error">{fileError}</div>}
+            {errorMessages.file && <div className="error">{errorMessages.file}</div>}
+            <div className="file-size">Max. file size: 512MB</div>
+          </div>
+
+          <div className="sub-Btn" >
+            <a type="submit" onClick={handleSubmit}>Submit</a>
+          </div>
+        </form>
       </div>
+    </div>
   </section>
   </>
   )
