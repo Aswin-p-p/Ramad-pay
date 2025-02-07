@@ -5,6 +5,7 @@ import './Countries.css'
 function Countries() {
   const [activeTab, setActiveTab] = useState(0); // State to track the active tab
 
+
   const handleTabClick = (index) => {
     if (activeTab === index) {
       setActiveTab(null); // Deselect the active tab if the same tab is clicked
@@ -15,6 +16,10 @@ function Countries() {
     }
   };
   const [hoveredCountry, setHoveredCountry] = useState(null);
+
+  const toggleHoverData = (countryName) => {
+    setHoveredCountry((prev) => (prev === countryName ? null : countryName));
+  };
   const countries = [
     {
       name: 'Benin',
@@ -864,8 +869,8 @@ function Countries() {
                 <div
                   className="listing"
                   key={index}
-                  onMouseEnter={() => setHoveredCountry(country.name)}
-                  onMouseLeave={() => setHoveredCountry(null)}
+                  onClick={() => toggleHoverData(country.name)}
+
                 >
                   <div className="rmd-country">
                     <div className="flag-img">
@@ -933,8 +938,7 @@ function Countries() {
                 <div
                   className="listing"
                   key={index}
-                  onMouseEnter={() => setHoveredCountry(country.name)}
-                  onMouseLeave={() => setHoveredCountry(null)}
+                  onClick={() => toggleHoverData(country.name)}
                 >
                   <div className="rmd-country">
                     <div className="flag-img">
@@ -1001,8 +1005,7 @@ function Countries() {
                 <div
                   className="listing"
                   key={index}
-                  onMouseEnter={() => setHoveredCountry(country.name)}
-                  onMouseLeave={() => setHoveredCountry(null)}
+                  onClick={() => toggleHoverData(country.name)}
                 >
                   <div className="rmd-country">
                     <div className="flag-img">
@@ -1069,8 +1072,7 @@ function Countries() {
                 <div
                   className="listing"
                   key={index}
-                  onMouseEnter={() => setHoveredCountry(country.name)}
-                  onMouseLeave={() => setHoveredCountry(null)}
+                  onClick={() => toggleHoverData(country.name)}
                 >
                   <div className="rmd-country">
                     <div className="flag-img">
@@ -1136,8 +1138,7 @@ function Countries() {
                 <div
                   className="listing"
                   key={index}
-                  onMouseEnter={() => setHoveredCountry(country.name)}
-                  onMouseLeave={() => setHoveredCountry(null)}
+                  onClick={() => toggleHoverData(country.name)}
                 >
                   <div className="rmd-country">
                     <div className="flag-img">
