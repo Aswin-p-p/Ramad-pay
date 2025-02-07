@@ -7,14 +7,12 @@ function Countries() {
 
 
   const handleTabClick = (index) => {
-    if (activeTab === index) {
-      setActiveTab(null); // Deselect the active tab if the same tab is clicked
-      setHoveredCountry(null); // Reset hovered country to close open boxes
-    } else {
+    if (activeTab !== index) {
       setActiveTab(index); // Activate the clicked tab
       setHoveredCountry(null); // Reset hovered country to close open boxes
     }
   };
+  
   const [hoveredCountry, setHoveredCountry] = useState(null);
 
   const toggleHoverData = (countryName) => {
