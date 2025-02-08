@@ -74,27 +74,66 @@ function CareerComponent() {
     phone: '',
     file: '',
   });
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (validateForm()) {
-      // Display success message using SweetAlert2
-      Swal.fire({
-        icon: 'success',
-        title: 'Form submitted successfully!',
-        text: 'Your details have been successfully submitted.',
-      });
-
-      // Clear form after successful submission
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-      });
-      setFileName('');
-      setFileError('');
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('phone', formData.phone);
+      if (document.getElementById('real-file').files[0]) {
+        formDataToSend.append('resume', document.getElementById('real-file').files[0]);
+      }
+  
+      try {
+        const response = await fetch('https://ramadpayserver.onrender.com/api/submit-career-form', {
+          method: 'POST',
+          body: formDataToSend,
+        });
+      
+      
+        let result;
+        try {
+          result = await response.json(); // Try to parse JSON
+        } catch (jsonError) {
+          console.error('JSON Parse Error:', jsonError);
+          throw new Error('Invalid JSON response from server');
+        }
+      
+   
+      
+        if (response.ok) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Form submitted successfully!',
+            text: 'Your details have been successfully submitted.',
+          });
+      
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+          });
+          setFileName('');
+          setFileError('');
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Form submission failed!',
+            text: result?.error || 'Something went wrong. Please try again.',
+          });
+        }
+      } catch (error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Form submission failed!',
+          text: error.message || 'An error occurred while submitting the form.',
+        });
+        console.error('Error:', error);
+      }
+      
     } else {
-      // Display error message using SweetAlert2
       Swal.fire({
         icon: 'error',
         title: 'Form submission failed!',
@@ -102,6 +141,7 @@ function CareerComponent() {
       });
     }
   };
+  
 
   const toggleForm = () => {
     setIsFormVisible((prev) => !prev);

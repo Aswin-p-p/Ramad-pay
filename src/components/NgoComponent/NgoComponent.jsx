@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './NgoComponent.css';
 import Swal from 'sweetalert2';
 import PageForm from '../PageForm/PageForm';
+import emailjs from "@emailjs/browser";
+
 
 function NgoComponent() {
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -73,20 +75,52 @@ function NgoComponent() {
     e.preventDefault();
 
     if (validateForm()) {
-      Swal.fire({
-        icon: 'success',
-        title: 'Form Submitted',
-        text: 'Thank you for submitting the form!',
-      });
-      setIsFormVisible(false); // Hide form after submission
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        agreed: false,
-    });
+        // Send email using EmailJS
+        emailjs.send(
+            "service_pis0sas", // Replace with your EmailJS Service ID
+            "template_qntyted", // Replace with your EmailJS Template ID
+            {
+                name: name,
+                email: email,
+                phone: phoneNumber,
+                agreed: isChecked ? "Yes" : "No", // Convert boolean to Yes/No
+            },
+            "1_0N8ymh4FiCQNo14" // Replace with your EmailJS Public Key
+        ).then(
+            (response) => {
+               
+
+                // Show success message
+                Swal.fire({
+                    icon: "success",
+                    title: "Form Submitted",
+                    text: "Thank you for submitting the form!",
+                });
+
+                // Hide the form
+                setIsFormVisible(false);
+
+                // Reset form fields
+                setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    agreed: false,
+                });
+            },
+            (error) => {
+                console.error("Error sending email:", error);
+
+                // Show error message
+                Swal.fire({
+                    icon: "error",
+                    title: "Submission Failed",
+                    text: "There was an error sending your form. Please try again.",
+                });
+            }
+        );
     }
-  };
+};
 
   return (
    <>
