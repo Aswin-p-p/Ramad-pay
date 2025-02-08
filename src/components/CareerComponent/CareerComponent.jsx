@@ -95,11 +95,13 @@ function CareerComponent() {
       
         let result;
         try {
-          result = await response.json(); // Try to parse JSON
+          const text = await response.text(); // Read response as text first
+          result = text ? JSON.parse(text) : {}; // Try parsing only if content exists
         } catch (jsonError) {
           console.error('JSON Parse Error:', jsonError);
-          throw new Error('Invalid JSON response from server');
+          result = { error: 'Invalid JSON response from server' }; // Fallback error message
         }
+        
       
    
       
