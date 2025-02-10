@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './NgoComponent.css';
 import Swal from 'sweetalert2';
 import PageForm from '../PageForm/PageForm';
-import emailjs from "@emailjs/browser";
 
 
 function NgoComponent() {
@@ -71,56 +70,55 @@ function NgoComponent() {
     return true;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-        // Send email using EmailJS
-        emailjs.send(
-            "service_pis0sas", // Replace with your EmailJS Service ID
-            "template_qntyted", // Replace with your EmailJS Template ID
-            {
+        fetch("https://ramadpayserver.onrender.com/api/submit-form", { // Replace with your API endpoint
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
                 name: name,
                 email: email,
                 phone: phoneNumber,
                 agreed: isChecked ? "Yes" : "No", // Convert boolean to Yes/No
-            },
-            "1_0N8ymh4FiCQNo14" // Replace with your EmailJS Public Key
-        ).then(
-            (response) => {
-               
+            }),
+        })
+        .then((response) => response.json())
+       
+        
+        .then((result) => {
 
-                // Show success message
-                Swal.fire({
-                    icon: "success",
-                    title: "Form Submitted",
-                    text: "Thank you for submitting the form!",
-                });
+            Swal.fire({
+                icon: "success",
+                title: "Form Submitted",
+                text: "Thank you for submitting the form!",
+            });
 
-                // Hide the form
-                setIsFormVisible(false);
+            // Hide the form
+            setIsFormVisible(false);
 
-                // Reset form fields
-                setFormData({
-                    name: "",
-                    email: "",
-                    phone: "",
-                    agreed: false,
-                });
-            },
-            (error) => {
-                console.error("Error sending email:", error);
+            // Reset form fields
+            setName ('');
+            setEmail ('');
+            setIsChecked (false);
+            setPhoneNumber ('');
+        })
+        .catch((error) => {
+            console.error("Error submitting form:", error);
 
-                // Show error message
-                Swal.fire({
-                    icon: "error",
-                    title: "Submission Failed",
-                    text: "There was an error sending your form. Please try again.",
-                });
-            }
-        );
+            // Show error message
+            Swal.fire({
+                icon: "error",
+                title: "Submission Failed",
+                text: "There was an error sending your form. Please try again.",
+            });
+        });
     }
 };
+
 
   return (
    <>
@@ -316,7 +314,7 @@ function NgoComponent() {
           <div className="col-md-12 col-lg-6">
             <div className="rmdNgoVid">
               <div className="vid">
-                <iframe width="100%" height="512" src="https://www.youtube.com/embed/Wy0G54Nr7xE?si=werupcb3wUyBFvDe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="512" src="https://www.youtube.com/embed/Wy0G54Nr7xE?si=werupcb3wUyBFvDe" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
               </div>
             </div>
           </div>

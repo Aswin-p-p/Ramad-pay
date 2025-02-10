@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import "./PageForm.css";
-import emailjs from "@emailjs/browser";
+
 
 function PageForm() {
     const [formData, setFormData] = useState({
@@ -20,63 +20,71 @@ function PageForm() {
     };
 
   
-const handleSubmit = (e) => {
-    e.preventDefault();
-
- 
-    const phoneRegex = /^[0-9]{10}$/; // Validates a 10-digit phone number
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Validates standard email format
-
-    // Validation checks
-    if (!formData.name || !formData.email || !formData.phone) {
-        Swal.fire("Error", "All fields are required!", "error");
-        return;
-    }
-
-    if (!emailRegex.test(formData.email)) {
-        Swal.fire("Error", "Enter a valid email address!", "error");
-        return;
-    }
-
-    if (!phoneRegex.test(formData.phone)) {
-        Swal.fire("Error", "Enter a valid 10-digit phone number!", "error");
-        return;
-    }
-
-    if (!formData.agreed) {
-        Swal.fire("Error", "You must agree to the terms before submitting!", "error");
-        return;
-    }
-
-    // EmailJS Configuration
-    const serviceID = "service_pis0sas";
-    const templateID = "template_qntyted";
-    const publicKey = "1_0N8ymh4FiCQNo14";
-
-    const templateParams = {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        agreed: formData.agreed ? "Yes" : "No",
-    };
-
-    emailjs.send(serviceID, templateID, templateParams, publicKey)
-        .then((response) => {
-         
-            Swal.fire("Success", "You have successfully joined RamadPay!", "success");
-
-            setFormData({
-                name: "",
-                email: "",
-                phone: "",
-                agreed: false,
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        const phoneRegex = /^[0-9]{10}$/; // Validates a 10-digit phone number
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Validates standard email format
+    
+        // Validation checks
+        if (!formData.name || !formData.email || !formData.phone) {
+            Swal.fire("Error", "All fields are required!", "error");
+            return;
+        }
+    
+        if (!emailRegex.test(formData.email)) {
+            Swal.fire("Error", "Enter a valid email address!", "error");
+            return;
+        }
+    
+        if (!phoneRegex.test(formData.phone)) {
+            Swal.fire("Error", "Enter a valid 10-digit phone number!", "error");
+            return;
+        }
+    
+        if (!formData.agreed) {
+            Swal.fire("Error", "You must agree to the terms before submitting!", "error");
+            return;
+        }
+    
+        // Replace this URL with your new API endpoint
+        const apiUrl = "https://ramadpayserver.onrender.com/api/submit-form";
+    
+        const formDataPayload = {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            agreed: formData.agreed ? "Yes" : "No",
+        };
+    
+        try {
+            const response = await fetch(apiUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formDataPayload),
             });
-        })
-        .catch((error) => {
-            console.error("Error sending email:", error);
-            Swal.fire("Error", "Failed to send email. Please try again later.", "error");
-        });
-};
+    
+            const result = await response.json();
+    
+            if (response.ok) {
+                Swal.fire("Success", "You have successfully joined RamadPay!", "success");
+                setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    agreed: false,
+                });
+            } else {
+                throw new Error(result.message || "Form submission failed.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            Swal.fire("Error", "Failed to submit form. Please try again later.", "error");
+        }
+    };
+    
 
     return (
         <section className="contactSec">
