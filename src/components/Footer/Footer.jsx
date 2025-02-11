@@ -64,7 +64,7 @@ function Footer() {
                                     </div>
                                     <div className="cntct-dtls">
                                         <div><img src="assets/footer/email.png" alt="" /></div>
-                                        <div><p>nfo@ramadpay.com</p></div>
+                                        <div><p>info@ramadpay.com</p></div>
                                     </div>
                                     <div className="cntct-dtls">
                                         <div><img src="assets/footer/ftCall.png" alt="" /></div>
