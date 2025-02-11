@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './CareerComponent.css'
 import PageForm from '../PageForm/PageForm'
 import Swal from 'sweetalert2';
@@ -148,6 +148,18 @@ function CareerComponent() {
   const toggleForm = () => {
     setIsFormVisible((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (isFormVisible) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("no-scroll"); // Cleanup on unmount
+    };
+  }, [isFormVisible]);
   
   return (
   <>

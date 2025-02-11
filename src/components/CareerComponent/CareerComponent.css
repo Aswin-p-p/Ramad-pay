@@ -431,7 +431,7 @@
   cursor: pointer;
   position: absolute;
   right: 34px;
-  top: 66px;
+  top: 10px;
 }
 .clsFrm-btn i{
   color: #000000;
@@ -503,4 +503,7 @@
 
 .error{
   color: red;
+}
+a{
+  cursor: pointer;
 }

@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import './Customised.css'
 import PageForm from '../PageForm/PageForm'
+import PopupForm from '../PopupForm/PopupForm';
+
 
 
 function Customised() {
+   const [isFormVisible, setIsFormVisible] = useState(false);
+
+  const toggleForm = () => {
+    setIsFormVisible((prev) => !prev);
+  };
+
+  useEffect(() => {
+    if (isFormVisible) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("no-scroll"); // Cleanup on unmount
+    };
+  }, [isFormVisible]);
+
   return (
     <>
     <main>
@@ -39,7 +59,7 @@ function Customised() {
                                         Get an interest-free customized debit card with Aziz Capital’s virtual checking account. Send and receive money quickly with Ramad Pay’s digital payments. Open an account and get your customized card with just a few clicks. Spend securely online and in-store with this innovative fintech solution.
                                       </p>
                                       <div className="primeBtn">
-                                        <a href="">Get Started</a>
+                                        <a onClick={toggleForm}>Get Started</a>
                                       </div>
                                     </div>
                                 </div>
@@ -155,6 +175,10 @@ function Customised() {
 
         <PageForm/>
         </main>
+
+        <div className={`popup-frm ${isFormVisible ? 'show' : ''}`}>
+       <PopupForm toggleForm={toggleForm} />
+      </div>
     </>
   )
 }

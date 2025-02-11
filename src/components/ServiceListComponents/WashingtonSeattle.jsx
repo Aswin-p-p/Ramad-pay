@@ -223,10 +223,11 @@ function WashingtonSeattle() {        const [currencies, setCurrencies] = useSta
                                             <form className="pay-frm">
                                             <div className="input-box">
                                               <label>Amount</label>
-                                              <input
+
+                                               <input
                                             type="number"
                                             value={amount}
-                                            onChange={(e) => setAmount(Number(e.target.value))}
+                                            onChange={(e) => setAmount(e.target.value ? Number(e.target.value) : '')}
                                         />
                                             </div>
                                             <div className="input-box">

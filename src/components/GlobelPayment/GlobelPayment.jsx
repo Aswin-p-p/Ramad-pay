@@ -1,17 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import './Globelpayment.css'
 import Countries from '../HomeComponents/Countries/Countries'
-import PageLink from '../PageLinks/PageLink'
 import PageForm from '../PageForm/PageForm'
+import PopupForm from '../PopupForm/PopupForm';
 function GlobelPayment() {
-  const handleSmoothScroll = (e) => {
-    e.preventDefault(); // Prevent default anchor behavior
+  const [isFormVisible, setIsFormVisible] = useState(false);
+  
+    const toggleForm = () => {
+      setIsFormVisible((prev) => !prev);
+    };
 
-    const pageFormSection = document.getElementById('pageFormSection');
-    if (pageFormSection) {
-      pageFormSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll effect
-    }
-  };
+    useEffect(() => {
+      if (isFormVisible) {
+        document.body.classList.add("no-scroll");
+      } else {
+        document.body.classList.remove("no-scroll");
+      }
+  
+      return () => {
+        document.body.classList.remove("no-scroll"); // Cleanup on unmount
+      };
+    }, [isFormVisible]);
+ 
   return (
 <>
 <main>
@@ -51,7 +61,7 @@ function GlobelPayment() {
                                         Joining Ramad Pay’s agent network in the U.S. is a great way to provide quality service while participating in this exciting growth and a generous commission.
                                       </p>
                                       <div className="primeBtn">
-                                        <a href="" onClick={handleSmoothScroll}>Get Started</a>
+                                        <a  onClick={toggleForm}>Get Started</a>
                                       </div>
                                     </div>
                                 </div>
@@ -228,12 +238,16 @@ function GlobelPayment() {
     <Countries/>
     </div>
 
-    
-    <section id="pageFormSection">
+ 
           <PageForm />
-        </section>
+        
 
     </main>
+
+    
+    <div className={`popup-frm ${isFormVisible ? 'show' : ''}`}>
+       <PopupForm toggleForm={toggleForm} />
+      </div>
 </>
   )
 }

@@ -107,7 +107,7 @@ function Feature() {
                   competitive exchange rates to make your remittance go further.
                 </p>
               </div>
-              <div className="rmd-slider">
+              {/* <div className="rmd-slider">
                 <div className="icon">
                   <img
                     src="assets/sliderImages/instant.png"
@@ -119,7 +119,7 @@ function Feature() {
                   We believe in transparency and value for your money, offering
                   competitive exchange rates to make your remittance go further.
                 </p>
-              </div>
+              </div> */}
               <div className="rmd-slider">
                 <div className="icon">
                   <img

@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import Video from '../../../assets/images/vdoImg.jpg'
+import SampleVideo  from '../../../../public/assets/Video/Ramappayhomevdo.mp4'
 function About() {
     
     return (
@@ -37,10 +37,12 @@ function About() {
                             </div>
                         </div>
                         <div className="col-md-6" data-aos="fade-down" data-aos-duration="1000">
-                            <div className="video">
-
-                                <img src={Video} alt=""/>
-                            </div>
+                        <div className="video">
+                            <video width="100%" controls  muted >
+                            <source src={SampleVideo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                            </video>
+                        </div>
                         </div>
                     </div>
                 </div>

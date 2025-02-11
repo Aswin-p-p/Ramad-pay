@@ -226,7 +226,7 @@ function StPaul() {
                                               <input
                                             type="number"
                                             value={amount}
-                                            onChange={(e) => setAmount(Number(e.target.value))}
+                                            onChange={(e) => setAmount(e.target.value ? Number(e.target.value) : '')}
                                         />
                                             </div>
                                             <div className="input-box">
