@@ -107,7 +107,7 @@ function Footer() {
                         <a href="https://www.linkedin.com/company/ramadpay/"  target='_blank'><i className="fa-brands fa-linkedin"></i></a>
                         </div>
                         <div>
-                            <a href="https://www.facebook.com/RamadPay"  target='_blank'><i className="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/ramadpay/"  target='_blank'><i className="fa-brands fa-instagram"></i></a>
                         </div>
                         {/* <div>
                             <a href=""><i className="fa-brands fa-youtube" ></i></a>
