@@ -5,6 +5,7 @@ import Countries from '../../HomeComponents/Countries/Countries';
 import Introduce from '../../HomeComponents/Introduce/Introduce';
 import About from '../../HomeComponents/About/About'
 import Feature from '../../HomeComponents/Feature/Feature';
+import HomePageForm from '../../HomePageForm/HomePageForm';
 function Home() {
     return (
         <>
@@ -14,6 +15,8 @@ function Home() {
             <Introduce /> 
             <About />
             <Feature />
+
+            <HomePageForm/>
         </>
     )
 }

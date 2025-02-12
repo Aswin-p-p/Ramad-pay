@@ -1,6 +1,7 @@
 import React from 'react'
 import './ProductComponent.css'
 import PageForm from '../PageForm/PageForm'
+import Service from '../HomeComponents/Services/Service';
 
 function ProductComponent() {
   return (
@@ -91,6 +92,8 @@ function ProductComponent() {
           </div>
         </div>
       </section>
+
+      <Service/>
 
       <PageForm/>
    </main>

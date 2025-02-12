@@ -40,6 +40,11 @@ import BlogDetails7 from './components/Blog_in_Components/BlogDetails7';
 import BlogDetails8 from './components/Blog_in_Components/BlogDetails8';
 import BlogDetails9 from './components/Blog_in_Components/BlogDetails9';
 import FindAgent from './components/find-agent/FindAgent';
+import Policy from './components/PrivacyPolicy/Policy';
+import TermOfUs from './components/PrivacyPolicy/TermOfUs';
+import Licenses from './components/PrivacyPolicy/Licenses';
+import WhatsAppChatbot from './components/WhatsAppChatbot ';
+
 
 
 function App() {
@@ -91,8 +96,13 @@ function App() {
         <Route path="/Global-Partnerships-How-Ramad" element={<BlogDetails8/>} />
         <Route path="/Innovations-in-B2B-Digital" element={<BlogDetails9/>} />
         <Route path="/find-Agent" element={<FindAgent/>} />
+        <Route path="/privacy-policy" element={<Policy/>} />
+        <Route path="/term-of-use" element={<TermOfUs/>} />
+        <Route path="/licenses" element={<Licenses/>} />
       </Routes>
+         <WhatsAppChatbot/>
       <Footer />
+    
     </BrowserRouter>
   )
 }

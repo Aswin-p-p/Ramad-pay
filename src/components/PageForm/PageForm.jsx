@@ -3,6 +3,7 @@ import Swal from "sweetalert2";
 import "./PageForm.css";
 
 
+
 function PageForm() {
     const [formData, setFormData] = useState({
         name: "",
@@ -23,10 +24,9 @@ function PageForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
     
-        const phoneRegex = /^[0-9]{10}$/; // Validates a 10-digit phone number
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Validates standard email format
+        const phoneRegex = /^[0-9]{10}$/;
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     
-        // Validation checks
         if (!formData.name || !formData.email || !formData.phone) {
             Swal.fire("Error", "All fields are required!", "error");
             return;
@@ -47,7 +47,8 @@ function PageForm() {
             return;
         }
     
-        // Replace this URL with your new API endpoint
+        setLoading(true);
+    
         const apiUrl = "https://ramadpayserver.onrender.com/api/submit-form";
     
         const formDataPayload = {
@@ -66,7 +67,14 @@ function PageForm() {
                 body: JSON.stringify(formDataPayload),
             });
     
-            const result = await response.json();
+            let result;
+            try {
+                result = await response.json();
+            } catch {
+                result = { message: "Unknown error occurred." };
+            }
+    
+            setLoading(false);
     
             if (response.ok) {
                 Swal.fire("Success", "You have successfully joined RamadPay!", "success");
@@ -81,19 +89,23 @@ function PageForm() {
             }
         } catch (error) {
             console.error("Error submitting form:", error);
+            setLoading(false);
             Swal.fire("Error", "Failed to submit form. Please try again later.", "error");
         }
     };
     
+    
 
     return (
+        <>
+        
         <section className="contactSec">
             <div className="container">
                 <div className="cntct-Frm">
                     <div className="FrmSec">
                         <div>
                             <h3>Your Information,<br />Your Terms - Join RamadPay Today!</h3>
-                            <form className="form" >
+                            <form className="form"  onSubmit={handleSubmit}>
                                 <div className="cntct-inputBox">
                                     <input
                                         type="text"
@@ -132,7 +144,7 @@ function PageForm() {
                                     </label>
                                 </div>
                                 <div className="join-btn">
-                                    <button type="submit" onClick={handleSubmit}>Join Ramad Pay</button>
+                                    <button type="submit" >Join Ramad Pay</button>
                                 </div>
                             </form>
                         </div>
@@ -143,6 +155,7 @@ function PageForm() {
                 </div>
             </div>
         </section>
+        </>
     );
 }
 

@@ -1,0 +1,46 @@
+
+.prDate p{
+    font-size: 19px;
+  }
+  .PrcyTxt{
+    padding-top: 15px;
+  }
+  .PrcyTxt p{
+    font-weight: 200;
+    letter-spacing:1px;
+    line-height: 26px;
+    padding: 5px 0;
+  }
+  .dataColl-list{
+    padding-top: 8px;
+  }
+  .dataColl-list p{
+    font-size: 19px;
+    padding-bottom: 8px;
+  }
+  .dataColl-list ul {
+    padding-left: 30px;
+  }
+  .dataColl-list ul li{
+    list-style: disc;
+  padding: 8px 0;
+  font-weight: 200;
+  letter-spacing: 1px;
+  }
+  #prvTxt{
+    font-weight: 200;
+    /* padding-left: 14px; */
+    padding-top: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .prvcyCntTxt p{
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 16px;
+  }
+  #prvTxt a{
+    color: #007f5f;
+    font-weight: 400;
+  }

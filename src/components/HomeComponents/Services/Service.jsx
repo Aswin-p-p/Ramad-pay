@@ -106,8 +106,8 @@ const currencyList = {
 };
 
 
-const API_KEY = "f1beda0417-157b4ba35a-srb6k0";
-const API_URL = `https://api.fastforex.io/fetch-all?api_key=${API_KEY}`;
+const API_KEY = import.meta.env.VITE_OPEN_EXCHANGE_KEY;
+const API_URL = `https://openexchangerates.org/api/latest.json?app_id=${API_KEY}`;
 function Service() {
     const dateInputRef = useRef(null);
     const openCalendarRef = useRef(null);
@@ -120,19 +120,28 @@ function Service() {
     const [rates, setRates] = useState({});
 
     useEffect(() => {
-        fetch(API_URL)
-            .then(response => response.json())
-            .then(data => {
-                if (data.results) {
-                    setRates(data.results);
-                    setCurrencies(Object.keys(data.results));
-                }
-            })
-            .catch(error => console.error("Error fetching currency data:", error));
+        const storedRates = sessionStorage.getItem("exchangeRates");
+        if (storedRates) {
+            // Use the stored rates if available
+            const parsedRates = JSON.parse(storedRates);
+            setRates(parsedRates);
+            setCurrencies(Object.keys(parsedRates));
+        } else {
+            // Fetch new rates only if not available in sessionStorage
+            fetch(API_URL)
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.rates) {
+                        sessionStorage.setItem("exchangeRates", JSON.stringify(data.rates));
+                        setRates(data.rates);
+                        setCurrencies(Object.keys(data.rates));
+                    }
+                })
+                .catch((error) => console.error("Error fetching currency data:", error));
+        }
     }, []);
 
     useEffect(() => {
-        // Ensure both from and to currencies are available in the rates before computing.
         if (rates[fromCurrency] && rates[toCurrency]) {
             const conversionRate = rates[toCurrency] / rates[fromCurrency];
             setConvertedAmount((amount * conversionRate).toFixed(2));
@@ -142,8 +151,14 @@ function Service() {
     const handleCalendarClick = () => {
         dateInputRef.current.showPicker();
     };
-
-
+    const handleClick = () => {
+        Swal.fire({
+          title: "Feature Coming Soon!",
+          text: "This feature will be available in a future update.",
+          icon: "info",
+          confirmButtonText: "OK",
+        });
+      };
 
     return (
         <div>
@@ -228,7 +243,11 @@ function Service() {
                                             Text <span> STOP</span> to cancel.
                                         </p>
                                     </div>
-                                    <div className="send-btn"><button>Send Amount</button></div>
+                                    <div className="send-btn">
+      <button className="disabled-btn" disabled>
+        Send Amount
+      </button>
+    </div>
                                 </form>
                             </div>
                         </div>

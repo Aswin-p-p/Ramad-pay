@@ -200,3 +200,27 @@
   @media (min-width: 320px) and (max-width: 500px) {
 
 }
+
+.disabled-btn {
+  position: relative;
+  background-color: lightgray; /* Light gray background */
+  color: #666; /* Darker text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+.disabled-btn:hover::after {
+  content: "Coming Soon!";
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}

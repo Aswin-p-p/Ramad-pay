@@ -1,0 +1,265 @@
+
+.hm-cntct{
+    background-color: #067e6f;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .hmCntct-contain{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    /* background-color: #fff; */
+    background-image: url('../../../public/assets/home/contactBanner.jpg');
+    background-position: 50%, 20%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 45px 50px;
+  }
+  .CntBnr{
+   display: none;
+  
+  }
+  .CntTxt-contain{
+    width: 50%;
+  
+  }
+  .Cnct-TXT{
+    max-width: 250px;
+  }
+  .Cnct-TXT h2{
+    color: #d9dc00;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-bottom: 12px;
+  }
+  .Cnct-TXT  p{
+    color: #ffff;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+  .Cnct-TXT .subCnt{
+    font-weight: 700 ;
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .hmCnct-frm form{
+   float: right;
+    width: 350px;
+  }
+  .hmCnct-frm input{
+  width: 100%;
+  padding: 12px 30px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #c4c4c4;
+  font-weight: 400;
+  font-size: 16px;
+  }
+  .hmCnct-frm input::placeholder{
+    font-weight: 200;
+  }
+  .hmCheck label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  
+  }
+  .hmCheck label {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .hmNxtBtn{
+    background-color: #067e6f;
+    width: 170px;
+    padding: 10px 30px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .hmNxtBtn a{
+    color: #fff;
+    font-size: 18px;
+  }
+  .manCnct{
+    position: absolute;
+  
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .manCnct img{
+    width: 300px;
+  }
+
+@media(max-width:999px){
+    .hmCntct-contain{
+        height: auto;
+        background-color: #fff;
+        background-image: none;
+        background-position: 92%, 0;
+        display: block;
+        padding: 45px 25px;
+        z-index: 22;
+    }
+    .CntTxt-contain {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+    .Cnct-TXT {
+      max-width: 396px;
+      float: right;
+    }
+    .Cnct-TXT  p{
+      color: #000000;
+      font-family: var(--aileron);
+    }
+    .hmCnct-frm form {
+      width: 396px;
+    }
+    .manCnct {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      transform: none;
+    }
+    .manCnct img {
+      width: 268px;
+    }
+    .CntBnr {
+      display: block;
+      position: absolute;
+      left: -499px;
+      transform: rotate(16deg);
+      bottom: -9px;
+      z-index: -1;
+    }
+    .Cnct-TXT h2{
+      color: #067e6f;
+      font-size: 28px;
+    }
+}
+  @media(max-width:999px){.hmCntct-contain{
+    height: auto;
+    background-color: #fff;
+    background-image: none;
+    background-position: 92%, 0;
+    display: block;
+    padding: 45px 25px;
+    z-index: 22;
+}
+.CntTxt-contain {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.Cnct-TXT {
+  max-width: 396px;
+  float: right;
+}
+.Cnct-TXT  p{
+  color: #000000;
+  font-family: var(--aileron);
+}
+.hmCnct-frm form {
+  width: 396px;
+}
+.manCnct {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transform: none;
+}
+.manCnct img {
+  width: 268px;
+}
+.CntBnr {
+  display: block;
+  position: absolute;
+  left: -499px;
+  transform: rotate(16deg);
+  bottom: -9px;
+  z-index: -1;
+}
+.Cnct-TXT h2{
+  color: #067e6f;
+  font-size: 28px;
+}
+
+  }
+  @media (min-width:1024px) and (max-width:1350px){
+    /* HOME CONTACT */
+    .hmCntct-contain{
+      padding: 45px 20px;
+      background-position: 64%
+    }
+    .hmCnct-frm form {
+      width: 325px;
+  }
+  
+  .manCnct img {
+    width: 255px;
+  }
+  }
+  @media screen and (max-width: 768px) {
+    .manCnct {
+        display: none;
+    }
+    .hmCnct-frm form {
+      width: 100%;
+      padding-top: 30px;
+    }
+    .Cnct-TXT {
+      max-width: 100%;
+      float: left;
+    }
+    .CntBnr {
+      left: -579px;
+    }
+    
+  }
+  @media (max-width: 600px) {
+    .Cnct-TXT h2 {
+        font-size: 23px;
+      }
+      .hmCnct-frm input {
+        padding: 12px 11px;
+      }
+  }
+  
+@media (max-width: 320px) {
+    
+  .cmplnc-content h1 {
+    line-height: 36px;
+    font-size: 35px;
+  }
+  .cmplnc-heroImg img {
+    width: 294px;
+  }
+  .rmdCom-head h3 {
+    font-size: 22px;
+  }
+  .rmdCom-head p {
+    font-size: 15px;
+  }
+  .com-head h3 {
+    font-size: 26px;
+  }
+
+  /* INVESTOR PAGE */
+  .invBgImg {
+    bottom: -34px;
+  }
+}

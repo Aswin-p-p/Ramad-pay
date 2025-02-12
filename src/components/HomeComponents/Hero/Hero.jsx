@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Hero.css'; // Corrected path for CSS import
 import Hand from '../../../assets/images/heroImages/hand-1.png';
-import gif from '/assets/pay fn.gif';
-import heroSlider from '/assets/Gif/heroSlider.gif';
 import heroSlideer from '/assets/Gif/heroSlideer.gif';
+import PopupForm from '../../PopupForm/PopupForm';
+import HomePageForm from '../../HomePageForm/HomePageForm';
 
 function Hero() {
+      const [isFormVisible, setIsFormVisible] = useState(false);
+
+
+      useEffect(() => {
+        // Check if popup has been shown before
+        const hasPopupBeenShown = sessionStorage.getItem("popupShown");
+
+        
+
+        if (!hasPopupBeenShown) {
+            setIsFormVisible(true);
+            sessionStorage.setItem("popupShown", "true"); // Store flag in localStorage
+        }
+    }, []);
+      const toggleForm = () => {
+        setIsFormVisible((prev) => !prev);
+      };
+      
+    
+      
     return (
-        <div>
+        <>
             <section className="rmd-hroSection">
                 <div className="container">
                     <div className="rmd-content">
@@ -58,7 +78,15 @@ function Hero() {
                     </div>
                 </div>
             </section>
-        </div>
+
+
+            {/* <div className={`popup-frm ${isFormVisible ? 'show' : ''}`}>
+               <HomePageForm/>
+      </div> */}
+        </>
+
+
+
     );
 }
 
