@@ -1,8 +1,22 @@
-import React from 'react'
+import { useEffect, useRef } from "react";
 import './About.css'
-import SampleVideo  from '../../../../public/assets/Video/Ramappayhomevdo.mp4'
+import SampleVideo from '../../../../public/assets/Video/Ramappayhomevdo.mp4'
+
 function About() {
-    
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        const video = videoRef.current;
+
+        if (video) {
+            video.play();   
+            const timer = setTimeout(() => {
+                video.pause(); 
+            }, 3000);
+
+            return () => clearTimeout(timer); 
+        }
+    }, []);
     return (
         <>
             <section className="payment-contain">
@@ -24,7 +38,7 @@ function About() {
                                 processes.
                             </p>
 
-                            <div className="dwnldBtns" data-aos="fade-down"  data-aos-duration="1000">
+                            <div className="dwnldBtns" data-aos="fade-down" data-aos-duration="1000">
                                 <div className="get-app" >
                                     <a href=""><i className="fa-brands fa-apple"></i>
                                         <div className='button-dwd'>Download on the <br /><span>App Store</span></div></a>
@@ -37,12 +51,12 @@ function About() {
                             </div>
                         </div>
                         <div className="col-md-6" data-aos="fade-down" data-aos-duration="1000">
-                        <div className="video">
-                            <video width="100%" controls  muted >
-                            <source src={SampleVideo} type="video/mp4" />
-                            Your browser does not support the video tag.
-                            </video>
-                        </div>
+                            <div className="video">
+                                <video ref={videoRef} width="100%" controls muted>
+                                    <source src={SampleVideo} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </div>
                     </div>
                 </div>

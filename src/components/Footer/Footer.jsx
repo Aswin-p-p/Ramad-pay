@@ -101,19 +101,19 @@ function Footer() {
                     <p>&copy;2023 Ramad Pay, Inc. All rights reserved.</p>
                     <div className="mediaLinks">
                         <div>
-                            <a href=""><i className="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/RamadPay" target='_blank'><i className="fa-brands fa-facebook-f"></i></a>
                         </div>
                         <div>
-                            <a href=""><i className="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/ramadpay/"  target='_blank'><i className="fa-brands fa-linkedin"></i></a>
                         </div>
                         <div>
-                            <a href=""><i className="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/RamadPay"  target='_blank'><i className="fa-brands fa-instagram"></i></a>
                         </div>
+                        {/* <div>
+                            <a href=""><i className="fa-brands fa-youtube" ></i></a>
+                        </div> */}
                         <div>
-                            <a href=""><i className="fa-brands fa-youtube"></i></a>
-                        </div>
-                        <div>
-                              <a href=""><i className="fa-brands fa-google"></i></a>
+                              <a href="https://ramadpay.com/licensing/#"  target='_blank'><i className="fa-brands fa-google"></i></a>
                             </div>
 
                     </div>
