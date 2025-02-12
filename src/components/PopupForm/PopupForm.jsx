@@ -71,7 +71,7 @@ function PopupForm({ toggleForm }) {
         e.preventDefault();
     
         if (validateForm()) {
-            fetch("https://ramadpayserver.onrender.com/api/submit-form", { // Replace with your API endpoint
+            fetch("https://ramadpayserver.onrender.com/api/submit-form", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -80,7 +80,7 @@ function PopupForm({ toggleForm }) {
                     name: name,
                     email: email,
                     phone: phoneNumber,
-                    agreed: isChecked ? "Yes" : "No", // Convert boolean to Yes/No
+                    agreed: isChecked ? "Yes" : "No", 
                 }),
             })
             .then((response) => response.json())
@@ -95,7 +95,6 @@ function PopupForm({ toggleForm }) {
                 });
     
                 // Hide the form
-                setIsFormVisible(false);
     
                 // Reset form fields
                 setName ('');
