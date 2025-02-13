@@ -155,18 +155,20 @@ function CareerComponent() {
     setIsFormVisible((prev) => !prev);
   };
 
-  useEffect(() => {
-    if (isFormVisible) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-
-    return () => {
-      document.body.classList.remove("no-scroll"); // Cleanup on unmount
-    };
-  }, [isFormVisible]);
-  
+   useEffect(() => {
+      if (isFormVisible) {
+        document.body.classList.add("no-scroll");
+        document.body.style.backgroundColor = "rgba(0, 0, 0, 0.5)"; // Dim the background
+      } else {
+        document.body.classList.remove("no-scroll");
+        document.body.style.backgroundColor = ""; // Reset background color
+      }
+    
+      return () => {
+        document.body.classList.remove("no-scroll"); // Cleanup on unmount
+        document.body.style.backgroundColor = ""; // Reset background color on unmount
+      };
+    }, [isFormVisible]);
   return (
   <>
      {loading && <PreLoader />}

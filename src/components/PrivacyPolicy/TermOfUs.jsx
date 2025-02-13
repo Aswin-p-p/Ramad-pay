@@ -107,7 +107,7 @@ function TermOfUs() {
                         <p>Address: Ramad Pay Inc.</p>
                         <p>2429 E Franklin Ave Minneapolis, MN 55406</p>
 
-                        <p id="prvTxt">Acceptance of Terms</p>
+                        <p id="prvTxt" style={{color:'black', fontSize:'20px', fontWeight:'400'}}>Acceptance of Terms</p>
 
                         <p id="prvTxt">By using Ramad Pay’s services, you indicate your acceptance of these Terms and Conditions. Customers are encouraged to review the Terms and Conditions regularly for any changes or updates. Continued use of services after changes deemed acceptance of updated Terms.<a
                                 href="">privacy@ramadpay.com.</a> </p>

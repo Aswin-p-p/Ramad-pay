@@ -49,7 +49,7 @@ function Footer() {
                                         <li><a href="/term-of-use">Terms of Use</a></li>
                                         <li><a href="/Compliance">Compliance</a></li>
                                         <li><a href="/licenses">Licenses</a></li>
-                                        <li><a href="/agent">Find An Agent</a></li>
+                                        <li><a href="/find-agent">Find An Agent</a></li>
                                     </ul>
                                 </div>
                             </div>

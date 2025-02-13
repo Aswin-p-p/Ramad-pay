@@ -82,7 +82,7 @@ function Header() {
             <li><a href="/investor-relations">Investor Relations</a></li>
 
             <li className={`serv-SubList ${openServiceArea ? 'open' : ''}`}>
-  <a href="/servicearea">
+  <a href="/servicearea" >
     Our Service Area
     <span
       className="angle-right"
@@ -112,9 +112,11 @@ function Header() {
     </div>
               </div>
               <div className="fnd-btn">
+              <a href="/find-agent" style={{color:'black'}}>
                 <div className="button">
-                  <a href="/find-agent">Find an agent</a>
+                  Find an agent
                 </div>
+                </a>
                 <div className="call-icon">
                   <a href="tel:18886110753" >
                     <img src={callicon} alt="" />
