@@ -12,7 +12,7 @@ function Hero() {
 
   useEffect(() => {
     const hasPopupBeenShown = localStorage.getItem("popupShown");
-
+    console.log(localStorage.getItem("popupShown"))
     if (!hasPopupBeenShown) {
         setIsFormVisible(true);
         localStorage.setItem("popupShown", "true");
