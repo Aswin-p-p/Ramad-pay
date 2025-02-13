@@ -8,6 +8,17 @@ import PreLoader from '../../Preloader/PreLoader';
 
 
 function Hero() {
+  const [isFormVisible, setIsFormVisible] = useState(false);
+
+  useEffect(() => {
+    const hasPopupBeenShown = localStorage.getItem("popupShown");
+
+    if (!hasPopupBeenShown) {
+        setIsFormVisible(true);
+        localStorage.setItem("popupShown", "true");
+    }
+}, []);
+
     const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
       name: "",
@@ -94,16 +105,12 @@ function Hero() {
         setLoading(false); // ✅ Fix: Ensures loading state is reset in all cases
       }
     };
-      const [isFormVisible, setIsFormVisible] = useState(false);
-      useEffect(() => {
-        // Check if popup has been shown before
-        const hasPopupBeenShown = sessionStorage.getItem("popupShown");
+      
 
-        if (!hasPopupBeenShown) {
-            setIsFormVisible(true);
-            sessionStorage.setItem("popupShown", "true"); // Store flag in localStorage
-        }
-    }, []);
+
+
+
+
       const toggleForm = () => {
         setIsFormVisible((prev) => !prev);
       };
