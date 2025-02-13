@@ -42,10 +42,11 @@ function HomePageForm() {
   };
 
   const handleSubmit = async (e) => {
-
     e.preventDefault();
     setLoading(true);
+  
     if (!validateForm()) {
+      setLoading(false); // ✅ Fix: Reset loading state on validation failure
       Swal.fire({
         icon: "error",
         title: "Validation Error",
@@ -53,7 +54,7 @@ function HomePageForm() {
       });
       return;
     }
-
+  
     try {
       const response = await fetch("https://ramadpayserver.onrender.com/api/submit-form", {
         method: "POST",
@@ -62,30 +63,29 @@ function HomePageForm() {
         },
         body: JSON.stringify(formData),
       });
-
+  
       if (response.ok) {
         Swal.fire({
           icon: "success",
           title: "Success",
           text: "Your application has been submitted successfully!",
         });
-        setFormData({ name: "", email: "", phone: "", agreed: false });
+        setFormData({ name: "", email: "", phone: "", agree: false });
         setErrors({});
       } else {
         throw new Error("Submission failed");
-        setLoading(false); 
       }
     } catch (error) {
-      console.log(error);
-      
-      setLoading(false); 
       Swal.fire({
         icon: "error",
         title: "Error",
         text: "Something went wrong. Please try again later.",
       });
+    } finally {
+      setLoading(false); // ✅ Fix: Ensures loading state is reset in all cases
     }
   };
+  
 
   return (
     <>

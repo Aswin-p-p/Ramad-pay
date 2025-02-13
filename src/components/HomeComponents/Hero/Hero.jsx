@@ -8,15 +8,96 @@ import PreLoader from '../../Preloader/PreLoader';
 
 
 function Hero() {
+    const [loading, setLoading] = useState(false);
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      phone: "",
+      agreed: false,
+    });
+  
+    const [errors, setErrors] = useState({});
+  
+    const validateForm = () => {
+      let newErrors = {};
+    
+      if (!formData.name.trim()) newErrors.name = "Name is required.";
+      if (!formData.email.trim()) {
+        newErrors.email = "Email is required.";
+      } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        newErrors.email = "Invalid email format.";
+      }
+      if (!formData.phone.trim()) {
+        newErrors.phone = "Phone Number is required.";
+      } else if (!/^\d{10}$/.test(formData.phone)) {
+        newErrors.phone = "Invalid phone number.";
+      }
+      if (!formData.agreed) newErrors.agreed = "You must agree to the terms.";
+    
+      setErrors(newErrors);
+      console.log("Validation Errors:", newErrors); // ✅ Debugging
+    
+      return Object.keys(newErrors).length === 0;
+    };
+    
+  
+    const handleChange = (e) => {
+      const { name, value, type, checked } = e.target;
+      setFormData((prev) => ({
+        ...prev,
+        [name]: type === "checkbox" ? checked : value,
+      }));
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setLoading(true);
+    
+      if (!validateForm()) {
+        setLoading(false); // ✅ Fix: Reset loading state on validation failure
+        Swal.fire({
+          icon: "error",
+          title: "Validation Error",
+          text: "Please fix the errors before submitting.",
+        });
+        return;
+      }
+    
+      try {
+        const response = await fetch("https://ramadpayserver.onrender.com/api/submit-form", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+    
+        if (response.ok) {
+          Swal.fire({
+            icon: "success",
+            title: "Success",
+            text: "Your application has been submitted successfully!",
+          });
+          setFormData({ name: "", email: "", phone: "", agreed: false });
+;
+          setErrors({});
+        } else {
+          throw new Error("Submission failed");
+        }
+      } catch (error) {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Something went wrong. Please try again later.",
+        });
+      } finally {
+        setLoading(false); // ✅ Fix: Ensures loading state is reset in all cases
+      }
+    };
       const [isFormVisible, setIsFormVisible] = useState(false);
-      const [loading, setLoading] = useState(false);
-
-
       useEffect(() => {
         // Check if popup has been shown before
         const hasPopupBeenShown = sessionStorage.getItem("popupShown");
-
-        
 
         if (!hasPopupBeenShown) {
             setIsFormVisible(true);
@@ -26,66 +107,12 @@ function Hero() {
       const toggleForm = () => {
         setIsFormVisible((prev) => !prev);
       };
-      const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        agreed: false,
-      });
+  
+
+   
+  
     
-      const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
-        setFormData((prev) => ({
-          ...prev,
-          [name]: type === "checkbox" ? checked : value,
-        }));
-      };
-    
-       const handleSubmit = async (e) => {
-     
-         e.preventDefault();
-         setLoading(true);
-         if (!validateForm()) {
-           Swal.fire({
-             icon: "error",
-             title: "Validation Error",
-             text: "Please fix the errors before submitting.",
-           });
-           return;
-         }
-     
-         try {
-           const response = await fetch("https://ramadpayserver.onrender.com/api/submit-form", {
-             method: "POST",
-             headers: {
-               "Content-Type": "application/json",
-             },
-             body: JSON.stringify(formData),
-           });
-     
-           if (response.ok) {
-            
-             Swal.fire({
-               icon: "success",
-               title: "Success",
-               text: "Your application has been submitted successfully!",
-             });
-             setFormData({ name: "", email: "", phone: "", agreed: false });
-             setErrors({});
-           } else {
-            setLoading(false); 
-             throw new Error("Submission failed");
-           
-           }
-         } catch (error) {
-           setLoading(false); 
-           Swal.fire({
-             icon: "error",
-             title: "Error",
-             text: "Something went wrong. Please try again later.",
-           });
-         }
-       };
+      
       
     
       
@@ -176,7 +203,7 @@ function Hero() {
       <input type="number" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} />
 
       <div className="custom-chkbox pophmCheck d-flex col-30">
-        <input type="checkbox" id="accounts1" name="agree" checked={formData.agree} onChange={handleChange} />
+        <input type="checkbox" id="accounts1" name="agreed" checked={formData.agreed} onChange={handleChange} />
         <label htmlFor="accounts1">
           By clicking this box, you agree to receive SMS from Ramad Pay Inc. You can reply STOP to opt-out at any time.
         </label>
