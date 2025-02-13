@@ -2,11 +2,14 @@ import React, { useEffect, useState } from 'react';
 import './Hero.css'; // Corrected path for CSS import
 import Hand from '../../../assets/images/heroImages/hand-1.png';
 import heroSlideer from '/assets/Gif/heroSlideer.gif';
-import PopupForm from '../../PopupForm/PopupForm';
-import HomePageForm from '../../HomePageForm/HomePageForm';
+import Swal from "sweetalert2";
+import PreLoader from '../../Preloader/PreLoader';
+
+
 
 function Hero() {
       const [isFormVisible, setIsFormVisible] = useState(false);
+      const [loading, setLoading] = useState(false);
 
 
       useEffect(() => {
@@ -23,11 +26,73 @@ function Hero() {
       const toggleForm = () => {
         setIsFormVisible((prev) => !prev);
       };
+      const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        agreed: false,
+      });
+    
+      const handleChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        setFormData((prev) => ({
+          ...prev,
+          [name]: type === "checkbox" ? checked : value,
+        }));
+      };
+    
+       const handleSubmit = async (e) => {
+     
+         e.preventDefault();
+         setLoading(true);
+         if (!validateForm()) {
+           Swal.fire({
+             icon: "error",
+             title: "Validation Error",
+             text: "Please fix the errors before submitting.",
+           });
+           return;
+         }
+     
+         try {
+           const response = await fetch("https://ramadpayserver.onrender.com/api/submit-form", {
+             method: "POST",
+             headers: {
+               "Content-Type": "application/json",
+             },
+             body: JSON.stringify(formData),
+           });
+     
+           if (response.ok) {
+            
+             Swal.fire({
+               icon: "success",
+               title: "Success",
+               text: "Your application has been submitted successfully!",
+             });
+             setFormData({ name: "", email: "", phone: "", agreed: false });
+             setErrors({});
+           } else {
+            setLoading(false); 
+             throw new Error("Submission failed");
+           
+           }
+         } catch (error) {
+           setLoading(false); 
+           Swal.fire({
+             icon: "error",
+             title: "Error",
+             text: "Something went wrong. Please try again later.",
+           });
+         }
+       };
       
     
       
     return (
         <>
+        
+     {loading && <PreLoader />}
             <section className="rmd-hroSection">
                 <div className="container">
                     <div className="rmd-content">
@@ -82,47 +147,49 @@ function Hero() {
 
                   <section className={`hm-Popupcntct ${isFormVisible ? 'show' : ''}`}>
            
-<div class="popcontainer">
+<div className="popcontainer">
 <div className="closeBtn" onClick={toggleForm}>
                         CLOSE &nbsp; X
                     </div>
-  <div class="hmpopup-contain">
-  <div class="MobCls" onClick={toggleForm}><i class="fa-solid fa-xmark"></i></div>
- <div class="Pop-CntBnr"><img src="assets/home/cntctBnner.png" alt=""/></div>
-    <div class="CntTxt-popup">
-    <div class="PopupCnct-TXT">
+  <div className="hmpopup-contain">
+  <div className="MobCls" onClick={toggleForm}><i className="fa-solid fa-xmark"></i></div>
+ <div className="Pop-CntBnr"><img src="assets/home/cntctBnner.png" alt=""/></div>
+    <div className="CntTxt-popup">
+    <div className="PopupCnct-TXT">
       <h2>Become a
         Ramad Pay 
         Agent</h2>
-        <p class="subCnt">Start Earning Commissions and Making a Difference</p>
+        <p className="subCnt">Start Earning Commissions and Making a Difference</p>
         <p>Join the Ramad Pay Agent network for top commissions, strong support, and Text2Pay services. Apply now to revolutionize money transfers!</p>
 
-        <div class="popArrw">
+        <div className="popArrw">
           <a href=""><img src="assets/home/pop-arrow.png" alt=""/></a>
         </div>
     </div>
   </div>
-    <div class="CntTxt-popup">
-      <div class="PopupFrm">
+    <div className="CntTxt-popup">
+      <div className="PopupFrm">
         <h2>Get Started</h2>
-        <form>
-          <input type="text" placeholder="Your Full Name " required/>
-          <input type="text" placeholder="Email Address" required/>
-          <input type="number" placeholder="Phone Number" />
+        <form >
+      <input type="text" name="name" placeholder="Your Full Name" value={formData.name} onChange={handleChange} required />
+      <input type="text" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required />
+      <input type="number" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} />
 
-          <div class="custom-chkbox pophmCheck d-flex col-30">
-            <input type="checkbox" id="accounts"/>
-            <label for="accounts">By clicking this box, you agree to receive SMS from Ramad Pay Inc, you can reply stop to opt-out at any time, this is my Privacy Policy. If the box is not clicked, then the form should not be sent</label>
-        </div>
+      <div className="custom-chkbox pophmCheck d-flex col-30">
+        <input type="checkbox" id="accounts1" name="agree" checked={formData.agree} onChange={handleChange} />
+        <label htmlFor="accounts1">
+          By clicking this box, you agree to receive SMS from Ramad Pay Inc. You can reply STOP to opt-out at any time.
+        </label>
+      </div>
 
-        <div class="pophmNxtBtn">
-          <a href="">Next</a>
-        </div>
-        </form>
+      <div className="pophmNxtBtn">
+        <a type="submit" onClick={handleSubmit}>Next</a>
+      </div>
+    </form>
       </div>
     </div>
 
-    <div class="popup-manCnct">
+    <div className="popup-manCnct">
       <img src="assets/home/manCnct.png" alt=""/>
     </div>
 

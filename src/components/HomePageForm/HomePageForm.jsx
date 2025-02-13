@@ -9,7 +9,7 @@ function HomePageForm() {
     name: "",
     email: "",
     phone: "",
-    agree: false,
+    agreed: false,
   });
 
   const [errors, setErrors] = useState({});
@@ -27,7 +27,7 @@ function HomePageForm() {
     } else if (!/^\d{10}$/.test(formData.phone)) {
       newErrors.phone = "Invalid phone number.";
     }
-    if (!formData.agree) newErrors.agree = "You must agree to the terms.";
+    if (!formData.agreed) newErrors.agreed = "You must agreed to the terms.";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -69,13 +69,15 @@ function HomePageForm() {
           title: "Success",
           text: "Your application has been submitted successfully!",
         });
-        setFormData({ name: "", email: "", phone: "", agree: false });
+        setFormData({ name: "", email: "", phone: "", agreed: false });
         setErrors({});
       } else {
         throw new Error("Submission failed");
         setLoading(false); 
       }
     } catch (error) {
+      console.log(error);
+      
       setLoading(false); 
       Swal.fire({
         icon: "error",
@@ -141,17 +143,17 @@ function HomePageForm() {
                   <input
                     type="checkbox"
                     id="accounts"
-                    name="agree"
-                    checked={formData.agree}
+                    name="agreed"
+                    checked={formData.agreed}
                     onChange={handleChange}
                   />
                   <label htmlFor="accounts">
-                    By clicking this box, you agree to receive SMS from Ramad Pay Inc.
+                    By clicking this box, you agreed to receive SMS from Ramad Pay Inc.
                     You can reply stop to opt-out at any time. This is my Privacy Policy.
                     If the box is not clicked, then the form should not be sent.
                   </label>
                 </div>
-                {errors.agree && <p className="error">{errors.agree}</p>}
+                {errors.agreed && <p className="error">{errors.agreed}</p>}
 
                 <div className="hmNxtBtn">
                   <a type="submit" onClick={handleSubmit}>Next</a>
