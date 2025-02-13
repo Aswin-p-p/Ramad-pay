@@ -6,9 +6,9 @@ import Currency from '../../../assets/images/currency.png'
 
 
 const currencyList = {
-    USD: "United States Dollar",
     EUR: "Euro",
     GBP: "British Pound Sterling",
+    USD: "United States Dollar",
     CAD: "Canadian Dollar",
     AUD: "Australian Dollar",
     JPY: "Japanese Yen",
