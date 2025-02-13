@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react'
 import './CareerComponent.css'
 import PageForm from '../PageForm/PageForm'
 import Swal from 'sweetalert2';
+import PreLoader from "../Preloader/PreLoader";
+
 
 
 function CareerComponent() {
+  const [loading, setLoading] = useState(false);
   const [isFormVisible, setIsFormVisible] = useState(false);
 
   const [fileName, setFileName] = useState('');
@@ -76,73 +79,76 @@ function CareerComponent() {
   });
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+    setLoading(true); //  Start loading
+
     if (validateForm()) {
-      const formDataToSend = new FormData();
-      formDataToSend.append('name', formData.name);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('phone', formData.phone);
-      if (document.getElementById('real-file').files[0]) {
-        formDataToSend.append('resume', document.getElementById('real-file').files[0]);
-      }
-  
-      try {
-        const response = await fetch('https://ramadpayserver.onrender.com/api/submit-career-form', {
-          method: 'POST',
-          body: formDataToSend,
-        });
-      
-      
-        let result;
-        try {
-          const text = await response.text(); // Read response as text first
-          result = text ? JSON.parse(text) : {}; // Try parsing only if content exists
-        } catch (jsonError) {
-          console.error('JSON Parse Error:', jsonError);
-          result = { error: 'Invalid JSON response from server' }; // Fallback error message
+        const formDataToSend = new FormData();
+        formDataToSend.append('name', formData.name);
+        formDataToSend.append('email', formData.email);
+        formDataToSend.append('phone', formData.phone);
+        if (document.getElementById('real-file').files[0]) {
+            formDataToSend.append('resume', document.getElementById('real-file').files[0]);
         }
-        
-      
-   
-      
-        if (response.ok) {
-          Swal.fire({
-            icon: 'success',
-            title: 'Form submitted successfully!',
-            text: 'Your details have been successfully submitted.',
-          });
-      
-          setFormData({
-            name: '',
-            email: '',
-            phone: '',
-          });
-          setFileName('');
-          setFileError('');
-        } else {
-          Swal.fire({
+
+        try {
+            const response = await fetch('https://ramadpayserver.onrender.com/api/submit-career-form', {
+                method: 'POST',
+                body: formDataToSend,
+            });
+
+            let result;
+            try {
+                const text = await response.text(); // Read response as text first
+                result = text ? JSON.parse(text) : {}; // Try parsing only if content exists
+            } catch (jsonError) {
+                console.error('JSON Parse Error:', jsonError);
+                result = { error: 'Invalid JSON response from server' }; // Fallback error message
+            }
+
+            setLoading(false); 
+
+            if (response.ok) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Form submitted successfully!',
+                    text: 'Your details have been successfully submitted.',
+                });
+
+                // Reset form fields
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                });
+                setFileName('');
+                setFileError('');
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Form submission failed!',
+                    text: result?.error || 'Something went wrong. Please try again.',
+                });
+            }
+        } catch (error) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Form submission failed!',
+                text: error.message || 'An error occurred while submitting the form.',
+            });
+            console.error('Error:', error);
+        } finally {
+            setLoading(false); 
+        }
+    } else {
+        Swal.fire({
             icon: 'error',
             title: 'Form submission failed!',
-            text: result?.error || 'Something went wrong. Please try again.',
-          });
-        }
-      } catch (error) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Form submission failed!',
-          text: error.message || 'An error occurred while submitting the form.',
+            text: 'Please fix the errors in the form.',
         });
-        console.error('Error:', error);
-      }
-      
-    } else {
-      Swal.fire({
-        icon: 'error',
-        title: 'Form submission failed!',
-        text: 'Please fix the errors in the form.',
-      });
+        setLoading(false); 
     }
-  };
+};
+
   
 
   const toggleForm = () => {
@@ -163,6 +169,7 @@ function CareerComponent() {
   
   return (
   <>
+     {loading && <PreLoader />}
  <main>
       <section className=" commonHro careerHro">
         <div className="container">

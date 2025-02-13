@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import "./HomePageForm.css";
+import PreLoader from "../Preloader/PreLoader";
 
 function HomePageForm() {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,7 +42,9 @@ function HomePageForm() {
   };
 
   const handleSubmit = async (e) => {
+
     e.preventDefault();
+    setLoading(true);
     if (!validateForm()) {
       Swal.fire({
         icon: "error",
@@ -69,8 +73,10 @@ function HomePageForm() {
         setErrors({});
       } else {
         throw new Error("Submission failed");
+        setLoading(false); 
       }
     } catch (error) {
+      setLoading(false); 
       Swal.fire({
         icon: "error",
         title: "Error",
@@ -80,7 +86,10 @@ function HomePageForm() {
   };
 
   return (
+    <>
+     {loading && <PreLoader />}
     <section className="hm-cntct">
+      
       <div className="container">
         <div className="hmCntct-contain">
           <div className="CntBnr">
@@ -156,6 +165,8 @@ function HomePageForm() {
         </div>
       </div>
     </section>
+    
+    </>
   );
 }
 

@@ -80,9 +80,55 @@ function Hero() {
             </section>
 
 
-            {/* <div className={`popup-frm ${isFormVisible ? 'show' : ''}`}>
-               <HomePageForm/>
-      </div> */}
+                  <section className={`hm-Popupcntct ${isFormVisible ? 'show' : ''}`}>
+           
+<div class="popcontainer">
+<div className="closeBtn" onClick={toggleForm}>
+                        CLOSE &nbsp; X
+                    </div>
+  <div class="hmpopup-contain">
+  <div class="MobCls" onClick={toggleForm}><i class="fa-solid fa-xmark"></i></div>
+ <div class="Pop-CntBnr"><img src="assets/home/cntctBnner.png" alt=""/></div>
+    <div class="CntTxt-popup">
+    <div class="PopupCnct-TXT">
+      <h2>Become a
+        Ramad Pay 
+        Agent</h2>
+        <p class="subCnt">Start Earning Commissions and Making a Difference</p>
+        <p>Join the Ramad Pay Agent network for top commissions, strong support, and Text2Pay services. Apply now to revolutionize money transfers!</p>
+
+        <div class="popArrw">
+          <a href=""><img src="assets/home/pop-arrow.png" alt=""/></a>
+        </div>
+    </div>
+  </div>
+    <div class="CntTxt-popup">
+      <div class="PopupFrm">
+        <h2>Get Started</h2>
+        <form>
+          <input type="text" placeholder="Your Full Name " required/>
+          <input type="text" placeholder="Email Address" required/>
+          <input type="number" placeholder="Phone Number" />
+
+          <div class="custom-chkbox pophmCheck d-flex col-30">
+            <input type="checkbox" id="accounts"/>
+            <label for="accounts">By clicking this box, you agree to receive SMS from Ramad Pay Inc, you can reply stop to opt-out at any time, this is my Privacy Policy. If the box is not clicked, then the form should not be sent</label>
+        </div>
+
+        <div class="pophmNxtBtn">
+          <a href="">Next</a>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup-manCnct">
+      <img src="assets/home/manCnct.png" alt=""/>
+    </div>
+
+  </div>
+</div>
+</section>
         </>
 
 

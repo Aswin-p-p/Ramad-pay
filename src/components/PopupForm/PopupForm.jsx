@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import '../NgoComponent/NgoComponent.css';
 import Swal from 'sweetalert2';
+import PreLoader from "../Preloader/PreLoader";
 
 
 
 
 function PopupForm({ toggleForm }) {
+  const [loading, setLoading] = useState(false);
       const [isChecked, setIsChecked] = useState(false);
       const [name, setName] = useState('');
       const [email, setEmail] = useState('');
@@ -69,6 +71,7 @@ function PopupForm({ toggleForm }) {
     
       const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
     
         if (validateForm()) {
             fetch("https://ramadpayserver.onrender.com/api/submit-form", {
@@ -80,13 +83,12 @@ function PopupForm({ toggleForm }) {
                     name: name,
                     email: email,
                     phone: phoneNumber,
-                    agreed: isChecked ? "Yes" : "No", 
+                    agreed: isChecked ? "Yes" : "No",
                 }),
             })
             .then((response) => response.json())
-           
-            
             .then((result) => {
+                setLoading(false); // ✅ Correct placement
     
                 Swal.fire({
                     icon: "success",
@@ -94,29 +96,30 @@ function PopupForm({ toggleForm }) {
                     text: "Thank you for submitting the form!",
                 });
     
-                // Hide the form
-    
                 // Reset form fields
-                setName ('');
-                setEmail ('');
-                setIsChecked (false);
-                setPhoneNumber ('');
+                setName("");
+                setEmail("");
+                setPhoneNumber("");
+                setIsChecked(false);
             })
             .catch((error) => {
-                console.error("Error submitting form:", error);
+                setLoading(false); // ✅ Ensures loading state is disabled even on error
     
-                // Show error message
+                console.error("Error submitting form:", error);
                 Swal.fire({
                     icon: "error",
                     title: "Submission Failed",
                     text: "There was an error sending your form. Please try again.",
                 });
             });
+        } else {
+            setLoading(false); // ✅ Ensure loading stops if validation fails
         }
     };
+    
   return (
     <>
-    
+     {loading && <PreLoader />}
       <div className="container">
       <div className="popup">
         <div className="clsFrm-btn" onClick={toggleForm}>

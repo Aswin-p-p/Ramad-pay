@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import "./PageForm.css";
+import PreLoader from "../Preloader/PreLoader";
 
 
 
 function PageForm() {
+    const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -98,7 +100,7 @@ function PageForm() {
 
     return (
         <>
-        
+        {loading && <PreLoader />}
         <section className="contactSec">
             <div className="container">
                 <div className="cntct-Frm">

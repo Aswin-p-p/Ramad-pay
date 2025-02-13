@@ -4,9 +4,13 @@ import './Preloader.css'
 function PreLoader() {
   return (
    <>
-     <div className="preloader-container">
-      <div className="preloader"></div>
+     <div className="spinner-overlay">
+    <div style={{color:'#067e6f'}} className="la-ball-clip-rotate-multiple la-3x">
+        <div></div>
+        <div></div>
     </div>
+</div>
+
    </>
   )
 }

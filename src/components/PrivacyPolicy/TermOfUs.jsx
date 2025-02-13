@@ -5,35 +5,35 @@ function TermOfUs() {
    <>
    <main>
     
-   <section class=" commonHro serviceInAreaHero">
-            <div class="container">
-                <div class="cmpny-content">
+   <section className=" commonHro serviceInAreaHero">
+            <div className="container">
+                <div className="cmpny-content">
                     <h1 data-aos="fade-right" data-aos-duration="1000">
-                        <span class="commSpn"> </span>
+                        <span className="commSpn"> </span>
                         Terms Of Use
                     </h1>
                 </div>
               </div>
         </section>
-        <section class="CA-section">
-            <div class="container">
-                <div class="pageLink">
+        <section className="CA-section">
+            <div className="container">
+                <div className="pageLink">
                     <p>Ramad Pay</p>
                     <p>Terms and Conditions</p>
                 </div>
 
-                <div class="PrvcyCnt">
-                    <div class="prDate">
+                <div className="PrvcyCnt">
+                    <div className="prDate">
                         <p>October 12, 2023,</p>
                     </div>
-                    <div class="PrcyTxt">
+                    <div className="PrcyTxt">
                         <p>Ramad Pay Inc. is a licensed money transmitter that provides international money transfer and remittance services to customers in the United States. Ramad Pay is committed to maintaining the privacy and security of customer data as per state and federal regulations. </p>
 
                         <p>The following document outlines Ramad Pay’s Terms and Conditions for using our services, including eligibility requirements, payment information, transaction details, prohibited uses, refund policy, privacy policy, and more. Customers are required to agree to these terms before using Ramad Pay’s services.</p>
                         <p>Eligibility</p>
                     </div>
 
-                    <div class="dataColl-list">
+                    <div className="dataColl-list">
                         <p>To be eligible to use Ramad Pay’s services, customers must:</p>
                         <ul>
                             <li>Be at least 18 years of age</li>
@@ -45,7 +45,7 @@ function TermOfUs() {
                         <p id="prvTxt">Ramad Pay services are only offered to individual consumers and cannot be used for business purposes. Each customer is only allowed one active Ramad Pay account</p>
                     </div>
 
-                    <div class="dataColl-list">
+                    <div className="dataColl-list">
                         <p>Payment Methods</p>
                         <p>To send a transaction, customers authorize Ramad Pay to charge their verified payment method on file, which may include a debit card, credit card, or bank account. Applicable service fees will be charged at the time of the transaction. Customers are responsible for any additional fees their bank or card issuer charges.</p>
                         <p>Transactions</p>
@@ -67,7 +67,7 @@ function TermOfUs() {
                         </ul>
                     </div>
 
-                    <div class="prvcyCntTxt dataColl-list">
+                    <div className="prvcyCntTxt dataColl-list">
                         <p>Privacy Policy
 
                         </p>
@@ -90,7 +90,7 @@ function TermOfUs() {
                         <p>Customers agree to indemnify Ramad Pay against any claims or damages arising from the prohibited use of services. Accounts may be terminated for violations of the Terms of Services.</p>
                     </div>
 
-                    <div class="dataColl-list">
+                    <div className="dataColl-list">
                         <p>Limitation of Liability</p>
                         <p id="prvTxt">Ramad Pay’s liability is limited to direct damages related to the transaction amount and fees paid. Ramad Pay cannot be held liable for any indirect, special, incidental, consequential, exemplary, or punitive damages arising from using our services or this agreement.</p>
 
