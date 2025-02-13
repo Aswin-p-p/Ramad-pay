@@ -155,8 +155,8 @@ function HomePageForm() {
                 </div>
                 {errors.agreed && <p className="error">{errors.agreed}</p>}
 
-                <div className="hmNxtBtn">
-                  <a type="submit" onClick={handleSubmit}>Next</a>
+                <div className="hmNxtBtn" onClick={handleSubmit}>
+                  <a type="submit" >Next</a>
                 </div>
               </form>
             </div>
