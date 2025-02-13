@@ -98,7 +98,6 @@ const currencyList = {
     TZS: "Tanzanian Shilling",
     UAH: "Ukrainian Hryvnia",
     UGX: "Ugandan Shilling",
-    USD: "United States Dollar",
     UYU: "Uruguayan Peso",
     VND: "Vietnamese Dong",
     ZAR: "South African Rand",
