@@ -43,6 +43,10 @@
     width: 120px;
     transition: all 0.3s;
   }
+  .button:hover{
+    background-color: #025248;
+    color: #fff;
+  }
   .fnd-btn{
     display: flex;
     align-items: center;
