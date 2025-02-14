@@ -2,6 +2,7 @@ import React from 'react'
 import './ProductComponent.css'
 import PageForm from '../PageForm/PageForm'
 import Service from '../HomeComponents/Services/Service';
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 function ProductComponent() {
   return (
@@ -95,7 +96,8 @@ function ProductComponent() {
 
       <Service/>
 
-      <PageForm/>
+      {/* <PageForm/> */}
+      <HomePageForm/>
    </main>
    </>
   )

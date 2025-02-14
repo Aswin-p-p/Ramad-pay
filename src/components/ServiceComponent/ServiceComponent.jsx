@@ -1,6 +1,7 @@
 import React from 'react'
 import PageForm from '../PageForm/PageForm'
 import './ServiceComponent.css'
+import HomePageForm from '../HomePageForm/HomePageForm'
 
 function ServiceComponent() {
   return (
@@ -170,7 +171,8 @@ function ServiceComponent() {
         </div>
       </section>
 
-      <PageForm/>
+      {/* <PageForm/> */}
+      <HomePageForm/>
 </main>
    </>
   )

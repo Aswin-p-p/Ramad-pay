@@ -2,6 +2,7 @@ import React from 'react';
 import './CompanyContent.css';
 import PageLinks from '../../PageLinks/PageLink'
 import PageForm from '../../PageForm/PageForm';
+import HomePageForm from '../../HomePageForm/HomePageForm';
 
 
 function CompanyContent() {
@@ -140,7 +141,8 @@ function CompanyContent() {
                     </div>
                 </div>
             </section>
-            <PageForm/>
+            {/* <PageForm/> */}
+            <HomePageForm/>
         </>
 
     );

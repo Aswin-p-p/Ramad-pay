@@ -216,7 +216,7 @@
     padding: 10px 0;
 }
 .mainMenu li a{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color: #067e6f;
 }
@@ -231,12 +231,15 @@
     padding: 10px;
     display: block;
     transition: all 0.3s;
+    border-bottom: 1px solid #ccc;
   }
-  
+
   .subMenu a:hover {
     color: var(--primary-color) !important;
   }
- 
+  .subMenu{
+    width: 260px !important;
+  }
 
   @media (min-width: 992px) {
     

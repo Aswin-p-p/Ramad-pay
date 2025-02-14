@@ -19,13 +19,20 @@
     padding: 40px 0 20px;
   }
   .rmd-rw {
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    /* gap: 30px; */
+    
   }
-  .rmd-col{
+  .CnvtrCol{
     background-color: #fff;
     border-radius: 15px;
+    height: 100%;
+
   }
+  /* .rmd-col{
+    background-color: #fff;
+    border-radius: 15px;
+  } */
   .pay-frm{
     display: block;
     padding:20px ;
@@ -163,6 +170,9 @@
   }
 
   @media screen and (max-width:768px) {
+    .rmd-col{
+      padding-bottom: 10px;
+    }
     .rmd-serviceTxt h2{
       font-size: 38px;
     }

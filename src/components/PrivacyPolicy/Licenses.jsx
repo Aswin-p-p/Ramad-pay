@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Policy.css'
 import PageForm from '../PageForm/PageForm'
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 function Licenses() {
     const [openIndex, setOpenIndex] = useState(0);
@@ -365,7 +366,8 @@ function Licenses() {
         </section>
 
 
-                   <PageForm/>
+                   {/* <PageForm/> */}
+                   <HomePageForm/>
         </>
     )
 }

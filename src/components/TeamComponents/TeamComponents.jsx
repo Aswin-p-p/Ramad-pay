@@ -1,6 +1,7 @@
 import React from 'react'
 import './TeamComponents.css'
 import PageForm from '../PageForm/PageForm'
+import HomePageForm from '../HomePageForm/HomePageForm'
 
 function TeamComponents() {
   return (
@@ -205,7 +206,8 @@ function TeamComponents() {
       </section>
    
 
-      <PageForm/>
+      {/* <PageForm/> */}
+      <HomePageForm/>
  
     </main>
 </>

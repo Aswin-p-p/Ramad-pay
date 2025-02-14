@@ -3,6 +3,7 @@ import './CareerComponent.css'
 import PageForm from '../PageForm/PageForm'
 import Swal from 'sweetalert2';
 import PreLoader from "../Preloader/PreLoader";
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 
 
@@ -381,7 +382,8 @@ function CareerComponent() {
         </div>
       </section>
 
-      <PageForm/>
+      {/* <PageForm/> */}
+      <HomePageForm/>
       </main>
 
 

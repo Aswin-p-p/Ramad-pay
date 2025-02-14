@@ -3,6 +3,7 @@ import '../Minneapolis/minneapolis.css'
 import Countries from '../HomeComponents/Countries/Countries'
 import PageForm from '../PageForm/PageForm'
 import CurrencyConverter from '../Minneapolis/CurrencyConverter'
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 function StPaul() {
       const handleSmoothScroll = (e) => {
@@ -178,7 +179,8 @@ function StPaul() {
 
         <Countries/>
 
-        <PageForm/>
+        {/* <PageForm/> */}
+        <HomePageForm/>
       </main>
     </>
   )

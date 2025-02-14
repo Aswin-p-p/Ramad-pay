@@ -3,6 +3,7 @@ import './minneapolis.css'
 import Countries from '../HomeComponents/Countries/Countries'
 import PageForm from '../PageForm/PageForm'
 import CurrencyConverter from './CurrencyConverter';
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 
 
@@ -184,7 +185,8 @@ function Minneapolis() {
 
         <Countries/>
 
-        <PageForm/>
+        {/* <PageForm/> */}
+        <HomePageForm/>
       </main>
     </>
   )

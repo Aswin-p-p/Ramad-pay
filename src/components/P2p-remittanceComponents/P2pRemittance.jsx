@@ -2,6 +2,7 @@ import React from 'react'
 import './P2premittance.css'
 import PageForm from '../PageForm/PageForm';
 import Countries from '../HomeComponents/Countries/Countries';
+import HomePageForm from '../HomePageForm/HomePageForm';
 function P2pRemittance() {
   return (
   <>
@@ -28,7 +29,8 @@ function P2pRemittance() {
       </section>
 
       <Countries />
-      <PageForm/>
+      {/* <PageForm/> */}
+      <HomePageForm/>
   </>
   )
 }

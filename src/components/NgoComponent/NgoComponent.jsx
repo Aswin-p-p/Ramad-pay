@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './NgoComponent.css';
 import PageForm from '../PageForm/PageForm';
 import PopupForm from '../PopupForm/PopupForm';
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 function NgoComponent() {
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -251,7 +252,8 @@ function NgoComponent() {
       </div>
     </section>
 
-    <PageForm/>
+    {/* <PageForm/> */}
+    <HomePageForm/>
     </main>
 
   

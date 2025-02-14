@@ -1,6 +1,7 @@
 import React from 'react'
 import './agent.css'
 import PageForm from '../PageForm/PageForm';
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 function Agent() {
   return (
@@ -244,7 +245,8 @@ function Agent() {
         </div>
       </section>
 
-      <PageForm/>
+      {/* <PageForm/> */}
+      <HomePageForm/>
 
 
     <section className="takeFrst">

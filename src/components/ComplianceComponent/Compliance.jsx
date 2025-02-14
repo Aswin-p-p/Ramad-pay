@@ -1,6 +1,7 @@
 import React from 'react'
 import './compliance.css'
 import PageForm from '../PageForm/PageForm';
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 function Compliance() {
   return (
@@ -215,7 +216,9 @@ function Compliance() {
 </section>
 
  
-<PageForm/>
+{/* <PageForm/> */}
+
+<HomePageForm/>
 
  
     </main>

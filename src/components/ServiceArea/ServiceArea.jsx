@@ -1,6 +1,7 @@
 import React from 'react'
 import './ServiceArea.css'
 import PageForm from '../PageForm/PageForm'
+import HomePageForm from '../HomePageForm/HomePageForm'
 
 function ServiceArea() {
   return (
@@ -71,7 +72,8 @@ function ServiceArea() {
         </div>
       </section>
        
-       <PageForm/>
+       {/* <PageForm/> */}
+       <HomePageForm/>
   
     </main>
 

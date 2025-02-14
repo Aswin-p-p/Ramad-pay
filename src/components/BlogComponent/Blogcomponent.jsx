@@ -1,6 +1,7 @@
 import React from 'react'
 import './Blogcomponent.css'
 import PageForm from '../PageForm/PageForm'
+import HomePageForm from '../HomePageForm/HomePageForm'
 
 function Blogcomponent() {
   return (
@@ -208,7 +209,8 @@ function Blogcomponent() {
         </div>
       </section>
 
-      <PageForm/>
+      {/* <PageForm/> */}
+      <HomePageForm/>
       
 
 

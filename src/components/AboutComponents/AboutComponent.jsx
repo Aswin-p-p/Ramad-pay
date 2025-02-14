@@ -1,6 +1,7 @@
 import React from 'react'
 import './AboutComponent.css'
 import PageForm from '../PageForm/PageForm'
+import HomePageForm from '../HomePageForm/HomePageForm'
 
 function AboutComponent() {
   return (
@@ -86,7 +87,8 @@ function AboutComponent() {
       </section>
 
 
- <PageForm/>
+ {/* <PageForm/> */}
+ <HomePageForm/>
       </main>
     </>
   )

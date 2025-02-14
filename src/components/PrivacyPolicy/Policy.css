@@ -179,6 +179,8 @@
   height: 40vh ;
   min-height: 250px;
 }
-.contenthead{
+.contenthead h1{
   padding-top: 60px;
+  font-size: 40px;
+  
 }

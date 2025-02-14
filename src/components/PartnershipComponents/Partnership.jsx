@@ -1,6 +1,7 @@
 import React from 'react'
 import './Partnership.css'
 import PageForm from '../PageForm/PageForm'
+import HomePageForm from '../HomePageForm/HomePageForm'
 
 function Partnership() {
   return (
@@ -109,7 +110,8 @@ function Partnership() {
         </div>
       </section>
 
-      <PageForm/>
+      {/* <PageForm/> */}
+      <HomePageForm/>
 
     </main>
   </>

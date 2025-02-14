@@ -1,6 +1,7 @@
 import React from 'react'
 import './FindAgent.css'
 import PageForm from '../PageForm/PageForm'
+import HomePageForm from '../HomePageForm/HomePageForm'
 
 function FindAgent() {
   return (
@@ -38,7 +39,8 @@ function FindAgent() {
         </div>
        </section>
 
-       <PageForm/>
+       {/* <PageForm/> */}
+       <HomePageForm/>
 
   </main>
   )

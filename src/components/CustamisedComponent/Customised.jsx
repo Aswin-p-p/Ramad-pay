@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Customised.css'
 import PageForm from '../PageForm/PageForm'
 import PopupForm from '../PopupForm/PopupForm';
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 
 
@@ -173,7 +174,8 @@ function Customised() {
           </div>
         </section>
 
-        <PageForm/>
+        {/* <PageForm/> */}
+        <HomePageForm/>
         </main>
 
         <div className={`popup-frm ${isFormVisible ? 'show' : ''}`}>

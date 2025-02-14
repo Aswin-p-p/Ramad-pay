@@ -1,6 +1,7 @@
 import React from 'react'
 import './InvestorComponents.css'
 import PageForm from '../PageForm/PageForm';
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 function InvestorComponent() {
   return (
@@ -55,7 +56,8 @@ function InvestorComponent() {
         </div>
       </section>
 
-      <PageForm/>
+      {/* <PageForm/> */}
+      <HomePageForm/>
  
 
     </main>

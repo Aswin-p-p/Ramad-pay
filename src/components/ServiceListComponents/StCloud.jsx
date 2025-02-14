@@ -3,6 +3,7 @@ import '../Minneapolis/minneapolis.css'
 import Countries from '../HomeComponents/Countries/Countries'
 import PageForm from '../PageForm/PageForm'
 import CurrencyConverter from '../Minneapolis/CurrencyConverter'
+import HomePageForm from '../HomePageForm/HomePageForm';
 
 function StCloud() {
   
@@ -173,7 +174,8 @@ function StCloud() {
 
         <Countries/>
 
-        <PageForm/>
+        {/* <PageForm/> */}
+        <HomePageForm/>
       </main>
    </>
   )

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './B2B.css'
 import PageForm from '../PageForm/PageForm'
 import PopupForm from '../PopupForm/PopupForm';
+import HomePageForm from '../HomePageForm/HomePageForm';
 function B2B() {
    const [isFormVisible, setIsFormVisible] = useState(false);
 
@@ -172,7 +173,8 @@ function B2B() {
 
 
      
-          <PageForm />
+          {/* <PageForm /> */}
+          <HomePageForm/>
      
     </main>
 

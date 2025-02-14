@@ -150,9 +150,7 @@ function HomePageForm() {
                     onChange={handleChange}
                   />
                   <label htmlFor="accounts">
-                    By clicking this box, you agreed to receive SMS from Ramad Pay Inc.
-                    You can reply stop to opt-out at any time. This is my Privacy Policy.
-                    If the box is not clicked, then the form should not be sent.
+                  Check this box to receive SMS from Ramad Pay Inc. Reply "STOP" to opt out. The form won’t submit unless checked.
                   </label>
                 </div>
                 {errors.agreed && <p className="error">{errors.agreed}</p>}
