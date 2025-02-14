@@ -371,3 +371,30 @@
     left: -250px; /* Move submenu to the left */
   }
 }
+
+
+
+.mainUl li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Animation - Left to Right Underline */
+.mainUl li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.mainUl li a:hover::after {
+  width: 100%;
+}
