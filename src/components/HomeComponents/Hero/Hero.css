@@ -796,22 +796,26 @@ body{
 
 /* POPUP */
 
-.hm-Popupcntct{
+.hm-Popupcntct {
   width: 100%;
   max-width: 1200px;
   position: fixed;
   top: 55%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  transition: all 0.3s;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   visibility: hidden;
   padding-bottom: 40px;
   z-index: 22;
 }
-.hm-Popupcntct.show{
+
+.hm-Popupcntct.show {
   opacity: 1;
   visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
 }
+
 
 
 .closeBtn{
