@@ -33,7 +33,7 @@
     position: absolute;
   } 
   .primeBtn a{
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
     border-radius: 50px;
     font-size: 18px;
@@ -396,4 +396,8 @@
   .popup h3 {
     padding-top: 20px;
   }
+}
+
+.primeBtn a:hover{
+  background-color: #0f1615 !important;
 }

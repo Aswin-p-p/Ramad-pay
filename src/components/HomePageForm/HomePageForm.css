@@ -80,18 +80,22 @@
     letter-spacing: 1px;
   }
   .hmNxtBtn{
-    background-color: #067e6f;
-    width: 170px;
-    padding: 10px 30px;
-    text-align: center;
-    margin-top: 10px;
-    border-radius: 8px;
-    cursor: pointer;
+    padding-top: 20px;
   }
   .hmNxtBtn a{
+    background-color: #067e6f;
+    padding: 10px 60px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: auto;
+    transition: all 0.3s;
+    color: #fff;
+    font-size: 18px;
     color: #fff;
     font-size: 18px;
   }
+
   .manCnct{
     position: absolute;
   
@@ -263,3 +267,9 @@
     bottom: -34px;
   }
 }
+
+
+.hmNxtBtn a:hover{
+  background-color: #15998a;
+ 
+ }

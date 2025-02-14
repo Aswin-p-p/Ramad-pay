@@ -150,7 +150,8 @@ function HomePageForm() {
                     onChange={handleChange}
                   />
                   <label htmlFor="accounts">
-                  Check this box to receive SMS from Ramad Pay Inc. Reply "STOP" to opt out. The form won’t submit unless checked.
+                  Check this box to receive SMS from Ramad Pay Inc. Reply "STOP" to opt out.
+                   View Privacy Policy. The form won't submit without it.
                   </label>
                 </div>
                 {errors.agreed && <p className="error">{errors.agreed}</p>}
