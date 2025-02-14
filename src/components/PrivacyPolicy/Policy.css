@@ -173,3 +173,9 @@
 .licns-container{
   padding-bottom: 40px;
 }
+
+.licens-hero{
+  background-color: var(--primary-color);
+  height: 50vh ;
+  min-height: 250px;
+}

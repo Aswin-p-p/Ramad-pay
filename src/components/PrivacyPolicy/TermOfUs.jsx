@@ -5,7 +5,7 @@ function TermOfUs() {
    <>
    <main>
     
-   <section className=" commonHro serviceInAreaHero">
+   <section className=" commonHro serviceInAreaHero licens-hero">
             <div className="container">
                 <div className="cmpny-content">
                     <h1 data-aos="fade-right" data-aos-duration="1000">
