@@ -176,6 +176,9 @@
 
 .licens-hero{
   background-color: var(--primary-color);
-  height: 50vh ;
+  height: 40vh ;
   min-height: 250px;
+}
+.contenthead{
+  padding-top: 60px;
 }

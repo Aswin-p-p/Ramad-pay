@@ -6,7 +6,7 @@ function Policy() {
     <main>
     <section className=" commonHro serviceInAreaHero licens-hero">
             <div className="container">
-                <div className="cmpny-content">
+                <div className="cmpny-content contenthead">
                     <h1 data-aos="fade-right" data-aos-duration="1000">
                         <span className="commSpn"> </span>
                        Privacy Policy
