@@ -46,14 +46,16 @@ function HomePageForm() {
     setLoading(true);
   
     if (!validateForm()) {
-      setLoading(false); // ✅ Fix: Reset loading state on validation failure
+      setLoading(false);
       Swal.fire({
         icon: "error",
-        title: "Validation Error",
-        text: "Please fix the errors before submitting.",
+        title: "Missing Details!",
+        text: "Please fill in all required fields before submitting.",
       });
       return;
     }
+    
+    
   
     try {
       const response = await fetch("https://ramadpayserver.onrender.com/api/submit-form", {

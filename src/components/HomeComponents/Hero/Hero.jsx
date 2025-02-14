@@ -54,14 +54,15 @@ function Hero() {
       setLoading(true);
     
       if (!validateForm()) {
-        setLoading(false); // ✅ Fix: Reset loading state on validation failure
+        setLoading(false);
         Swal.fire({
           icon: "error",
-          title: "Validation Error",
-          text: "Please fix the errors before submitting.",
+          title: "Missing Details!",
+          text: "Please check and complete the required fields.",
         });
         return;
       }
+      
     
       try {
         const response = await fetch("https://ramadpayserver.onrender.com/api/submit-form", {
@@ -103,6 +104,22 @@ function Hero() {
             sessionStorage.setItem("popupShown", "true"); // Store flag in localStorage
         }
     }, []);
+    useEffect(() => {
+      if (isFormVisible) {
+        document.body.classList.add("no-scroll");
+        requestAnimationFrame(() => {
+          document.body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        });
+      } else {
+        document.body.classList.remove("no-scroll");
+        document.body.style.backgroundColor = "";
+      }
+  
+      return () => {
+        document.body.classList.remove("no-scroll");
+        document.body.style.backgroundColor = "";
+      };
+    }, [isFormVisible]);
       const toggleForm = () => {
         setIsFormVisible((prev) => !prev);
       };
