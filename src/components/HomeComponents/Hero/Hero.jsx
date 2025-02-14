@@ -167,7 +167,7 @@ function Hero() {
                                 </div>
                             </div>
                             <div className="download-Btn">
-                                <a href="#">Download app</a>
+                                <a >Download app</a>
                             </div>
                         </div>
                     </div>

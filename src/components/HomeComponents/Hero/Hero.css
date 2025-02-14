@@ -1129,3 +1129,7 @@ padding: 9px 30px;
 }
 
 }
+
+.download-Btn:hover{
+  background-color: rgb(15, 15, 15);
+}
