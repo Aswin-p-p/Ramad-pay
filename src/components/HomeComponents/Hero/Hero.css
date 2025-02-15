@@ -269,7 +269,7 @@
   }
   .tabList-hover {
       width: 100%;
-      display: none;
+      /* display: none; */
       position: absolute;
       background-color: #ffe15a;
       padding: 10px 6px;
