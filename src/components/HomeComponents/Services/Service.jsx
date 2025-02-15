@@ -170,7 +170,7 @@ function Service() {
                     <div className="pay-services">
                         <div className="row rmd-rw">
                             <div className="rmd-col col-md-6" data-aos="fade-right" data-aos-duration="1000">
-                            <div class="CnvtrCol">
+                            <div className="CnvtrCol">
                                 <form className="pay-frm">
                                     <div className="input-box">
                                         <label>Amount</label>
@@ -228,7 +228,7 @@ function Service() {
                                 </div>
                             </div>
                             <div className="rmd-col col-md-6" data-aos="fade-right" data-aos-duration="1000">
-                            <div class="CnvtrCol">
+                            <div className="CnvtrCol">
                                 <form className="pay-frm send-box">
                                     <div className="input-box">
                                         <label>Mobile Number</label>

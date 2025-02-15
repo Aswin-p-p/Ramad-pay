@@ -1011,12 +1011,11 @@ transform: none;
 width: 268px;
 }
 .Pop-CntBnr {
-display: block;
-position: absolute;
-left: -499px;
-transform: rotate(16deg);
-bottom: -9px;
-z-index: -1;
+  display: block;
+  position: absolute;
+  left: -683px;
+  transform: rotate(-8deg);
+  bottom: -9px;
 }
 .PopupFrm h2{
 color: #067e6f;
@@ -1034,6 +1033,7 @@ padding: 9px 30px;
   /* HOME POPUP */
   .PopupCnct-TXT{
     max-width: 100%;
+    z-index: 22;
   }
   .CntTxt-popup{
     width: 100%;
@@ -1043,9 +1043,9 @@ padding: 9px 30px;
   .PopupCnct-TXT h2 {
     font-size: 26px;
 }
-  .Pop-CntBnr {
+  /* .Pop-CntBnr {
     display: none;
-}
+} */
 .PopupFrm{
   width: 100%;
 }
@@ -1126,7 +1126,10 @@ padding: 9px 30px;
   font-size: 14px;
   font-weight: 400;
 }
+.Pop-CntBnr {
 
+  left: -806px;
+}
 }
 
 .download-Btn:hover{

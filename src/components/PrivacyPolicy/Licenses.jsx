@@ -298,17 +298,17 @@ function Licenses() {
 
             </section>
 
-            <section class="CA-section Pri">
-            <div class="container">
-                <div class="pageLink">
+            <section className="CA-section Pri">
+            <div className="container">
+                <div className="pageLink">
                     <a href="">Home | Company | <span>Licences</span></a>
                 </div>
                
 
 
 
-                <div class="licns-container">
-                    <div class="licRw">
+                <div className="licns-container">
+                    <div className="licRw">
                     {faqData.map((faq, index) => (
         <div className="faq-item" key={index}>
           <div className="faq-question" onClick={() => toggleFAQ(index)}>
