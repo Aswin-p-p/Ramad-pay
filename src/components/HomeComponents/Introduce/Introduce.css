@@ -323,20 +323,11 @@
       overflow: hidden;
       z-index: -1;
   }
-  .rmd-content h1 {
-      line-height: 41px;
-      color: #fff;
-      font-weight: 700;
-      font-size: 46px;
-  }
+  
   .sub-contents {
       margin-top: 15px;
   }
-  .sub-contents h4 {
-      font-size: 25px;
-      font-weight: 400;
-      color: #fff;
-  }
+
   .feature-div h2 {
       font-weight: 100;
       font-size: 36px;
@@ -369,12 +360,15 @@
       height: 600px;
   }
   .personImg {
-      position: absolute;
-      left: 20px;
-      bottom: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
   .personImg img {
-      width: 248px;
+    width: 176px;
+        margin: auto;
+        display: block;
   }
   .rmd-countries .head h2 {
       font-weight: 100;
@@ -464,6 +458,7 @@
 
 
 @media(min-width:320px) and (max-width:500px){
+    
   .toggle {
       display: block;
       z-index: 222;
@@ -534,19 +529,13 @@
       position: absolute;
       bottom: -14px;
       left: 50%;
-      top: 50%;
+      top: 55%;
       transform: translate(-50%, 26%);
       /* overflow: hidden; */
       z-index: 1;
   }
-  .rmd-content h1 {
-      line-height: 36px;
 
-      font-size: 38px;
-  }
-  .sub-contents h4 {
-      font-size: 22px;
-  }
+
   .sub-contents p {
       max-width: 100%;
       font-size: 13px;
@@ -561,7 +550,7 @@
       border-radius: 5px;
       padding: 7px 16px;
       width: 250px;
-      margin: 10px 0;
+      margin: 10px auto;
   }
   .amount h2 {
       text-align: center;
@@ -654,10 +643,7 @@
       transform: translate(-50%, 28%);
       z-index: 1;
   }
-  .rmd-content h1 {
-      line-height: 36px;
-      font-size: 35px;
-  }
+  
 
   .rmd-introduce {
       height: 535px;

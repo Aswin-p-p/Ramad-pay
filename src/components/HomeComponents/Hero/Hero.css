@@ -127,11 +127,7 @@
     padding-top: 8px;
     font-weight: 700;
 }
-.personImg {
-    position: absolute;
-    right: 70px;
-    bottom: 0;
-}
+
 .tab {
     font-size: 18px;
 }
@@ -451,14 +447,8 @@
       position: relative;
       height: 600px;
   }
-  .personImg {
-      position: absolute;
-      left: 20px;
-      bottom: 0;
-  }
-  .personImg img {
-      width: 248px;
-  }
+
+ 
   .rmd-countries .head h2 {
       font-weight: 100;
       font-size: 36px;
@@ -617,18 +607,22 @@
       position: absolute;
       bottom: -14px;
       left: 50%;
-      top: 50%;
+      top: 55%;
       transform: translate(-50%, 26%);
       /* overflow: hidden; */
       z-index: 1;
   }
   .rmd-content h1 {
       line-height: 36px;
-
+       text-align: center;
       font-size: 38px;
+  }
+  .rmd-content{
+    text-align: center;
   }
   .sub-contents h4 {
       font-size: 22px;
+      text-align: center;
   }
   .sub-contents p {
       max-width: 100%;
@@ -639,12 +633,16 @@
       display: block;
       margin: 5px 0 25px;
   }
+  .download-Btn {
+margin: auto;
+  }
   .appStore {
       border: 1px solid #fff;
       border-radius: 5px;
       padding: 7px 16px;
       width: 250px;
-      margin: 10px 0;
+      margin: 10px auto;
+
   }
   .amount h2 {
       text-align: center;
@@ -727,6 +725,7 @@
       display: flex
   ;
       align-items: start;
+      overflow: hidden;
   }
   .mobSliding {
       width: 231px;
