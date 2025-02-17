@@ -160,6 +160,8 @@ function HomePageForm() {
                   <a type="submit" >Next</a>
                 </div>
               </form>
+              
+
             </div>
           </div>
           <div className="manCnct">
