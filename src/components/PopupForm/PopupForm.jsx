@@ -88,7 +88,7 @@ function PopupForm({ toggleForm }) {
             })
             .then((response) => response.json())
             .then((result) => {
-                setLoading(false); // ✅ Correct placement
+                setLoading(false); 
     
                 Swal.fire({
                     icon: "success",
@@ -103,7 +103,7 @@ function PopupForm({ toggleForm }) {
                 setIsChecked(false);
             })
             .catch((error) => {
-                setLoading(false); // ✅ Ensures loading state is disabled even on error
+                setLoading(false); 
     
                 console.error("Error submitting form:", error);
                 Swal.fire({
@@ -113,7 +113,7 @@ function PopupForm({ toggleForm }) {
                 });
             });
         } else {
-            setLoading(false); // ✅ Ensure loading stops if validation fails
+            setLoading(false); 
         }
     };
     

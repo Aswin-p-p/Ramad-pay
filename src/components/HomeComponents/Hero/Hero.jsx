@@ -35,7 +35,7 @@ function Hero() {
       if (!formData.agreed) newErrors.agreed = "You must agree to the terms.";
     
       setErrors(newErrors);
-      console.log("Validation Errors:", newErrors); // ✅ Debugging
+      console.log("Validation Errors:", newErrors); 
     
       return Object.keys(newErrors).length === 0;
     };
@@ -92,7 +92,7 @@ function Hero() {
           text: "Something went wrong. Please try again later.",
         });
       } finally {
-        setLoading(false); // ✅ Fix: Ensures loading state is reset in all cases
+        setLoading(false); 
       }
     };
       const [isFormVisible, setIsFormVisible] = useState(false);

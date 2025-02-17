@@ -84,7 +84,7 @@ function HomePageForm() {
         text: "Something went wrong. Please try again later.",
       });
     } finally {
-      setLoading(false); // ✅ Fix: Ensures loading state is reset in all cases
+      setLoading(false); 
     }
   };
   
