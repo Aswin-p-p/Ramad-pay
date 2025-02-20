@@ -18,6 +18,7 @@
     justify-content: space-between;
     border-radius: 20px;
     padding: 45px 50px;
+    margin: auto;
   }
   .CntBnr{
    display: none;

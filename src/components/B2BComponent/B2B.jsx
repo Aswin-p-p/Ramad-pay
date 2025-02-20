@@ -166,12 +166,6 @@ function B2B() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
      
           {/* <PageForm /> */}
           <HomePageForm/>
