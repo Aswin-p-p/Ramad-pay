@@ -282,6 +282,21 @@ function Licenses() {
           disclosures:
             "As a Ramad Pay Inc. customer, if your issue remains unresolved after contacting Ramad Pay Inc. at 1-888-611-0753 (Monday-Friday, 9:00 AM – 6:00 PM), you may reach out to the money transmitter licensing authority in your state. If you believe your dispute or complaint regarding Ramad Pay Inc.’s services has not been adequately addressed, please consider submitting a formal complaint with the appropriate authority.",
         },
+        {
+          state: "North Caroline",
+          license: "NC 27603",
+          agency: {
+            contact: "For inquiries, please contact:",
+            name: "The N.C Office of the Commissioner Of Banks(NCCOB) Finance Institution",
+            address: "316 W.Edenton Street,Raleight, NC 27603",
+            mailingAddress: "4309 Mail Service Center,Raleight, NC 27699-4309",
+            phone: "Tel: 919-733-3016",
+            website: "Website: https://nccob.nc.gov/financial-institutions/money-transmitters",
+          },
+          jurisdiction: "North Caroline",
+          disclosures:
+            "As a Ramad Pay Inc. customer, if your issue remains unresolved after contacting Ramad Pay Inc. at 1-888-611-0753 (Monday-Friday, 9:00 AM – 6:00 PM), you may reach out to the money transmitter licensing authority in your state. If you believe your dispute or complaint regarding Ramad Pay Inc.’s services has not been adequately addressed, please consider submitting a formal complaint with the appropriate authority.",
+        },
     ]
     return (
         <>
