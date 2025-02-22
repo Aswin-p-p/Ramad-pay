@@ -13,7 +13,7 @@ function Footer() {
                                     <img src="assets/logo.png" alt="" />
                                 </div>
                             </div>
-                           
+
                             <div className="ftrSec">
                                 <h4>Services</h4>
                                 <div className="FtrService">
@@ -50,6 +50,10 @@ function Footer() {
                                         <li><a href="/Compliance">Compliance</a></li>
                                         <li><a href="/licenses">Licenses</a></li>
                                         <li><a href="/find-agent">Find An Agent</a></li>
+                                        <li>
+                                            <a href="/">IT Policy</a>
+                                            <span className="new-label">new</span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -76,7 +80,7 @@ function Footer() {
                                         </div>
                                     </div>
                                     <div className="agent" >
-                                        <p id="agent-head">Agent portal</p>
+                                        <p id="agent-head">Agent Portal</p>
                                         <div className="cntct-dtls">
                                             <div id="locImg1"><img src="assets/footer/locate.png" alt="" /></div>
                                             <div>
@@ -104,17 +108,17 @@ function Footer() {
                             <a href="https://www.facebook.com/RamadPay" target='_blank'><i className="fa-brands fa-facebook-f"></i></a>
                         </div>
                         <div>
-                        <a href="https://www.linkedin.com/company/ramadpay/"  target='_blank'><i className="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/company/ramadpay/" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
                         </div>
                         <div>
-                            <a href="https://www.instagram.com/ramadpay/"  target='_blank'><i className="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/ramadpay/" target='_blank'><i className="fa-brands fa-instagram"></i></a>
                         </div>
                         {/* <div>
                             <a href=""><i className="fa-brands fa-youtube" ></i></a>
                         </div> */}
                         <div>
-                              <a  ><i className="fa-brands fa-google"></i></a>
-                            </div>
+                            <a href='https://st.ramadpay.com/'  target='_blank' ><i className="fa-brands fa-google"></i></a>
+                        </div>
 
                     </div>
                 </div>

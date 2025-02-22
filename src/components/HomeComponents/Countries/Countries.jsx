@@ -92,7 +92,7 @@ function Countries() {
       }
     },
     {
-      name: 'Ethopia', flag: 'assets/CountryFlag/ethopya.jpg',
+      name: 'Ethiopia', flag: 'assets/CountryFlag/ethopya.jpg',
       hoverData: {
         payoutType: 'Banks',
         coverage: 'All Banks',
