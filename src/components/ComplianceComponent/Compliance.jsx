@@ -49,7 +49,7 @@ function Compliance() {
                
                           <div className="row abtRow">                      
                            <div className="AgentImg col-md-12 col-lg-6">
-                              <img src="assets/compliance/compliance.webp" alt=""/>
+                              <img src="assets/ABOUT/compliance.png" alt=""/>
                             </div>
                             <div className="AgntImg-cntnt col-md-12 col-lg-6">
                               <div>

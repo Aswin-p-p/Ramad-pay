@@ -38,7 +38,7 @@ function CompanyContent() {
 
                                     <div className="row abtRow">
                                         <div className="abtImg col-md-6">
-                                            <img src="assets/company/compliance.webp" alt="" />
+                                            <img src="assets/company/compliance.png" alt="" />
                                         </div>
                                         <div className="abt-content col-md-6">
                                             <div>
@@ -68,7 +68,7 @@ function CompanyContent() {
                                             </div>
                                         </div>
                                         <div className="abtImg col-md-6">
-                                            <img src="assets/company/Investor-relationship.webp" alt="" />
+                                            <img src="assets/company/Investor-relationship.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@ function CompanyContent() {
 
                                     <div className="row abtRow">
                                         <div className="abtImg col-md-6">
-                                            <img src="assets/company/partnership.webp" alt="" />
+                                            <img src="assets/company/partnership.png" alt="" />
                                         </div>
                                         <div className="abt-content col-md-6">
                                             <div>
@@ -111,7 +111,7 @@ function CompanyContent() {
                                             </div>
                                         </div>
                                         <div className="abtImg col-md-6">
-                                            <img src="assets/company/Remittance-Team.webp" alt="" />
+                                            <img src="assets/company/Remittance-Team.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@ function CompanyContent() {
 
                                     <div className="row abtRow">
                                         <div className="abtImg col-md-6">
-                                            <img src="assets/company/careers.webp" alt="" />
+                                            <img src="assets/company/careers.png" alt="" />
                                         </div>
                                         <div className="abt-content col-md-6">
                                             <div>

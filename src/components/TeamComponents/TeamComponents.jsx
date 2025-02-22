@@ -44,7 +44,7 @@ function TeamComponents() {
             <div className="col-md-6 col-lg-4">
               <div className="teamBlk" data-aos="fade-up" data-aos-duration="1000">
                 <div className="teamImg">
-                  <img src="assets/team/team1.webp" alt=""/>
+                  <img src="assets/team/team1.png" alt=""/>
                 </div>
                 <div className="teamDesc">
                   <h3>Sh. Nur Hadi</h3>
@@ -67,7 +67,7 @@ function TeamComponents() {
             <div className="col-md-6 col-lg-4">
               <div className="teamBlk" data-aos="fade-up" data-aos-duration="1000">
                 <div className="teamImg">
-                  <img src="assets/team/team2.webp" alt=""/>
+                  <img src="assets/team/team2.png" alt=""/>
                 </div>
                 <div className="teamDesc">
                   <h3>Hussein Hashi</h3>
@@ -87,7 +87,7 @@ function TeamComponents() {
             <div className="col-md-6 col-lg-4">
               <div className="teamBlk" data-aos="fade-up" data-aos-duration="1000">
                 <div className="teamImg">
-                  <img src="assets/team/team3.webp" alt=""/>
+                  <img src="assets/team/team3.png" alt=""/>
                 </div>
                 <div className="teamDesc">
                   <h3>Aden Hassan</h3>
@@ -107,7 +107,7 @@ function TeamComponents() {
             <div className="col-md-6 col-lg-4">
               <div className="teamBlk" data-aos="fade-up" data-aos-duration="1000">
                 <div className="teamImg">
-                  <img src="assets/team/team4.webp" alt=""/>
+                  <img src="assets/team/team4.png" alt=""/>
                 </div>
                 <div className="teamDesc">
                   <h3>Ali Mohammed</h3>
@@ -130,7 +130,7 @@ function TeamComponents() {
             <div className="col-md-6 col-lg-4">
               <div className="teamBlk" data-aos="fade-up" data-aos-duration="1000">
                 <div className="teamImg">
-                  <img src="assets/team/team5.webp" alt=""/>
+                  <img src="assets/team/team5.png" alt=""/>
                 </div>
                 <div className="teamDesc">
                   <h3>Nur Abdukadir Sh. Ahmed</h3>
@@ -153,7 +153,7 @@ function TeamComponents() {
             <div className="col-md-6 col-lg-4">
               <div className="teamBlk" data-aos="fade-up" data-aos-duration="1000">
                 <div className="teamImg">
-                  <img src="assets/team/team6.webp" alt=""/>
+                  <img src="assets/team/team6.png" alt=""/>
                 </div>
                 <div className="teamDesc">
                   <h3>Faysal Warfa</h3>
@@ -176,7 +176,7 @@ function TeamComponents() {
             <div className="col-md-6 col-lg-4">
               <div className="teamBlk"data-aos="fade-up" data-aos-duration="1000">
                 <div className="teamImg">
-                  <img src="assets/team/team7.webp" alt=""/>
+                  <img src="assets/team/team7.png" alt=""/>
                 </div>
                 <div className="teamDesc">
                   <h3>Ali Jirde</h3>

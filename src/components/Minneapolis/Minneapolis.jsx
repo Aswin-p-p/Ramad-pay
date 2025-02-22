@@ -27,7 +27,7 @@ function Minneapolis() {
             <div className="container">
                 <div className="cmpny-content cmpny-minne">
                     <h1 data-aos="fade-right" data-aos-duration="1000">
-                        <span className="commSpn">Minneapolis'</span>
+                        <span className="commSpn">Minneapolis</span>
                         Gateway to Global <br/>
                         Financial Connectivity
                     </h1>

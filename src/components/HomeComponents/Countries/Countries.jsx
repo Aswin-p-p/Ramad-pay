@@ -30,8 +30,8 @@ function Countries() {
     },
     {
       name: 'Burkina Faso', flag: 'assets/CountryFlag/burkina.jpg', hoverData: {
-        payoutType: 'Wallets2; Banks',
-        coverage: 'All Banks2',
+        payoutType: 'Wallets; Banks',
+        coverage: 'All Banks',
         businessType: 'P2P',
       }
     },
