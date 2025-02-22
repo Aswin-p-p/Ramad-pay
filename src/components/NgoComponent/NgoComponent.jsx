@@ -50,7 +50,7 @@ function NgoComponent() {
         <section className="CA-section">
             <div className="container">
                 <div className="pageLink">
-                    <a href="">Home | Company | <span>Our Service Agent</span></a>
+                    <a href="">Home | Company | <span>NGOs</span></a>
                 </div>
             </div>
         </section>

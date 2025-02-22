@@ -316,7 +316,7 @@ function Licenses() {
             <section className="CA-section Pri">
             <div className="container">
                 <div className="pageLink">
-                    <a href="">Home | Company | <span>Licences</span></a>
+                    <a href="">Home | Company | <span>Licensing</span></a>
                 </div>
                
 
